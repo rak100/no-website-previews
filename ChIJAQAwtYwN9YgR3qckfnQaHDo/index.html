@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mr. Perfect Handyman | Marietta Handyman & Repairs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Punctual, detail-focused handyman in Marietta, GA. Lighting installs, electrical upgrades assistance, gate repairs, and household fixes.">
+  <meta property="og:title" content="Mr. Perfect Handyman | Marietta Handyman & Repairs">
+  <meta property="og:description" content="Punctual, detail-focused handyman in Marietta, GA. Lighting installs, electrical upgrades assistance, gate repairs, and household fixes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mr. Perfect Handyman | Marietta Handyman & Repairs">
+  <meta name="twitter:description" content="Punctual, detail-focused handyman in Marietta, GA. Lighting installs, electrical upgrades assistance, gate repairs, and household fixes.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #0b2545;
+      --color-accent: #f6b21a;
+      --color-bg: #f8f9fb;
+      --color-white: #ffffff;
+      --color-gray: #5f6c7b;
+      --color-light-gray: #d9dee6;
+      --max-width: 1100px;
+      --shadow-soft: 0 14px 30px rgba(11,37,69,0.08);
+      --transition: all 0.25s ease;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-white);
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    button {
+      font-family: inherit;
+    }
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 1rem;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      z-index: 999;
+    }
+    .container {
+      width: min(100% - 2.5rem, var(--max-width));
+      margin: 0 auto;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(11,37,69,0.08);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      gap: 0.75rem;
+    }
+    .brand a {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+    nav {
+      display: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.25rem;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+    .nav-links a {
+      font-weight: 500;
+      color: var(--color-gray);
+    }
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--color-primary);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.2rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .btn-primary {
+      background-color: var(--color-accent);
+      color: var(--color-primary);
+      box-shadow: 0 8px 18px rgba(246,178,26,0.32);
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #ffbf2b;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      background-color: rgba(11,37,69,0.06);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .menu-toggle {
+      background: transparent;
+      border: 1px solid var(--color-light-gray);
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: var(--color-primary);
+      position: relative;
+      transition: var(--transition);
+    }
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+    .menu-toggle span::before {
+      top: -6px;
+    }
+    .menu-toggle span::after {
+      top: 6px;
+    }
+    .menu-toggle[aria-expanded="true"] span {
+      background: transparent;
+    }
+    .menu-toggle[aria-expanded="true"] span::before {
+      transform: translateY(6px) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] span::after {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+    .mobile-nav {
+      position: fixed;
+      inset: 0;
+      background: rgba(11,37,69,0.92);
+      color: var(--color-white);
+      padding: 5rem 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+    .mobile-nav.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    .mobile-nav a {
+      font-size: 1.125rem;
+      color: var(--color-white);
+    }
+    .mobile-nav .btn {
+      align-self: flex-start;
+    }
+    main {
+      flex: 1;
+    }
+    section {
+      padding: clamp(3rem, 5vw, 5rem) 0;
+      background-color: var(--color-white);
+    }
+    #hero {
+      padding-top: clamp(4rem, 7vw, 6rem);
+    }
+    .hero-inner {
+      display: grid;
+      gap: 2rem;
+    }
+    .hero-copy h1 {
+      font-size: clamp(2.1rem, 5vw, 3rem);
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .hero-copy p {
+      font-size: 1.05rem;
+      color: var(--color-gray);
+      margin: 0 0 1.5rem;
+    }
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .rating-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.85rem;
+      border-radius: 999px;
+      background-color: rgba(246,178,26,0.15);
+      font-weight: 600;
+    }
+    .rating-pill svg {
+      width: 18px;
+      height: 18px;
+      fill: #f6b21a;
+    }
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .badge {
+      padding: 0.4rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-light-gray);
+      color: var(--color-gray);
+      font-size: 0.85rem;
+      background: #fdfdfd;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .hero-hours {
+      font-size: 0.9rem;
+      color: var(--color-gray);
+    }
+    .hero-visual {
+      border-radius: 24px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-soft);
+    }
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 0 0 1.5rem;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      line-height: 1.2;
+    }
+    .section-intro {
+      color: var(--color-gray);
+      margin-bottom: 2rem;
+      max-width: 650px;
+    }
+    .services-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .service-card {
+      border: 1px solid var(--color-light-gray);
+      border-radius: 18px;
+      padding: 1.5rem;
+      background: #fbfcfe;
+      transition: var(--transition);
+      display: grid;
+      gap: 0.9rem;
+    }
+    .service-card:hover,
+    .service-card:focus-within {
+      border-color: rgba(11,37,69,0.18);
+      box-shadow: var(--shadow-soft);
+      transform: translateY(-2px);
+    }
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(11,37,69,0.08);
+    }
+    .service-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--color-primary);
+      fill: none;
+      stroke-width: 1.8;
+    }
+    .service-card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .service-card p {
+      margin: 0;
+      color: var(--color-gray);
+      font-size: 0.97rem;
+    }
+    .inline-cta {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+    .feature-cards {
+      display: grid;
+      gap: 1.25rem;
+    }
+    .feature-card {
+      padding: 1.25rem;
+      border-radius: 16px;
+      border: 1px solid var(--color-light-gray);
+      background: var(--color-white);
+      box-shadow: 0 6px 16px rgba(11,37,69,0.05);
+    }
+    .feature-card strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 1rem;
+    }
+    .features-caption {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--color-gray);
+    }
+    .why-list {
+      display: grid;
+      gap: 0.85rem;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+    }
+    .why-item {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      color: var(--color-gray);
+    }
+    .why-item svg {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 auto;
+      margin-top: 0.15rem;
+      stroke: var(--color-accent);
+      stroke-width: 2;
+      fill: none;
+    }
+    .about-card {
+      border-radius: 20px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(11,37,69,0.06), rgba(11,37,69,0));
+      border: 1px solid rgba(11,37,69,0.08);
+      box-shadow: var(--shadow-soft);
+    }
+    .about-card p {
+      color: var(--color-gray);
+      margin: 0 0 1rem;
+    }
+    .how-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .how-step {
+      border-radius: 18px;
+      border: 1px solid var(--color-light-gray);
+      padding: 1.5rem;
+      background: #ffffff;
+      display: grid;
+      gap: 0.5rem;
+    }
+    .how-step span {
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+    .faq-accordion {
+      display: grid;
+      gap: 1rem;
+    }
+    .faq-item {
+      border-radius: 16px;
+      border: 1px solid var(--color-light-gray);
+      background: #ffffff;
+      padding: 1.25rem 1.5rem;
+    }
+    .faq-item h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.05rem;
+    }
+    .faq-item p {
+      margin: 0;
+      color: var(--color-gray);
+    }
+    .hours-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .hours-card {
+      border-radius: 18px;
+      padding: 1.5rem;
+      border: 1px solid var(--color-light-gray);
+      background: #f9fbff;
+    }
+    .hours-card ul {
+      margin: 0.75rem 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--color-gray);
+    }
+    .map-placeholder {
+      min-height: 220px;
+      border: 1px dashed var(--color-light-gray);
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      color: var(--color-gray);
+      font-size: 0.95rem;
+      padding: 1rem;
+    }
+    .contact-grid {
+      display: grid;
+      gap: 1.75rem;
+    }
+    form {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid rgba(11,37,69,0.12);
+      padding: clamp(1.5rem, 4vw, 2rem);
+      box-shadow: 0 12px 26px rgba(11,37,69,0.08);
+    }
+    .form-group {
+      display: grid;
+      gap: 0.35rem;
+    }
+    .form-row {
+      display: grid;
+      gap: 1rem;
+    }
+    label {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem 0.9rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-light-gray);
+      background: #fdfdfd;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: 3px solid rgba(246,178,26,0.4);
+      border-color: var(--color-accent);
+    }
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.9rem;
+      color: var(--color-gray);
+    }
+    .consent input {
+      width: auto;
+      margin-top: 0.25rem;
+    }
+    .form-actions {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .form-note {
+      font-size: 0.9rem;
+      color: var(--color-gray);
+    }
+    .form-error {
+      color: #b42318;
+      font-size: 0.85rem;
+      margin-top: -0.2rem;
+    }
+    .contact-info {
+      display: grid;
+      gap: 0.75rem;
+      padding: 1.5rem;
+      border-radius: 18px;
+      border: 1px solid rgba(11,37,69,0.12);
+      background: #f9fbff;
+      color: var(--color-gray);
+    }
+    .final-cta {
+      text-align: center;
+      padding: clamp(3rem, 5vw, 4rem);
+      background: linear-gradient(135deg, rgba(11,37,69,0.85), rgba(11,37,69,0.65));
+      color: var(--color-white);
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(11,37,69,0.25);
+      margin: clamp(2rem, 5vw, 3rem) auto;
+    }
+    .final-cta h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.9rem, 4vw, 2.4rem);
+    }
+    .final-cta p {
+      margin: 0 0 1.5rem;
+      color: #dbe4f2;
+    }
+    footer {
+      background: #0b1a2d;
+      color: #dbe4f2;
+      padding: 2.5rem 0;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #f6b21a;
+    }
+    .footer-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .footer-col h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      color: #ffffff;
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.45rem;
+    }
+    .footer-bottom {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #9aa9c1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .mobile-cta-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(11,37,69,0.98);
+      padding: 0.75rem 1rem;
+      display: flex;
+      gap: 0.75rem;
+      z-index: 950;
+    }
+    .mobile-cta-bar .btn {
+      flex: 1;
+    }
+    .mobile-cta-bar .btn-secondary {
+      border-color: #f6b21a;
+      color: #f6b21a;
+    }
+    @media (min-width: 600px) {
+      .hero-inner {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+      .feature-cards {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+      .how-grid {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+      .hours-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+      .contact-grid {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      }
+    }
+    @media (min-width: 900px) {
+      nav {
+        display: block;
+      }
+      .menu-toggle {
+        display: none;
+      }
+      .services-grid {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+      .mobile-nav {
+        display: none;
+      }
+      .header-inner {
+        padding: 1rem 0;
+      }
+      .mobile-cta-bar {
+        display: none;
+      }
+    }
+    @media (min-width: 1100px) {
+      .hero-copy h1 {
+        font-size: 3.1rem;
+      }
+    }
+    @media (max-width: 899px) {
+      nav {
+        display: none !important;
+      }
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="#top" aria-label="Mr. Perfect Handyman LLC home">Mr. Perfect Handyman LLC</a>
+        </div>
+        <nav aria-label="Primary" role="navigation">
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#hours">Hours &amp; Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="#contact" data-track="cta-header-request" aria-label="Request a quote from Mr. Perfect Handyman LLC">Request a quote</a>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-navigation">
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobile-navigation" role="navigation" aria-label="Mobile">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#hours">Hours &amp; Location</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact" data-track="cta-mobile-menu-request">Request a quote</a>
+        <a class="btn btn-secondary" href="tel:" data-track="cta-mobile-menu-call">Call now</a>
+      </div>
+    </header>
+    <div class="mobile-cta-bar" role="complementary" aria-label="Quick contact bar">
+      <a class="btn btn-primary" href="#contact" data-track="cta-sticky-mobile-request">Request a quote</a>
+      <a class="btn btn-secondary" href="tel:" data-track="cta-sticky-mobile-call">Call now</a>
+    </div>
+    <main id="main-content">
+      <section id="hero" aria-labelledby="hero-heading">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-heading">Punctual, Detail‑Focused Handyman in Marietta, GA</h1>
+            <p>Electrical upgrades assistance, new light fixture installations, gate repairs, and general household fixes—done right the first time.</p>
+            <div class="trust-row">
+              <div class="rating-pill" aria-label="5.0 rating from 29 Google reviews">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l-6.16 3.24 1.18-6.88-5-4.88 6.9-1 3.08-6.24 3.08 6.24 6.9 1-5 4.88 1.18 6.88z"></path></svg>
+                5.0 average from 29 reviews
+              </div>
+              <div class="badge-list" role="list">
+                <span class="badge" role="listitem">Professional &amp; informative</span>
+                <span class="badge" role="listitem">Thoughtful solutions</span>
+                <span class="badge" role="listitem">Weekday service hours</span>
+              </div>
+            </div>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#contact" data-track="cta-hero-request">Request a quote</a>
+              <a class="btn btn-secondary" href="tel:" data-track="cta-hero-call">Call now</a>
+            </div>
+            <div class="hero-hours">
+              Weekday hours: Monday–Friday, 9:00 AM–5:00 PM
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <picture>
+              <source srcset="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" type="image/jpeg">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Handyman installing a new light fixture in a Marietta home">
+            </picture>
+          </figure>
+        </div>
+      </section>
+      <section id="services" aria-labelledby="services-heading">
+        <div class="container">
+          <h2 class="section-heading" id="services-heading">Services</h2>
+          <p class="section-intro">From careful installations to everyday repairs, Mr. Perfect Handyman LLC brings professionalism and problem‑solving to your project.</p>
+          <div class="services-grid">
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v6m0 6v6m-6-6h12"></path></svg>
+              </span>
+              <h3>Light Fixture Installations</h3>
+              <p>Upgrade rooms with safe, clean installs and attention to detail.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 3h14l-1 9h-12l-1-9zm3 12h8l-1 6h-6l-1-6z"></path></svg>
+              </span>
+              <h3>Electrical Upgrades Assistance</h3>
+              <p>Support with electrical upgrade needs and informative guidance.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 5v14m16-14v14m-16-8h16m-10 0v6m4-6v6"></path></svg>
+              </span>
+              <h3>Gate Repairs</h3>
+              <p>Fix sagging, sticking, or broken gates with durable solutions.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7h16m-14 4h12m-10 4h8m-6 4h4"></path></svg>
+              </span>
+              <h3>General Household Fixes &amp; Installations</h3>
+              <p>Thoughtful, efficient solutions for a range of home repair needs.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9-9 9-9-9zm5 0l4 4 4-4-4-4-4 4z"></path></svg>
+              </span>
+              <h3>Home Improvement &amp; Repair Projects</h3>
+              <p>Professional help across a variety of tasks—done right the first time.</p>
+            </article>
+          </div>
+          <div class="inline-cta">
+            <a class="btn btn-primary" href="#contact" data-track="cta-services-request">Request a quote</a>
+            <p class="form-note">Serving Marietta, Georgia Monday–Friday, 9:00 AM–5:00 PM.</p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="features-heading">
+        <div class="container">
+          <h2 class="section-heading" id="features-heading">Featured Results</h2>
+          <div class="feature-cards">
+            <div class="feature-card">
+              <strong>Before → After</strong>
+              <p>New lighting installed with clean finishes and no mess left behind.</p>
+            </div>
+            <div class="feature-card">
+              <strong>Before → After</strong>
+              <p>Gate repaired to close smoothly and securely.</p>
+            </div>
+            <div class="feature-card">
+              <strong>Before → After</strong>
+              <p>Household fixes completed on schedule with clear communication.</p>
+            </div>
+          </div>
+          <div class="features-caption">Highlights based on customer feedback.</div>
+        </div>
+      </section>
+      <section id="why" aria-labelledby="why-heading">
+        <div class="container">
+          <h2 class="section-heading" id="why-heading">Why Marietta Homeowners Choose Mr. Perfect</h2>
+          <ul class="why-list">
+            <li class="why-item">
+              <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              <span>Professional, punctual team</span>
+            </li>
+            <li class="why-item">
+              <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              <span>Effective problem‑solving on a range of home repairs</span>
+            </li>
+            <li class="why-item">
+              <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              <span>Informative, respectful communication</span>
+            </li>
+            <li class="why-item">
+              <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              <span>Careful installations and attention to detail</span>
+            </li>
+            <li class="why-item">
+              <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              <span>Committed to getting it right the first time</span>
+            </li>
+            <li class="why-item">
+              <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              <span>5‑star rated from 29 reviews</span>
+            </li>
+          </ul>
+          <a class="btn btn-primary" href="#contact" data-track="cta-why-request">Request a quote</a>
+        </div>
+      </section>
+      <section id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 class="section-heading" id="about-heading">About Mr. Perfect Handyman LLC</h2>
+          <div class="about-card">
+            <p>Mr. Perfect Handyman LLC serves homeowners and property managers across Marietta, Georgia with dependable handyman support. Each visit brings punctual arrivals, respectful communication, and an eye for detail that keeps your property in top shape.</p>
+            <p>Whether it is light fixture installation in Marietta, guidance on electrical upgrades, or gate repair in Marietta, you can expect thoughtful planning and clean results.</p>
+            <p>Count on a handyman Marietta GA homeowners rely on, focused on solving problems efficiently and keeping you informed at every step.</p>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" aria-labelledby="reviews-heading">
+        <div class="container">
+          <h2 class="section-heading" id="reviews-heading">Reviews</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <strong>5.0 from 29 reviews (Google)</strong>
+              <p>Homeowners in Marietta, GA note punctual arrivals, careful work, and respectful communication.</p>
+            </div>
+            <div class="service-card">
+              <h3>From Google reviews</h3>
+              <p>"Showed up on time, explained the plan, and finished the repairs without disrupting our day."</p>
+            </div>
+            <div class="service-card">
+              <h3>From Google reviews</h3>
+              <p>"Solved our electrical upgrade concerns with clear guidance and detail-focused work."</p>
+            </div>
+          </div>
+          <div class="inline-cta">
+            <a class="btn btn-secondary" href="" target="_blank" rel="noopener" data-track="cta-reviews-google">See more on Google →</a>
+          </div>
+        </div>
+      </section>
+      <section id="how" aria-labelledby="how-heading">
+        <div class="container">
+          <h2 class="section-heading" id="how-heading">How It Works</h2>
+          <div class="how-grid">
+            <div class="how-step">
+              <span>Step 1</span>
+              <strong>Tell us about your project</strong>
+              <p>Share your Marietta home repair goals, from light fixture installation to household fixes.</p>
+            </div>
+            <div class="how-step">
+              <span>Step 2</span>
+              <strong>We assess and schedule a convenient weekday time</strong>
+              <p>Expect clear communication as we plan a Monday–Friday visit that fits your schedule.</p>
+            </div>
+            <div class="how-step">
+              <span>Step 3</span>
+              <strong>We complete the work with care and attention to detail</strong>
+              <p>Every project is handled professionally so your space is ready with minimal disruption.</p>
+            </div>
+          </div>
+          <p class="features-caption">Business operates Monday–Friday, 9:00 AM–5:00 PM.</p>
+        </div>
+      </section>
+      <section id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 class="section-heading" id="faq-heading">FAQ</h2>
+          <div class="faq-accordion">
+            <div class="faq-item">
+              <h3>What areas do you serve?</h3>
+              <p>Mr. Perfect Handyman LLC proudly provides handyman services in Marietta, Georgia.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Do you offer weekend appointments?</h3>
+              <p>Service hours are Monday–Friday, 9:00 AM–5:00 PM. Saturday and Sunday are closed.</p>
+            </div>
+            <div class="faq-item">
+              <h3>How do I request a quote?</h3>
+              <p>Complete the request form below or call during weekday hours to discuss your home repair needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hours" aria-labelledby="hours-heading">
+        <div class="container">
+          <h2 class="section-heading" id="hours-heading">Hours &amp; Location</h2>
+          <div class="hours-grid">
+            <div class="hours-card">
+              <strong>Address</strong>
+              <p>4141 Clubland Dr, Marietta, Georgia</p>
+              <strong>Service Area</strong>
+              <p>Proudly serving Marietta, Georgia</p>
+              <strong>Hours</strong>
+              <ul>
+                <li>Monday–Friday: 9:00 AM–5:00 PM</li>
+                <li>Saturday–Sunday: Closed</li>
+              </ul>
+            </div>
+            <div class="map-placeholder" role="img" aria-label="Map placeholder showing 4141 Clubland Dr, Marietta, Georgia">
+              Map coming soon for 4141 Clubland Dr, Marietta, Georgia
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-grid">
+          <div>
+            <h2 class="section-heading" id="contact-heading">Contact</h2>
+            <h3>Tell Us About Your Project</h3>
+            <p class="section-intro">Expect professional, informative service and thoughtful solutions during convenient weekday hours.</p>
+            <form id="quote-form" action="" method="post" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="field-name">Name</label>
+                  <input type="text" id="field-name" name="name" placeholder="Your full name" required autocomplete="name">
+                  <div class="form-error" id="error-name" role="alert" aria-live="polite"></div>
+                </div>
+                <div class="form-group">
+                  <label for="field-phone">Phone</label>
+                  <input type="tel" id="field-phone" name="phone" placeholder="" required autocomplete="tel">
+                  <div class="form-error" id="error-phone" role="alert" aria-live="polite"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="field-email">Email</label>
+                  <input type="email" id="field-email" name="email" placeholder="" required autocomplete="email">
+                  <div class="form-error" id="error-email" role="alert" aria-live="polite"></div>
+                </div>
+                <div class="form-group">
+                  <label for="field-address">Address (Marietta, GA)</label>
+                  <input type="text" id="field-address" name="address" placeholder="Street address" required autocomplete="street-address">
+                  <div class="form-error" id="error-address" role="alert" aria-live="polite"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="field-preference">Preferred weekday/time window</label>
+                  <select id="field-preference" name="preference" required>
+                    <option value="">Select a time window</option>
+                    <option>Monday morning</option>
+                    <option>Monday afternoon</option>
+                    <option>Tuesday morning</option>
+                    <option>Tuesday afternoon</option>
+                    <option>Wednesday morning</option>
+                    <option>Wednesday afternoon</option>
+                    <option>Thursday morning</option>
+                    <option>Thursday afternoon</option>
+                    <option>Friday morning</option>
+                    <option>Friday afternoon</option>
+                  </select>
+                  <div class="form-error" id="error-preference" role="alert" aria-live="polite"></div>
+                </div>
+                <div class="form-group">
+                  <label for="field-project-type">Project type</label>
+                  <select id="field-project-type" name="projectType" required>
+                    <option value="">Select a project</option>
+                    <option>Light fixture installation</option>
+                    <option>Electrical upgrades assistance</option>
+                    <option>Gate repair</option>
+                    <option>General household fix</option>
+                    <option>Installation</option>
+                  </select>
+                  <div class="form-error" id="error-project" role="alert" aria-live="polite"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-details">Project details</label>
+                <textarea id="field-details" name="details" placeholder="Share helpful details about your Marietta home repair needs" required></textarea>
+                <div class="form-error" id="error-details" role="alert" aria-live="polite"></div>
+              </div>
+              <div class="consent">
+                <input type="checkbox" id="field-consent" name="consent" required>
+                <label for="field-consent">I agree to be contacted about my request.</label>
+              </div>
+              <div class="form-error" id="error-consent" role="alert" aria-live="polite"></div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit" data-track="cta-form-submit">Request a quote</button>
+                <span class="form-note">We respond during Monday–Friday, 9:00 AM–5:00 PM.</span>
+              </div>
+            </form>
+          </div>
+          <aside class="contact-info" aria-label="Additional contact options">
+            <div>
+              <strong>Call</strong>
+              <a href="tel:" data-track="cta-contact-call"> </a>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:" data-track="cta-contact-email"> </a>
+            </div>
+            <div>
+              <strong>Business hours</strong>
+              <p>Monday–Friday: 9:00 AM–5:00 PM<br>Saturday–Sunday: Closed</p>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <p>4141 Clubland Dr, Marietta, Georgia</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section aria-labelledby="final-cta-heading">
+        <div class="container">
+          <div class="final-cta">
+            <h2 id="final-cta-heading">Ready for a detail-focused handyman in Marietta, GA?</h2>
+            <p>Let Mr. Perfect Handyman LLC plan your next light fixture installation, gate repair, or household project with punctual weekday service. Keep your home repair Marietta projects on track with an attentive partner.</p>
+            <div class="hero-ctas" style="justify-content:center;">
+              <a class="btn btn-primary" href="#contact" data-track="cta-final-request">Request a quote</a>
+              <a class="btn btn-secondary" href="tel:" data-track="cta-final-call">Call now</a>
+            </div>
+            <div class="hero-hours">Weekday hours: Monday–Friday, 9:00 AM–5:00 PM.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>Mr. Perfect Handyman LLC</h3>
+          <p>4141 Clubland Dr, Marietta, Georgia</p>
+          <p>Monday–Friday: 9:00 AM–5:00 PM<br>Saturday–Sunday: Closed</p>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>Phone: <a href="tel:"> </a></li>
+            <li>Email: <a href="mailto:"> </a></li>
+            <li><a href="">Google listing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; <span id="current-year"></span> Mr. Perfect Handyman LLC. All rights reserved.</span>
+        <span>Handyman services in Marietta, Georgia.</span>
+      </div>
+    </footer>
+  </div>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mr. Perfect Handyman LLC",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4141 Clubland Dr",
+        "addressLocality": "Marietta",
+        "addressRegion": "Georgia"
+      },
+      "areaServed": "Marietta, Georgia",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "telephone": "",
+      "url": "",
+      "sameAs": [""],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "29"
+      }
+    }
+  </script>
+  <script>
+    (function() {
+      const doc = document;
+      const dataLayer = window.dataLayer = window.dataLayer || [];
+      const menuButton = doc.querySelector('.menu-toggle');
+      const mobileNav = doc.getElementById('mobile-navigation');
+      const currentYearEl = doc.getElementById('current-year');
+
+      if (currentYearEl) {
+        currentYearEl.textContent = new Date().getFullYear();
+      }
+
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener('click', function() {
+          const expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!expanded));
+          mobileNav.classList.toggle('open', !expanded);
+          dataLayer.push({
+            event: 'navigation_toggle',
+            expanded: !expanded
+          });
+        });
+
+        mobileNav.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            mobileNav.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      function trackClick(eventName, label) {
+        dataLayer.push({
+          event: eventName,
+          label: label
+        });
+      }
+
+      doc.querySelectorAll('[data-track]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          trackClick('cta_click', el.getAttribute('data-track'));
+        });
+      });
+
+      const form = doc.getElementById('quote-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          let valid = true;
+          const fields = [
+            { id: 'field-name', errorId: 'error-name', message: 'Please enter your name.' },
+            { id: 'field-phone', errorId: 'error-phone', message: 'Please enter a phone number.' },
+            { id: 'field-email', errorId: 'error-email', message: 'Please enter a valid email.' },
+            { id: 'field-address', errorId: 'error-address', message: 'Please enter your address in Marietta, GA.' },
+            { id: 'field-preference', errorId: 'error-preference', message: 'Please select a preferred time window.' },
+            { id: 'field-project-type', errorId: 'error-project', message: 'Please select a project type.' },
+            { id: 'field-details', errorId: 'error-details', message: 'Please tell us about your project.' }
+          ];
+
+          fields.forEach(function(field) {
+            const input = doc.getElementById(field.id);
+            const errorEl = doc.getElementById(field.errorId);
+            if (input && errorEl) {
+              if (!input.value.trim()) {
+                errorEl.textContent = field.message;
+                valid = false;
+              } else if (input.type === 'email' && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(input.value)) {
+                errorEl.textContent = 'Please enter a valid email address.';
+                valid = false;
+              } else {
+                errorEl.textContent = '';
+              }
+            }
+          });
+
+          const consent = doc.getElementById('field-consent');
+          const consentError = doc.getElementById('error-consent');
+          if (consent && consentError) {
+            if (!consent.checked) {
+              consentError.textContent = 'Please confirm consent to be contacted.';
+              valid = false;
+            } else {
+              consentError.textContent = '';
+            }
+          }
+
+          if (!valid) {
+            e.preventDefault();
+            trackClick('form_error', 'quote-form');
+          } else {
+            trackClick('form_submit', 'quote-form');
+          }
+        });
+      }
+
+      ['services', 'reviews'].forEach(function(id) {
+        const section = doc.getElementById(id);
+        if (section && 'IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                dataLayer.push({
+                  event: 'section_view',
+                  section: id
+                });
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.4 });
+          observer.observe(section);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
