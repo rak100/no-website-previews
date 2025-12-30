@@ -1,109 +1,71 @@
+```html
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Eclipse Landscape Lighting - Professional Outdoor Lighting Solutions in Atlanta</title>
-        <meta name="description" content="Eclipse Landscape Lighting provides expert landscape lighting solutions in Atlanta, transforming outdoor spaces for aesthetics and safety. Call now to schedule!">
-        <meta property="og:title" content="Eclipse Landscape Lighting - Professional Outdoor Lighting Solutions in Atlanta">
-        <meta property="og:description" content="Eclipse Landscape Lighting provides expert landscape lighting solutions in Atlanta, transforming outdoor spaces for aesthetics and safety. Call now to schedule!">
-        <meta property="og:image" content="URL_TO_BRAND_IMAGE">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #fff;
-            }
-            .container {
-                width: 100%;
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 15px;
-            }
-            .hero {
-                background-color: #000066;
-                color: #fff;
-                text-align: center;
-                padding: 50px 0;
-            }
-            .hero h1, .hero h2 {
-                margin: 0;
-            }
-            .cta-button {
-                display: inline-block;
-                background-color: #FFD700;
-                color: #000;
-                padding: 20px 30px;
-                margin-top: 30px;
-                text-decoration: none;
-            }
-            h2 {
-                color: #000066;
-            }
-            .rating {
-                color: #FFD700;
-            }
-            ul {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-            }
-            footer {
-                background-color: #000066;
-                color: #fff;
-                text-align: center;
-                padding: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <section class="hero">
-                <h1>Transform Your Outdoor Spaces with Eclipse Landscape Lighting</h1>
-                <h2>Expert Landscape Lighting Solutions in Atlanta, GA</h2>
-                <a href="tel:" class="cta-button" aria-label="Call Now to Schedule">Call Now to Schedule</a>
-            </section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Landscape Lighting - Professional Outdoor Lighting in Atlanta</title>
+    <meta name="description" content="Transform your outdoor spaces with professional landscape lighting services in Atlanta, GA. Call now to schedule a free consultation.">
+    <meta property="og:title" content="Eclipse Landscape Lighting - Professional Outdoor Lighting in Atlanta">
+    <meta property="og:description" content="Transform your outdoor spaces with professional landscape lighting services in Atlanta, GA. Call now to schedule a free consultation.">
+    <meta property="og:image" content="URL_TO_IMAGE">
 
-            <section class="about">
-                <h2>About Us</h2>
-                <p>Eclipse Landscape Lighting is committed to customer satisfaction, as showcased by our 4-star rating from 8 reviews.</p>
-            </section>
-
-            <section class="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Highlight lighting for patios</li>
-                    <li>Highlight lighting for pools</li>
-                    <li>Designed for aesthetics and safety</li>
-                </ul>
-            </section>
-
-            <section class="why-us">
-                <h2>Why Choose Us</h2>
-                <p>Choose Eclipse Landscape Lighting for our courteous service, creative design, excellent communication, and professionalism.</p>
-            </section>
-
-            <section class="testimonials">
-                <h2>Testimonials</h2>
-                <p>Customer reviews coming soon.</p>
-            </section>
-
-            <section class="cta">
-                <h2>Schedule Your Free Consultation Today!</h2>
-                <a href="tel:" class="cta-button" aria-label="Call Now to Schedule">Call Now to Schedule</a>
-            </section>
-
-            <section class="contact">
-                <h2>Contact Information</h2>
-                <p>Working hours: Monday - Saturday, 8:00 AM - 6:00 PM</p>
-                <p>Phone: </p>
-                <p>Contact form coming soon.</p>
-            </section>
-        </div>
-
-        <footer>
-            <p>&copy; 2022 Eclipse Landscape Lighting. All rights reserved.</p>
-        </footer>
-    </body>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+      h1,h2,h3 { color: #002366; }
+      .hero { background-color: #002366; color: #fff; padding: 50px; text-align: center;}
+      .button { background-color: #FFD700; color: #002366; border: none; cursor: pointer; padding: 12px 24px; text-align: center;}
+      .testimonials, .contact { background-color: #F5F5F5; padding: 20px; }
+      .services, .about, .whyus { padding: 20px; }
+    </style>
+  </head>
+  <body>
+    <header class="hero" role="banner">
+      <h1>Transform Your Outdoor Spaces with Eclipse Landscape Lighting</h1>
+      <p>Expert Landscape Lighting Solutions in Atlanta, GA</p>
+      <button class="button" onclick="location.href='tel:PHONE_NUMBER'" aria-label="Call Now to Schedule">Call Now to Schedule</button>
+    </header>
+    <main role="main">
+      <section class="about" id="aboutus">
+        <h2>About Us</h2>
+        <p>Eclipse Landscape Lighting is committed to customer satisfaction. With a notable 4-star rating from 8 reviews, we ensure you get the best lighting for your outdoor space.</p>
+      </section>
+      <section class="services" id="ourservices">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Highlight lighting for patios</li>
+          <li>Lighting solutions for pools</li>
+          <li>Emphasis on aesthetics and safety</li>
+        </ul>
+      </section>
+      <section class="whyus" id="whyus">
+        <h2>Why Choose Us</h2>
+        <p>We provide courteous service, creativity in design, exceptional communication, and professionalism to transform your outdoor spaces.</p>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Our customers praise us for our great results, personable service, expert knowledge, and on-time delivery.</p>
+      </section>
+      <section class="cta" id="cta">
+        <h2>Schedule Your Free Consultation Today!</h2>
+        <button class="button" onclick="location.href='tel:PHONE_NUMBER'" aria-label="Call to Schedule">Call Now!</button>
+      </section>
+    </main>
+    <footer class="contact" role="contentinfo">
+      <h2>Contact Information</h2>
+      <p>Hours: Monday - Saturday, 8:00 AM - 6:00 PM</p>
+      <p>Phone: </p>
+      <form id="contactForm" action="ACTION_URL" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    </footer>
+  </body>
 </html>
+```
+Please replace "PHONE_NUMBER" and "ACTION_URL" with appropriate content.
