@@ -1,722 +1,887 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>We Buy Junk Cars, GA | Quick, Fair Cash in Marietta</title>
-  <meta name="description" content="Sell your junk car fast in Marietta. Fair offers, cash at pickup, and efficient removal—often within hours. Call [PHONE].">
-  <meta property="og:title" content="We Buy Junk Cars, GA | Quick, Fair Cash in Marietta">
-  <meta property="og:description" content="Sell your junk car fast in Marietta. Fair offers, cash at pickup, and efficient removal—often within hours. Call [PHONE].">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80">
-  <meta property="og:image:alt" content="Tow truck removing a junk car in Marietta, GA">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="We Buy Junk Cars, GA | Quick, Fair Cash in Marietta">
-  <meta name="twitter:description" content="Sell your junk car fast in Marietta. Fair offers, cash at pickup, and efficient removal—often within hours. Call [PHONE].">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-  <style>
-    :root {
-      --color-bg: #f5f5f5;
-      --color-surface: #ffffff;
-      --color-text: #1f2933;
-      --color-muted: #4a5568;
-      --color-accent: #f39c12;
-      --color-accent-dark: #d97706;
-      --color-border: #e2e8f0;
-      --color-success: #16a34a;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      background: var(--color-bg);
-      color: var(--color-text);
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-      border-radius: 12px;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .container {
-      width: min(1120px, 92vw);
-      margin: 0 auto;
-    }
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(31, 41, 51, 0.95);
-      color: #fff;
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .site-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.75rem 0;
-    }
-    .brand {
-      display: flex;
-      flex-direction: column;
-    }
-    .brand span:first-child {
-      font-weight: 700;
-      font-size: 1.05rem;
-      letter-spacing: 0.5px;
-    }
-    .brand span:last-child {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.75);
-    }
-    .primary-phone {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.65rem 1.25rem;
-      background: var(--color-accent);
-      color: #1f2933;
-      font-weight: 600;
-      border-radius: 999px;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-    .primary-phone:hover,
-    .primary-phone:focus {
-      background: var(--color-accent-dark);
-      transform: translateY(-1px);
-    }
-    main {
-      display: block;
-    }
-    section {
-      padding: clamp(3rem, 7vw, 5rem) 0;
-    }
-    .hero {
-      background: linear-gradient(180deg, rgba(31,41,51,0.95), rgba(31,41,51,0.88));
-      color: #fff;
-      padding-top: clamp(4rem, 10vw, 6rem);
-    }
-    .hero-grid {
-      display: grid;
-      gap: 2.5rem;
-      align-items: center;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 1rem;
-      line-height: 1.15;
-    }
-    .hero p {
-      color: rgba(255,255,255,0.85);
-    }
-    .trust-row {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin: 1.25rem 0;
-      padding: 0.5rem 0.75rem;
-      background: rgba(255,255,255,0.08);
-      border-radius: 999px;
-      font-weight: 500;
-    }
-    .trust-row svg {
-      width: 18px;
-      height: 18px;
-      fill: var(--color-accent);
-    }
-    .hero-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.9rem 1.35rem;
-      border-radius: 999px;
-      font-weight: 600;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
-      text-align: center;
-      min-width: 160px;
-      text-decoration: none;
-    }
-    .btn-primary {
-      background: var(--color-accent);
-      color: #1f2933;
-    }
-    .btn-primary:hover,
-    .btn-primary:focus {
-      background: var(--color-accent-dark);
-    }
-    .btn-secondary {
-      background: transparent;
-      color: #fff;
-      border-color: rgba(255,255,255,0.4);
-    }
-    .btn-secondary:hover,
-    .btn-secondary:focus {
-      background: rgba(255,255,255,0.18);
-    }
-    .hero figure {
-      margin: 0;
-      position: relative;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: var(--shadow);
-    }
-    .hero figure::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(243, 156, 18, 0.15), rgba(255,255,255,0));
-    }
-    h2 {
-      font-size: clamp(1.6rem, 4vw, 2.25rem);
-      margin-bottom: 1rem;
-      line-height: 1.2;
-    }
-    .section-intro {
-      margin-bottom: 2rem;
-      color: var(--color-muted);
-      max-width: 680px;
-    }
-    .card-grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-    .card {
-      background: var(--color-surface);
-      padding: 1.75rem;
-      border-radius: 16px;
-      border: 1px solid var(--color-border);
-      box-shadow: 0 1px 3px rgba(15,23,42,0.08);
-    }
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-      font-size: 1.15rem;
-    }
-    .steps {
-      counter-reset: step;
-    }
-    .step {
-      position: relative;
-      padding-left: 3.25rem;
-    }
-    .step + .step {
-      margin-top: 1.5rem;
-    }
-    .step::before {
-      counter-increment: step;
-      content: counter(step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 2.25rem;
-      height: 2.25rem;
-      border-radius: 50%;
-      background: var(--color-accent);
-      color: #1f2933;
-      display: grid;
-      place-items: center;
-      font-weight: 700;
-    }
-    ul.checklist {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-    }
-    ul.checklist li {
-      position: relative;
-      padding-left: 1.75rem;
-      margin-bottom: 0.75rem;
-    }
-    ul.checklist li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--color-success);
-      font-weight: 600;
-    }
-    .reviews-highlights {
-      display: grid;
-      gap: 1rem;
-    }
-    .reviews-highlights li {
-      background: var(--color-surface);
-      border-radius: 12px;
-      border: 1px solid var(--color-border);
-      padding: 1rem 1.25rem;
-    }
-    .form-card {
-      background: var(--color-surface);
-      border-radius: 18px;
-      padding: clamp(2rem, 5vw, 2.75rem);
-      box-shadow: var(--shadow);
-      border: 1px solid var(--color-border);
-    }
-    form {
-      display: grid;
-      gap: 1.1rem;
-    }
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 0.35rem;
-    }
-    input, textarea, select {
-      width: 100%;
-      padding: 0.85rem 1rem;
-      border-radius: 12px;
-      border: 1px solid var(--color-border);
-      font: inherit;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-      background: #fff;
-    }
-    input:focus,
-    textarea:focus,
-    select:focus {
-      border-color: var(--color-accent);
-      box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.25);
-      outline: none;
-    }
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-    .consent {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.95rem;
-      color: var(--color-muted);
-    }
-    .consent input {
-      width: auto;
-      margin-top: 0.2rem;
-    }
-    .form-note {
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
-      color: var(--color-muted);
-    }
-    .location-grid {
-      display: grid;
-      gap: 2rem;
-    }
-    .map-embed {
-      min-height: 260px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid var(--color-border);
-      box-shadow: 0 6px 18px rgba(15,23,42,0.1);
-    }
-    .location-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-    .faq-item {
-      background: var(--color-surface);
-      border-radius: 16px;
-      padding: 1.5rem;
-      border: 1px solid var(--color-border);
-      box-shadow: 0 1px 3px rgba(15,23,42,0.08);
-    }
-    .faq-item h3 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
-    .final-cta {
-      background: #1f2933;
-      color: #fff;
-      text-align: center;
-      padding: clamp(3rem, 8vw, 4.5rem) 0;
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-    .final-cta p {
-      color: rgba(255,255,255,0.75);
-      max-width: 620px;
-      margin: 0.75rem auto 2rem;
-    }
-    footer {
-      background: #111827;
-      color: rgba(255,255,255,0.75);
-      padding: 2.5rem 0;
-      margin-top: 3rem;
-    }
-    footer a {
-      color: rgba(255,255,255,0.85);
-      text-decoration: underline;
-    }
-    footer .footer-grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-    .footer-meta {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.65);
-    }
-    .mobile-cta-bar {
-      position: fixed;
-      inset: auto 0 0;
-      background: rgba(17,24,39,0.96);
-      color: #fff;
-      display: none;
-      padding: 0.65rem 1rem;
-      z-index: 1001;
-      box-shadow: 0 -6px 16px rgba(15,23,42,0.18);
-    }
-    .mobile-cta-bar .bar-actions {
-      display: flex;
-      gap: 0.75rem;
-    }
-    .mobile-cta-bar .btn {
-      flex: 1;
-      padding: 0.75rem 1rem;
-      border-radius: 12px;
-      min-width: auto;
-    }
-    .anchor-link {
-      color: var(--color-accent);
-      font-weight: 600;
-    }
-    @media (min-width: 768px) {
-      .hero-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-      .card-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-      .reviews-highlights {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-      .location-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .faq-grid {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-      .mobile-cta-bar {
-        display: none !important;
-      }
-    }
-    @media (max-width: 767px) {
-      body {
-        padding-bottom: 4.5rem;
-      }
-      .mobile-cta-bar {
-        display: block;
-      }
-      .site-header .container {
-        gap: 1rem;
-      }
-      .primary-phone {
-        padding: 0.55rem 1.1rem;
-        font-size: 0.95rem;
-      }
-      .card-grid.services-cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>We Buy Junk Cars, GA | Quick, Fair Cash in Marietta</title>
+<meta name="description" content="Sell your junk car fast in Marietta. Fair offers, cash at pickup, and efficient removal—often within hours. Call [PHONE].">
+<meta property="og:title" content="Sell Your Junk Car in Marietta—Often Within Hours">
+<meta property="og:description" content="We Buy Junk Cars, GA makes it simple with straightforward offers, fast pickup, and cash paid at the time of car removal. Call [PHONE].">
+<meta property="og:type" content="website">
+<meta property="og:url" content="[GOOGLE_LISTING_URL]">
+<meta property="og:image" content="https://images.unsplash.com/photo-1529429617124-aee711a7a478?auto=format&amp;fit=crop&amp;w=1400&amp;q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sell Your Junk Car in Marietta—Often Within Hours">
+<meta name="twitter:description" content="Quick, straightforward offers, cash at pickup, and efficient removal across Marietta. Call [PHONE].">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1529429617124-aee711a7a478?auto=format&amp;fit=crop&amp;w=1400&amp;q=80">
+<style>
+:root {
+  --accent: #f5a425;
+  --accent-dark: #d88707;
+  --charcoal: #1f2933;
+  --chalk: #f7f7f7;
+  --text: #1a1a1a;
+  --muted: #616161;
+  --border: #e0e0e0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background-color: #ffffff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  color: var(--accent-dark);
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+.container {
+  width: min(1100px, 100% - 2.5rem);
+  margin-inline: auto;
+}
+section {
+  padding: 3.5rem 0;
+  scroll-margin-top: 6rem;
+}
+h1, h2, h3 {
+  color: var(--charcoal);
+  line-height: 1.25;
+  margin-top: 0;
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+p {
+  margin: 0 0 1rem;
+}
+ul {
+  padding-left: 1.2rem;
+  margin: 0 0 1.5rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.site-header .top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+.branding {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+}
+.primary-nav {
+  display: none;
+}
+.call-header {
+  flex-shrink: 0;
+}
+.call-header a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.65rem 1rem;
+  background-color: var(--accent);
+  color: #1a1a1a;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.call-header a:hover,
+.call-header a:focus-visible {
+  background-color: var(--accent-dark);
+  transform: translateY(-1px);
+}
+.site-header .hours {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 0 0 0.75rem;
+  text-align: center;
+  border-top: 1px solid #f1f1f1;
+  margin: 0;
+}
+.hero {
+  background: linear-gradient(180deg, #fef8ee 0%, #ffffff 100%);
+  padding-top: 4.5rem;
+}
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+}
+.hero-text .rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+.hero-text .stars {
+  display: inline-flex;
+  gap: 0.15rem;
+  font-size: 1rem;
+  color: #f9b234;
+}
+.hero-text p {
+  max-width: 32rem;
+}
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  text-align: center;
+}
+.btn-primary {
+  background-color: var(--accent);
+  color: #1a1a1a;
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: var(--accent-dark);
+  box-shadow: 0 12px 24px rgba(245,164,37,0.25);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background-color: #1f2933;
+  color: #ffffff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background-color: #111827;
+  box-shadow: 0 12px 24px rgba(31,41,51,0.25);
+  transform: translateY(-1px);
+}
+.hero-figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+.hero-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.social-proof-cards {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+.social-proof-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+}
+.services-grid,
+.process-steps,
+.why-list {
+  display: grid;
+  gap: 1.25rem;
+}
+.service-item,
+.process-step,
+.why-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+}
+.service-icon,
+.process-icon,
+.why-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #fff5e0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+.form-card {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.08);
+  border: 1px solid #f1f1f1;
+}
+form {
+  display: grid;
+  gap: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+label {
+  font-weight: 600;
+  color: var(--charcoal);
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fafafa;
+}
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(245,164,37,0.25);
+}
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+}
+.checkbox-group input {
+  margin-top: 0.2rem;
+}
+.form-description {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
+.form-confirmation {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.link-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background-color: #ffffff;
+  font-weight: 600;
+}
+.link-row a:hover,
+.link-row a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+.map-wrapper {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.08);
+}
+.map-frame {
+  width: 100%;
+  height: 320px;
+  border: 0;
+}
+.service-area {
+  background-color: #f9fafb;
+  padding: 2.5rem 0;
+}
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+}
+.final-cta {
+  background: linear-gradient(180deg, #fff4de 0%, #ffffff 100%);
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+.final-cta h2 {
+  max-width: 32rem;
+  margin-inline: auto;
+}
+.final-cta p {
+  max-width: 36rem;
+  margin-inline: auto;
+  color: var(--muted);
+}
+.footer {
+  background-color: var(--charcoal);
+  color: #ffffff;
+  padding: 2.5rem 0;
+}
+.footer-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.footer a {
+  color: #fef3c7;
+}
+.footer a:hover,
+.footer a:focus-visible {
+  color: #fde68a;
+}
+.footer small {
+  color: #d1d5db;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+.mobile-cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(31,41,51,0.96);
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+}
+.mobile-cta-bar a {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+.mobile-cta-call {
+  background-color: var(--accent);
+  color: #1a1a1a;
+}
+.mobile-cta-offer {
+  background-color: #ffffff;
+  color: var(--charcoal);
+}
+.mobile-cta-bar a:focus-visible {
+  outline: 3px solid #fef3c7;
+  outline-offset: 2px;
+}
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 720px) {
+  .primary-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  .primary-nav a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .primary-nav a:hover,
+  .primary-nav a:focus-visible {
+    color: var(--accent-dark);
+  }
+}
+@media (min-width: 768px) {
+  section {
+    padding: 4.5rem 0;
+  }
+  .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+  .social-proof-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .why-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mobile-cta-bar {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .process-steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .why-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .site-header .top-row {
+    padding: 1rem 0;
+  }
+  .site-header .hours {
+    text-align: right;
+    padding-right: 0;
+    border-top: none;
+    padding-bottom: 1rem;
+  }
+}
+:focus-visible {
+  outline: 3px solid rgba(245,164,37,0.5);
+  outline-offset: 3px;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "We Buy Junk Cars, GA",
+  "description": "Quick, straightforward junk car buying and removal in Marietta, GA with fair offers and cash paid at pickup.",
+  "image": "https://images.unsplash.com/photo-1529429617124-aee711a7a478?auto=format&fit=crop&w=1400&q=80",
+  "telephone": "[PHONE]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1708 Austell Rd SW",
+    "addressLocality": "Marietta",
+    "addressRegion": "GA",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": "[SERVICE_AREA]",
+  "sameAs": [
+    "[GOOGLE_LISTING_URL]"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "43"
+  }
+}
+</script>
 </head>
 <body>
-  <div class="mobile-cta-bar" role="region" aria-label="Quick actions">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
-      <span style="font-weight:600;font-size:0.95rem;">Need to sell your junk car?</span>
-      <div class="bar-actions">
-        <a class="btn btn-secondary" href="#offer-form" aria-label="Get a fair offer form on mobile">Get Offer</a>
-        <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE] now">Call Now</a>
+<header class="site-header">
+  <div class="container">
+    <div class="top-row">
+      <a class="branding" href="#hero" aria-label="We Buy Junk Cars, GA home">
+        We Buy Junk Cars, GA
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#social-proof">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#lead-form">Get Offer</a>
+      </nav>
+      <div class="call-header">
+        <a href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">
+          Call Now [PHONE]
+        </a>
       </div>
+    </div>
+    <p class="hours">Open Mon–Sat 9:00 AM–6:00 PM • Closed Sun</p>
+  </div>
+</header>
+<main>
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="rating" aria-label="Rated 4.6 out of 5 stars from 43 reviews">
+          <span class="stars" aria-hidden="true">★★★★☆</span>
+          <span>4.6★ from 43 reviews</span>
+        </div>
+        <h1 id="hero-title">Sell Your Junk Car in Marietta—Often Within Hours</h1>
+        <p>We Buy Junk Cars, GA makes it simple with straightforward offers, fast pickup, and cash paid at the time of car removal.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA now at [PHONE]">Call Now [PHONE]</a>
+          <a class="btn btn-secondary" href="#lead-form" aria-label="Jump to the Get a Fair Offer form">Get a Fair Offer</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="https://images.unsplash.com/photo-1529429617124-aee711a7a478?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="We Buy Junk Cars, GA picking up an unwanted car in Marietta, GA">
+      </figure>
+    </div>
+  </section>
+
+  <section id="social-proof" aria-labelledby="social-proof-title">
+    <div class="container">
+      <h2 id="social-proof-title">Trusted by Marietta Sellers</h2>
+      <p>Rated 4.6★ from 43 reviews for fast pickup, fair offers, and professional service.</p>
+      <div class="social-proof-cards">
+        <article class="social-proof-card">
+          <h3>Fast pickup within hours</h3>
+          <p>Customers report many vehicles removed within hours of the first call, making it easy to clear space quickly.</p>
+        </article>
+        <article class="social-proof-card">
+          <h3>Fair offers, no runaround</h3>
+          <p>Reviewers highlight straightforward offers that reflect the vehicle’s condition without haggling.</p>
+        </article>
+        <article class="social-proof-card">
+          <h3>Professional, courteous team</h3>
+          <p>Drivers and representatives are praised for being helpful, respectful, and on time throughout the process.</p>
+        </article>
+      </div>
+      <div class="link-row">
+        <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View We Buy Junk Cars, GA reviews on Google">
+          See more on Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title">Services Tailored to Junk and Unwanted Vehicles</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">🚗</div>
+          <h3>Junk Car Purchasing</h3>
+          <p>Sell unwanted, damaged, or non-running vehicles with straightforward offers and clear expectations.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">🛠️</div>
+          <h3>Vehicle Removal Coordination</h3>
+          <p>We handle pickup logistics so your junk car can be removed without guesswork or delays.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">💵</div>
+          <h3>Cash Paid at Pickup</h3>
+          <p>Receive cash at the time of car removal with no waiting around for payment to arrive later.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">🤝</div>
+          <h3>Helpful Representatives</h3>
+          <p>Talk to courteous team members who guide you through the process with clear, professional communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" aria-labelledby="how-title">
+    <div class="container">
+      <h2 id="how-title">A Simple, Straightforward Process—No Runaround</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-icon" aria-hidden="true">1</div>
+          <h3>Contact Us</h3>
+          <p>Call <strong>[PHONE]</strong> or submit the form with key vehicle details to get started.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-icon" aria-hidden="true">2</div>
+          <h3>Get a Fair Offer</h3>
+          <p>Receive a straightforward offer based on your vehicle’s condition, age, and location.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-icon" aria-hidden="true">3</div>
+          <h3>Schedule Pickup</h3>
+          <p>Choose a convenient pickup time—many removals happen within hours of initial contact.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-icon" aria-hidden="true">4</div>
+          <h3>Get Paid</h3>
+          <p>Hand off the keys and receive cash at the time of car removal. It’s that simple.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-choose" aria-labelledby="why-title">
+    <div class="container">
+      <h2 id="why-title">Why Choose We Buy Junk Cars, GA</h2>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">⚡</div>
+          <h3>Quick, straightforward transactions</h3>
+          <p>Keep your schedule on track with an efficient process designed to remove unwanted vehicles fast.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">🧾</div>
+          <h3>Fair offers</h3>
+          <p>Know what you’ll receive upfront with offers based on the details you provide—no hidden surprises.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">🙂</div>
+          <h3>Professional, helpful representatives</h3>
+          <p>Expect courteous conversations and clear steps from first call through pickup.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">💸</div>
+          <h3>Cash paid at pickup</h3>
+          <p>Walk away with cash in hand as soon as your car is removed.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">🚚</div>
+          <h3>Efficient pickup and removal</h3>
+          <p>Coordinated logistics mean many vehicles are collected within hours of contact.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">📍</div>
+          <h3>Local in Marietta</h3>
+          <p>Based at <strong>1708 Austell Rd SW, Marietta, GA</strong>, we understand the local area and community needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+      <h2 id="about-title">About We Buy Junk Cars, GA</h2>
+      <p>Located in Marietta, We Buy Junk Cars, GA focuses on giving vehicle owners a fast, fair way to move on from unwanted cars. The team is known for professionalism, clear communication, and honest offers that respect your time. From the first call to the moment cash changes hands, every step is designed to be straightforward and stress-free.</p>
+    </div>
+  </section>
+
+  <section id="lead-form" aria-labelledby="lead-form-title">
+    <div class="container">
+      <div class="form-card">
+        <h2 id="lead-form-title">Get a Fair Offer</h2>
+        <p class="form-description">Tell us about your vehicle—get a fair offer and quick pickup.</p>
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone*</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required aria-required="true" placeholder="Best phone number">
+          </div>
+          <div class="form-group">
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Email address">
+          </div>
+          <div class="form-group">
+            <label for="vehicle">Vehicle Year / Make / Model*</label>
+            <input id="vehicle" name="vehicle" type="text" required aria-required="true" placeholder="Example: 2008 Honda Accord">
+          </div>
+          <div class="form-group">
+            <label for="condition">Vehicle condition</label>
+            <textarea id="condition" name="condition" placeholder="Condition details, damage, missing parts, etc."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="pickup">Pickup location / address</label>
+            <input id="pickup" name="pickup" type="text" autocomplete="street-address" placeholder="Street, city, zip">
+          </div>
+          <div class="form-group">
+            <label for="best-time">Best time to contact</label>
+            <input id="best-time" name="best-time" type="text" placeholder="Example: Today after 3 PM">
+          </div>
+          <div class="checkbox-group">
+            <input id="consent" name="consent" type="checkbox" required aria-required="true">
+            <label for="consent">You agree to be contacted about your vehicle.</label>
+          </div>
+          <button type="submit" class="btn btn-primary" aria-label="Submit vehicle details to get a fair offer">Get My Fair Offer</button>
+          <div class="form-confirmation" role="status" hidden tabindex="-1">
+            Thanks—We’ll follow up shortly. Many pickups are completed within hours of initial contact.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" aria-labelledby="location-title">
+    <div class="container">
+      <h2 id="location-title">Location &amp; Hours</h2>
+      <p><strong>Address:</strong> 1708 Austell Rd SW, Marietta, GA</p>
+      <p><strong>Hours:</strong> Monday–Saturday: 9:00 AM–6:00 PM &nbsp;|&nbsp; Sunday: Closed</p>
+      <div class="link-row">
+        <a href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">Call Now [PHONE]</a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1708%20Austell%20Rd%20SW%2C%20Marietta%2C%20GA" target="_blank" rel="noopener" aria-label="Get directions to We Buy Junk Cars, GA on Google Maps">Get Directions</a>
+        <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View We Buy Junk Cars, GA on Google">View on Google</a>
+      </div>
+      <div class="map-wrapper">
+        <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=1708%20Austell%20Rd%20SW%20Marietta%20GA&amp;output=embed" title="Map showing We Buy Junk Cars, GA at 1708 Austell Rd SW, Marietta, GA"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="service-area" class="service-area" aria-labelledby="service-area-title">
+    <div class="container">
+      <h2 id="service-area-title">Service Area</h2>
+      <p>Based in Marietta, serving [SERVICE_AREA].</p>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title">FAQ</h2>
+      <div class="faq-item">
+        <h3>How fast can you pick up my car?</h3>
+        <p>Many purchases and pickups are completed within hours of initial contact.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How will I be paid?</h3>
+        <p>Cash is provided at the time of car removal.</p>
+      </div>
+      <div class="faq-item">
+        <h3>When are you open?</h3>
+        <p>Monday through Saturday, 9:00 AM to 6:00 PM. Closed Sundays.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where are you located?</h3>
+        <p>1708 Austell Rd SW, Marietta, GA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-final" class="final-cta" aria-labelledby="final-cta-title">
+    <div class="container">
+      <h2 id="final-cta-title">Ready to Turn Your Junk Car into Cash Today?</h2>
+      <p>Connect with We Buy Junk Cars, GA for a fair offer, efficient pickup, and cash paid at removal—often within hours of your first call.</p>
+      <div class="cta-group" role="group" aria-label="Final call to action buttons">
+        <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA now at [PHONE]">Call Now [PHONE]</a>
+        <a class="btn btn-secondary" href="#lead-form" aria-label="Open the Get a Fair Offer form">Get a Fair Offer</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer" aria-labelledby="footer-title">
+  <div class="container footer-grid">
+    <div>
+      <h2 id="footer-title" class="sr-only">Footer</h2>
+      <h3>We Buy Junk Cars, GA</h3>
+      <p>1708 Austell Rd SW, Marietta, GA</p>
+      <p>Phone: <a href="tel:[PHONE]">[PHONE]</a><br>Email: <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Mon–Sat: 9:00 AM–6:00 PM<br>Sunday: Closed</p>
+    </div>
+    <div>
+      <h3>Links</h3>
+      <p>
+        <a href="#lead-form">Get a Fair Offer</a><br>
+        <a href="#faq">FAQ</a><br>
+        <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Google Listing</a><br>
+        <a href="#!" aria-label="Privacy Policy">Privacy Policy</a><br>
+        <a href="#!" aria-label="Terms and Conditions">Terms</a>
+      </p>
     </div>
   </div>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand" aria-label="We Buy Junk Cars, GA">
-        <span>We Buy Junk Cars, GA</span>
-        <span>Open Mon–Sat 9:00 AM–6:00 PM • Closed Sun</span>
-      </div>
-      <a class="primary-phone" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">
-        Call Now [PHONE]
-      </a>
-    </div>
-  </header>
-  <main>
-    <section id="hero" class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div>
-          <h1 id="hero-title">Sell Your Junk Car in Marietta—Often Within Hours</h1>
-          <p>We Buy Junk Cars, GA makes it simple with straightforward offers, fast pickup, and cash paid at the time of car removal.</p>
-          <div class="trust-row" aria-label="Customer rating 4.6 out of 5 stars">
-            <svg role="presentation" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.47 5.01 5.53.8-4 3.9.94 5.5L10 13.9l-4.94 2.8.94-5.5-4-3.9 5.53-.8L10 1.5z"/></svg>
-            <span>Rated 4.6★ from 43 reviews</span>
-          </div>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE] now">Call Now [PHONE]</a>
-            <a class="btn btn-secondary" href="#offer-form" aria-label="Scroll to get a fair offer form">Get a Fair Offer</a>
-          </div>
-        </div>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="We Buy Junk Cars, GA picking up an unwanted car in Marietta, GA">
-        </figure>
-      </div>
-    </section>
+  <div class="container" style="margin-top:1.5rem;">
+    <small>Details based on customer feedback and typical experience; timing may vary.</small>
+  </div>
+</footer>
 
-    <section id="social-proof" aria-labelledby="social-proof-title">
-      <div class="container">
-        <h2 id="social-proof-title">Trusted Junk Car Buyers in Marietta</h2>
-        <p class="section-intro">Rated 4.6★ from 43 reviews—drivers count on We Buy Junk Cars, GA for quick responses, fair offers, and respectful service every step of the way.</p>
-        <ul class="reviews-highlights" role="list">
-          <li>Fast pickup within hours of first call</li>
-          <li>Fair offer and easy process</li>
-          <li>Professional, courteous service</li>
-        </ul>
-        <div style="margin-top:1.75rem;">
-          <a class="btn btn-primary" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View We Buy Junk Cars, GA on Google">See more on Google</a>
-        </div>
-      </div>
-    </section>
+<div class="mobile-cta-bar" role="navigation" aria-label="Mobile quick actions">
+  <a class="mobile-cta-call" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">Call Now</a>
+  <a class="mobile-cta-offer" href="#lead-form" aria-label="Open the Get a Fair Offer form">Get Offer</a>
+</div>
 
-    <section id="services" aria-labelledby="services-title">
-      <div class="container">
-        <h2 id="services-title">Services Tailored for Unwanted Vehicles</h2>
-        <p class="section-intro">Whether your vehicle is damaged, non-running, or just ready to go, our team handles the process from offer to removal.</p>
-        <div class="card-grid services-cards">
-          <div class="card">
-            <h3>Junk Car Buying</h3>
-            <p>Fair, competitive offers for cars in any condition—running or not.</p>
-          </div>
-          <div class="card">
-            <h3>On-Site Removal</h3>
-            <p>We arrive at your location, handle the loading, and haul the vehicle away efficiently.</p>
-          </div>
-          <div class="card">
-            <h3>Cash at Pickup</h3>
-            <p>Receive cash at the time of car removal for a straightforward transaction.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="how-it-works" aria-labelledby="how-it-works-title">
-      <div class="container">
-        <h2 id="how-it-works-title">How It Works</h2>
-        <p class="section-intro">A simple, straightforward process—no runaround.</p>
-        <div class="steps">
-          <div class="step">
-            <h3>Contact Us</h3>
-            <p>Call <a class="anchor-link" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">[PHONE]</a> or submit the form with your vehicle details.</p>
-          </div>
-          <div class="step">
-            <h3>Get a Fair Offer</h3>
-            <p>We provide a straightforward offer based on your vehicle.</p>
-          </div>
-          <div class="step">
-            <h3>Schedule Pickup</h3>
-            <p>We arrange removal—often within hours of initial contact.</p>
-          </div>
-          <div class="step">
-            <h3>Get Paid</h3>
-            <p>Cash at the time of car removal.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-choose" aria-labelledby="why-choose-title">
-      <div class="container">
-        <h2 id="why-choose-title">Why Choose We Buy Junk Cars, GA</h2>
-        <p class="section-intro">Local insight, responsive service, and direct communication from helpful representatives.</p>
-        <ul class="checklist">
-          <li>Quick, straightforward transactions</li>
-          <li>Fair offers</li>
-          <li>Professional, helpful representatives</li>
-          <li>Cash paid at pickup</li>
-          <li>Efficient pickup and removal</li>
-          <li>Local in Marietta: 1708 Austell Rd SW</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="about" aria-labelledby="about-title">
-      <div class="container">
-        <h2 id="about-title">About We Buy Junk Cars, GA</h2>
-        <p>Based in Marietta, We Buy Junk Cars, GA focuses on helping neighbors move unwanted vehicles quickly and confidently. Our team handles every detail—from your first call to the moment we load the vehicle—so you can turn your junk car into cash without the hassle.</p>
-        <p>We understand the importance of clarity and follow-through. That is why we keep communication direct, offers fair, and pickups efficient.</p>
-      </div>
-    </section>
-
-    <section id="offer-form" aria-labelledby="offer-form-title">
-      <div class="container">
-        <div class="form-card">
-          <h2 id="offer-form-title">Get a Fair Offer</h2>
-          <p class="section-intro">Tell us about your vehicle—get a fair offer and quick pickup.</p>
-          <form aria-describedby="form-note" action="#">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your full name" required>
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="[PHONE]" required>
-            </div>
-            <div>
-              <label for="email">Email (optional)</label>
-              <input id="email" name="email" type="email" placeholder="[EMAIL]">
-            </div>
-            <div>
-              <label for="vehicle">Vehicle Year / Make / Model</label>
-              <input id="vehicle" name="vehicle" type="text" placeholder="e.g., 2008 Ford Focus" required>
-            </div>
-            <div>
-              <label for="condition">Vehicle Condition</label>
-              <textarea id="condition" name="condition" placeholder="Share condition details, missing parts, title info, etc." required></textarea>
-            </div>
-            <div>
-              <label for="pickup-location">Pickup Location / Address</label>
-              <input id="pickup-location" name="pickup-location" type="text" placeholder="Street, city, zip" required>
-            </div>
-            <div>
-              <label for="contact-time">Best Time to Contact</label>
-              <input id="contact-time" name="contact-time" type="text" placeholder="Preferred call time">
-            </div>
-            <div class="consent">
-              <input id="consent" name="consent" type="checkbox" required>
-              <label for="consent">You agree to be contacted about your vehicle.</label>
-            </div>
-            <button class="btn btn-primary" type="submit" aria-label="Submit vehicle information to get a fair offer">Get My Fair Offer</button>
-            <p id="form-note" class="form-note">Thanks—We’ll follow up shortly. Many pickups are completed within hours of initial contact.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="location" aria-labelledby="location-title">
-      <div class="container">
-        <h2 id="location-title">Location &amp; Hours</h2>
-        <div class="location-grid">
-          <div>
-            <p><strong>Address:</strong> 1708 Austell Rd SW, Marietta, GA</p>
-            <p><strong>Hours:</strong></p>
-            <p>Monday–Saturday: 9:00 AM–6:00 PM<br>Sunday: Closed</p>
-            <div class="location-actions">
-              <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">Call Now [PHONE]</a>
-              <a class="btn btn-secondary" href="https://www.google.com/maps/dir//1708+Austell+Rd+SW,+Marietta,+GA" target="_blank" rel="noopener" aria-label="Get directions to 1708 Austell Rd SW Marietta GA">Get Directions</a>
-              <a class="btn btn-secondary" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View We Buy Junk Cars, GA on Google">View on Google</a>
-            </div>
-          </div>
-          <div class="map-embed" aria-label="Map to We Buy Junk Cars, GA">
-            <iframe title="Map of We Buy Junk Cars, GA" loading="lazy" src="https://www.google.com/maps?q=1708+Austell+Rd+SW,+Marietta,+GA&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="service-area" aria-labelledby="service-area-title">
-      <div class="container">
-        <h2 id="service-area-title">Service Area</h2>
-        <p>Based in Marietta, serving [SERVICE_AREA].</p>
-      </div>
-    </section>
-
-    <section id="faq" aria-labelledby="faq-title">
-      <div class="container">
-        <h2 id="faq-title">Frequently Asked Questions</h2>
-        <div class="faq-grid">
-          <div class="faq-item">
-            <h3>How fast can you pick up my car?</h3>
-            <p>Many purchases and pickups are completed within hours of initial contact.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How will I be paid?</h3>
-            <p>Cash at the time of car removal.</p>
-          </div>
-          <div class="faq-item">
-            <h3>When are you open?</h3>
-            <p>Monday through Saturday, 9:00 AM to 6:00 PM. Closed Sundays.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Where are you located?</h3>
-            <p>1708 Austell Rd SW, Marietta, GA.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="final-cta" aria-labelledby="final-cta-title">
-      <div class="container">
-        <div class="final-cta">
-          <h2 id="final-cta-title">Ready to Turn Your Junk Car into Cash?</h2>
-          <p>Connect with We Buy Junk Cars, GA for a fair offer, efficient removal, and cash at pickup—often within hours of your first call.</p>
-          <div class="hero-ctas" style="justify-content:center;">
-            <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">Call Now [PHONE]</a>
-            <a class="btn btn-secondary" href="#offer-form" aria-label="Scroll to get a fair offer form">Get a Fair Offer</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer aria-labelledby="footer-title">
-    <div class="container footer-grid">
-      <div>
-        <h2 id="footer-title" style="font-size:1.25rem;color:#fff;margin-bottom:0.75rem;">We Buy Junk Cars, GA</h2>
-        <p>1708 Austell Rd SW, Marietta, GA</p>
-        <p>Phone: <a href="tel:[PHONE]" aria-label="Call We Buy Junk Cars, GA at [PHONE]">[PHONE]</a></p>
-        <p>Email: <a href="mailto:[EMAIL]" aria-label="Email We Buy Junk Cars, GA at [EMAIL]">[EMAIL]</a></p>
-        <p>Hours: Mon–Sat 9:00 AM–6:00 PM • Closed Sun</p>
-      </div>
-      <div class="footer-meta">
-        <p><a href="#hero">Back to top</a> • <a href="#offer-form">Get a Fair Offer</a> • <a href="#faq">FAQ</a></p>
-        <p><a href="#">Privacy Policy</a> • <a href="#">Terms</a></p>
-        <p>Details based on customer feedback and typical experience; timing may vary.</p>
-      </div>
-    </div>
-  </footer>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "We Buy Junk Cars, GA",
-      "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1708 Austell Rd SW",
-        "addressLocality": "Marietta",
-        "addressRegion": "GA",
-        "postalCode": "",
-        "addressCountry": "US"
-      },
-      "telephone": "[PHONE]",
-      "openingHours": "Mo-Sa 09:00-18:00",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.6",
-        "reviewCount": "43"
-      },
-      "sameAs": ["[GOOGLE_LISTING_URL]"]
-    }
-  </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('#lead-form form');
+  const confirmation = form.querySelector('.form-confirmation');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    confirmation.hidden = false;
+    form.reset();
+    setTimeout(function () {
+      confirmation.focus();
+    }, 100);
+  });
+});
+</script>
 </body>
 </html>
