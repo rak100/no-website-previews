@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HB Retrofit LLC | Home Goods Store in Kennesaw, GA</title>
+  <meta name="description" content="Visit HB Retrofit LLC, a local home goods store in Kennesaw, GA. Open Monday–Friday 9 AM–5 PM and located at 3640 Kennesaw North Industrial Parkway. Get directions and plan your visit.">
+  <link rel="canonical" href="{{PRIMARY_DOMAIN}}/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HB Retrofit LLC | Home Goods Store in Kennesaw, GA">
+  <meta property="og:description" content="Visit HB Retrofit LLC in Kennesaw, GA. Open Mon–Fri 9 AM–5 PM at 3640 Kennesaw North Industrial Parkway.">
+  <meta property="og:url" content="{{PRIMARY_DOMAIN}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta name="theme-color" content="#1F2937">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1F2937;
+      --color-background: #F5F7FA;
+      --color-accent: #6FA687;
+      --color-accent-alt: #C26D5C;
+      --color-surface: #FFFFFF;
+      --color-muted: #E5E7EB;
+      --color-text: #1F2937;
+      --color-text-secondary: #4B5563;
+      --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.08);
+      --radius-lg: 20px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+      --hero-gradient: radial-gradient(circle at top right, rgba(111, 166, 135, 0.25), transparent 55%), linear-gradient(135deg, #FFFFFF 0%, #F5F7FA 100%);
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    button, a.button {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    }
+    button:focus-visible, a:focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .container {
+      width: min(1160px, 92vw);
+      margin: 0 auto;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.08);
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 0;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.02em;
+    }
+    .header-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+    }
+    .header-info a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-decoration-color: rgba(31, 41, 55, 0.3);
+    }
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .button.primary {
+      background-color: var(--color-accent);
+      color: #FFFFFF;
+      box-shadow: 0 12px 24px rgba(111, 166, 135, 0.32);
+    }
+    .button.primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(111, 166, 135, 0.38);
+    }
+    .button.secondary {
+      background-color: transparent;
+      color: var(--color-text);
+      border-color: var(--color-text);
+    }
+    .button.secondary:hover {
+      background-color: rgba(31, 41, 55, 0.06);
+    }
+    .button.outline {
+      background-color: transparent;
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+    .button.outline:hover {
+      background-color: rgba(111, 166, 135, 0.12);
+    }
+    .icon-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--color-muted);
+      background-color: #FFFFFF;
+      color: var(--color-text);
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
+    }
+    .icon-button:hover {
+      transform: translateY(-1px);
+    }
+    .hero {
+      background: var(--hero-gradient);
+      padding: clamp(3rem, 6vw, 5rem) 0 clamp(3.5rem, 7vw, 6rem);
+    }
+    .hero-content {
+      display: grid;
+      gap: 2.5rem;
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.8rem, 4vw, 2.6rem);
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(194, 109, 92, 0.08), transparent 60%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-accent-alt);
+    }
+    h1 {
+      margin: 1rem 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      line-height: 1.15;
+      color: var(--color-primary);
+    }
+    .hero-subhead {
+      margin: 0 0 1.5rem;
+      font-size: 1.05rem;
+      color: var(--color-text-secondary);
+      max-width: 32rem;
+    }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .hero-facts {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .fact-card {
+      background-color: rgba(245, 247, 250, 0.9);
+      border-left: 3px solid var(--color-accent);
+      padding: 1rem 1.1rem;
+      border-radius: var(--radius-sm);
+      color: var(--color-text-secondary);
+    }
+    .hero-media {
+      display: none;
+    }
+    .social-proof {
+      padding: clamp(3rem, 6vw, 4.5rem) 0;
+    }
+    .section-header {
+      display: grid;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      margin: 0;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--color-primary);
+    }
+    .section-subtitle {
+      margin: 0;
+      color: var(--color-text-secondary);
+    }
+    .social-proof-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .proof-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+      display: grid;
+      gap: 0.75rem;
+    }
+    .proof-label {
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .proof-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+    .benefits-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .benefit-item {
+      background-color: var(--color-surface);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.2rem;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .benefit-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+      background-color: rgba(111, 166, 135, 0.16);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--color-accent);
+      flex-shrink: 0;
+    }
+    .store-overview {
+      padding: clamp(3rem, 6vw, 4.5rem) 0;
+    }
+    .overview-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: clamp(2rem, 4vw, 2.6rem);
+      box-shadow: var(--shadow-card);
+      display: grid;
+      gap: 1.5rem;
+    }
+    .micro-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .how-it-works {
+      padding: clamp(3rem, 6vw, 4.5rem) 0;
+      background-color: #FFFFFF;
+    }
+    .steps-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .step-card {
+      background: var(--color-background);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid rgba(31, 41, 55, 0.08);
+      display: grid;
+      gap: 0.75rem;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background-color: rgba(194, 109, 92, 0.18);
+      color: var(--color-accent-alt);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+    .location-hours {
+      padding: clamp(3.5rem, 7vw, 5rem) 0;
+    }
+    .location-grid {
+      display: grid;
+      gap: 2.5rem;
+    }
+    .hours-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0 0;
+      display: grid;
+      gap: 0.65rem;
+      color: var(--color-text-secondary);
+    }
+    .map-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      box-shadow: var(--shadow-card);
+    }
+    .map-embed {
+      position: relative;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--color-muted);
+      background: rgba(229, 231, 235, 0.45);
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    .map-embed img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery {
+      padding: clamp(3rem, 6vw, 4.5rem) 0;
+    }
+    .gallery-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .gallery-item {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+      background-color: #FFFFFF;
+    }
+    .about {
+      padding: clamp(3rem, 6vw, 4.5rem) 0;
+      background-color: #FFFFFF;
+    }
+    .contact {
+      padding: clamp(3.5rem, 7vw, 5rem) 0;
+    }
+    .contact-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .contact-cards {
+      display: grid;
+      gap: 1rem;
+    }
+    .contact-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+      display: grid;
+      gap: 0.35rem;
+    }
+    .contact-card a {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+    .contact-form {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: clamp(1.8rem, 5vw, 2.4rem);
+      box-shadow: var(--shadow-card);
+      display: grid;
+      gap: 1.2rem;
+    }
+    .form-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .form-group {
+      display: grid;
+      gap: 0.4rem;
+    }
+    label {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem 0.9rem;
+      border-radius: 10px;
+      border: 1px solid rgba(31, 41, 55, 0.15);
+      font: inherit;
+      background: #FFFFFF;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(111, 166, 135, 0.2);
+      outline: none;
+    }
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-status {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      min-height: 1.5em;
+    }
+    .note {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+    }
+    .google-card {
+      background: linear-gradient(135deg, rgba(111, 166, 135, 0.12), rgba(194, 109, 92, 0.12));
+      border-radius: var(--radius-md);
+      padding: clamp(1.8rem, 5vw, 2.4rem);
+      display: grid;
+      gap: 0.75rem;
+      margin-top: clamp(2.5rem, 5vw, 3rem);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    }
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+    .faq {
+      padding: clamp(3.5rem, 7vw, 5rem) 0;
+      background-color: #FFFFFF;
+    }
+    .faq-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .faq-item {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      border: 1px solid rgba(31, 41, 55, 0.08);
+    }
+    .faq-item h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      color: var(--color-primary);
+    }
+    .final-cta {
+      padding: clamp(3rem, 6vw, 4.5rem) 0;
+    }
+    .final-cta-card {
+      background: var(--color-primary);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: clamp(2.5rem, 6vw, 3.5rem);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+      display: grid;
+      gap: 1.2rem;
+      text-align: center;
+    }
+    .final-cta-card .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    footer {
+      background-color: #111827;
+      color: rgba(255, 255, 255, 0.88);
+      padding: 2.5rem 0;
+    }
+    .footer-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .footer-top {
+      display: grid;
+      gap: 0.6rem;
+    }
+    .footer-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .footer-cta a {
+      padding: 0.6rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .footer-bottom a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, 0.4);
+    }
+    .mobile-only {
+      display: inline-flex;
+    }
+    .desktop-only {
+      display: none;
+    }
+    .mobile-cta-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      background: rgba(17, 24, 39, 0.98);
+      backdrop-filter: blur(8px);
+      padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .mobile-cta-bar a {
+      flex: 1;
+      border-radius: 12px;
+      padding: 0.75rem;
+      text-align: center;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .mobile-cta-bar a.call {
+      background: var(--color-accent-alt);
+    }
+    .mobile-cta-bar a.directions {
+      background: var(--color-accent);
+    }
+    main {
+      display: block;
+    }
+    @media (min-width: 600px) {
+      .hero-card {
+        padding: clamp(2.2rem, 5vw, 3rem);
+      }
+      .hero-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .social-proof-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .benefits-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .steps-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .location-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      }
+    }
+    @media (min-width: 768px) {
+      .mobile-cta-bar {
+        display: none;
+      }
+      .mobile-only {
+        display: none !important;
+      }
+      .desktop-only {
+        display: inline-flex;
+      }
+      .hero-content {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        align-items: center;
+      }
+      .hero-media {
+        display: block;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition: none !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-content">
+        <a href="#hero" class="logo" aria-label="HB Retrofit LLC home">HB Retrofit LLC</a>
+        <div class="header-info desktop-only">
+          <a href="https://www.google.com/maps/search/?api=1&query=3640+Kennesaw+North+Industrial+Parkway%2C+Kennesaw%2C+Georgia" target="_blank" rel="noopener">3640 Kennesaw North Industrial Parkway, Kennesaw, GA</a>
+          <span>Mon–Fri 9:00 AM–5:00 PM</span>
+        </div>
+        <div class="header-cta">
+          <a href="tel:{{PHONE}}" class="icon-button mobile-only" aria-label="Call HB Retrofit LLC">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6.62 10.79a15.07 15.07 0 006.59 6.59l2.2-2.2a1 1 0 01.96-.26 11.36 11.36 0 003.56.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.26.96l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=3640+Kennesaw+North+Industrial+Parkway%2C+Kennesaw%2C+Georgia" class="icon-button mobile-only" target="_blank" rel="noopener" aria-label="Get directions to HB Retrofit LLC">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l8 8-8 8-8-8 8-8zm0 3.83L7.83 10 12 14.17 16.17 10 12 5.83zM11 9h2v2h-2V9z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="tel:{{PHONE}}" class="button secondary desktop-only">Call {{PHONE}}</a>
+          <a href="{{GOOGLE_LISTING_URL}}" class="button primary desktop-only" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-card">
+            <p class="eyebrow">Welcome to HB Retrofit LLC</p>
+            <h1>Home Goods Store in Kennesaw, GA</h1>
+            <p class="hero-subhead">Visit HB Retrofit LLC — a local point of interest for home-related products.</p>
+            <div class="cta-group">
+              <a href="{{GOOGLE_LISTING_URL}}" class="button primary" target="_blank" rel="noopener">Get Directions</a>
+              <a href="tel:{{PHONE}}" class="button outline">Call {{PHONE}}</a>
+              <a href="{{GOOGLE_LISTING_URL}}" class="button outline" target="_blank" rel="noopener">View on Google</a>
+            </div>
+            <div class="hero-facts" role="list">
+              <div class="fact-card" role="listitem">
+                <strong>Location</strong><br>3640 Kennesaw North Industrial Parkway, Kennesaw, GA
+              </div>
+              <div class="fact-card" role="listitem">
+                <strong>Hours</strong><br>Mon–Fri 9:00 AM–5:00 PM • Closed Sat–Sun
+              </div>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="map-card">
+              <div class="map-embed">
+                <img src="{{GALLERY_IMG_1}}" alt="Storefront exterior of HB Retrofit LLC placeholder" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="social-proof" class="social-proof" aria-labelledby="social-proof-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Social Proof</p>
+          <h2 id="social-proof-title" class="section-title">See HB Retrofit LLC on Google</h2>
+          <p class="section-subtitle">Explore updates, photos, and local feedback shared on our Google listing.</p>
+        </div>
+        <div class="social-proof-grid">
+          <div class="proof-card">
+            <span class="proof-label">Local visibility</span>
+            <p>Find HB Retrofit LLC in Google Maps to plan your visit and share directions with friends or family.</p>
+            <a class="proof-action" href="{{GOOGLE_LISTING_URL}}" target="_blank" rel="noopener" aria-label="Open Google listing for HB Retrofit LLC">View listing</a>
+          </div>
+          <div class="proof-card">
+            <span class="proof-label">Updates &amp; photos</span>
+            <p>Check the Google listing for recent photos of our Kennesaw storefront and interior displays.</p>
+            <a class="proof-action" href="{{GOOGLE_LISTING_URL}}" target="_blank" rel="noopener" aria-label="See photos on Google listing">See photos</a>
+          </div>
+          <div class="proof-card">
+            <span class="proof-label">Plan ahead</span>
+            <p>Confirm weekday hours and contact details through the listing before you arrive.</p>
+            <a class="proof-action" href="{{GOOGLE_LISTING_URL}}" target="_blank" rel="noopener" aria-label="Confirm hours on Google listing">Check hours</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="store-overview">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Why Visit Us</p>
+          <h2 class="section-title">Your Local Stop for Home-Related Products</h2>
+          <p class="section-subtitle">HB Retrofit LLC serves the Kennesaw area with an accessible storefront for home-related products. Stop by during weekday hours or get in touch before you visit.</p>
+        </div>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <span class="benefit-icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Convenient Kennesaw location</strong>
+              <p>Visit us at 3640 Kennesaw North Industrial Parkway for easy access within the community.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon" aria-hidden="true">🗓️</span>
+            <div>
+              <strong>Weekday hours for easy planning</strong>
+              <p>We are open Monday through Friday from 9:00 AM to 5:00 PM to fit your weekday errands.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon" aria-hidden="true">🛒</span>
+            <div>
+              <strong>In-person browsing and quick pickup</strong>
+              <p>Stop in to browse home-related products and pick up what you need on the spot.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="store-overview" class="store-overview">
+      <div class="container">
+        <div class="overview-card">
+          <h3>What You’ll Find</h3>
+          <p>As a home goods store, we carry home-related products for everyday needs. For current availability, please visit our store during business hours or contact us.</p>
+          <div class="micro-cta-group">
+            <a href="#location-hours" class="button primary">Visit Store</a>
+            <a href="tel:{{PHONE}}" class="button outline">Call {{PHONE}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="how-it-works" aria-labelledby="how-it-works-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Plan Your Visit</p>
+          <h2 id="how-it-works-title" class="section-title">How It Works</h2>
+          <p class="section-subtitle">Simple steps to make the most of your visit to HB Retrofit LLC.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3>Check weekday hours</h3>
+            <p>Confirm our Monday–Friday schedule and plan a time that fits your day.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3>Stop by our storefront</h3>
+            <p>Visit us in person at 3640 Kennesaw North Industrial Parkway to browse home-related products.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3>Call ahead if needed</h3>
+            <p>Have a question before you arrive? Reach out at {{PHONE}} during business hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="location-hours" class="location-hours" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Plan Your Trip</p>
+          <h2 id="location-title" class="section-title">Visit HB Retrofit LLC</h2>
+          <p class="section-subtitle">Stop by our Kennesaw storefront during open hours for home-related products.</p>
+        </div>
+        <div class="location-grid">
+          <div>
+            <h3>Address</h3>
+            <p>3640 Kennesaw North Industrial Parkway, Kennesaw, Georgia</p>
+            <h3>Hours</h3>
+            <ul class="hours-list" aria-label="Store hours">
+              <li>Monday: 9:00 AM–5:00 PM</li>
+              <li>Tuesday: 9:00 AM–5:00 PM</li>
+              <li>Wednesday: 9:00 AM–5:00 PM</li>
+              <li>Thursday: 9:00 AM–5:00 PM</li>
+              <li>Friday: 9:00 AM–5:00 PM</li>
+              <li>Saturday: Closed</li>
+              <li>Sunday: Closed</li>
+            </ul>
+            <div class="micro-cta-group" style="margin-top:1.5rem;">
+              <a href="{{GOOGLE_LISTING_URL}}" class="button primary" target="_blank" rel="noopener">Get Directions</a>
+              <a href="{{GOOGLE_LISTING_URL}}" class="button outline" target="_blank" rel="noopener">View on Google</a>
+            </div>
+          </div>
+          <div class="map-card" aria-labelledby="map-title">
+            <h3 id="map-title" class="sr-only">Map and directions</h3>
+            <a href="{{GOOGLE_LISTING_URL}}" class="map-embed" target="_blank" rel="noopener" aria-label="Open map to HB Retrofit LLC">
+              <img src="{{MAP_EMBED_OR_IMAGE}}" alt="Map placeholder for HB Retrofit LLC" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title" class="section-title">Inside the Store</h2>
+          <p class="section-subtitle">Preview our storefront exterior, interior displays, and home goods ambiance.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_1}}" alt="Storefront exterior of HB Retrofit LLC" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_2}}" alt="Interior aisle showcasing home goods" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_3}}" alt="Shelves with assorted home accessories" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_4}}" alt="Front counter area at HB Retrofit LLC" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_5}}" alt="Home goods display table" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_6}}" alt="Organized shelves with home products" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_7}}" alt="Lighting and decor accessories" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="{{GALLERY_IMG_8}}" alt="Checkout area inside HB Retrofit LLC" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Local Business</p>
+          <h2 id="about-title" class="section-title">About HB Retrofit LLC</h2>
+          <p class="section-subtitle">HB Retrofit LLC is a local business recognized as a home goods store in the Kennesaw area. Located at 3640 Kennesaw North Industrial Parkway, we offer an accessible location for customers seeking home-related products. We’re open Monday through Friday from 9:00 AM to 5:00 PM.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title" class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Have a quick question before you stop by? Reach our team using the options below.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <strong>Call</strong>
+              <a href="tel:{{PHONE}}">{{PHONE}}</a>
+            </div>
+            <div class="contact-card">
+              <strong>Email</strong>
+              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+            </div>
+            <div class="contact-card">
+              <strong>Visit on Google</strong>
+              <a href="{{GOOGLE_LISTING_URL}}" target="_blank" rel="noopener">View on Google</a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form" action="{{CONTACT_FORM_ENDPOINT}}" method="post" novalidate>
+            <h3>Contact Form</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" autocomplete="name" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" autocomplete="email" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone (optional)</label>
+                <input type="tel" id="contact-phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required aria-required="true"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="button primary" aria-label="Submit contact form">Send Message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="note">For the fastest response during open hours, please call.</p>
+          </form>
+        </div>
+        <div class="google-card" aria-labelledby="google-card-title">
+          <span class="google-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21.35 11.1H12v2.92h5.39c-.24 1.34-1.43 3.94-5.39 3.94a6.24 6.24 0 010-12.49 5.78 5.78 0 014.06 1.57l2.22-2.14A9.53 9.53 0 0012 2.54a9.46 9.46 0 100 18.92c5.47 0 9.08-3.85 9.08-9.27a8.8 8.8 0 00-.17-1.09z" fill="#4285F4"/>
+            </svg>
+            Google Listing
+          </span>
+          <h3 id="google-card-title">Find Us on Google</h3>
+          <p>See our latest updates and details on our Google listing.</p>
+          <a href="{{GOOGLE_LISTING_URL}}" class="button secondary" target="_blank" rel="noopener">View on Google</a>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title" class="section-title">FAQs</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>What are your hours?</h3>
+            <p>We’re open Monday–Friday from 9:00 AM to 5:00 PM and closed on weekends.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Where are you located?</h3>
+            <p>3640 Kennesaw North Industrial Parkway, Kennesaw, Georgia.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What types of items do you carry?</h3>
+            <p>We offer home-related products. For current availability, please visit during business hours or contact us.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer online ordering or weekend hours?</h3>
+            <p>Please contact us to confirm current options. We are closed on weekends.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="final-cta" class="final-cta" aria-label="Plan your visit">
+      <div class="container">
+        <div class="final-cta-card">
+          <h2 class="section-title" style="color:#FFFFFF;">Ready to stop by HB Retrofit LLC?</h2>
+          <p>Plan your weekday visit to our Kennesaw home goods store and reach out if you have questions before you arrive.</p>
+          <div class="cta-buttons">
+            <a href="{{GOOGLE_LISTING_URL}}" class="button primary" target="_blank" rel="noopener">Get Directions</a>
+            <a href="tel:{{PHONE}}" class="button outline">Call {{PHONE}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-top">
+          <strong>HB Retrofit LLC</strong>
+          <span>3640 Kennesaw North Industrial Parkway, Kennesaw, Georgia</span>
+          <span>Mon–Fri 9:00 AM–5:00 PM • Closed Sat–Sun</span>
+        </div>
+        <div class="footer-cta">
+          <a href="tel:{{PHONE}}">Call {{PHONE}}</a>
+          <a href="{{GOOGLE_LISTING_URL}}" target="_blank" rel="noopener">Get Directions</a>
+          <a href="{{GOOGLE_LISTING_URL}}" target="_blank" rel="noopener">View on Google</a>
+        </div>
+        <div class="footer-bottom">
+          <a href="{{PRIVACY_URL}}">Privacy Policy</a>
+          <a href="{{TERMS_URL}}">Terms</a>
+          <span>© {{CURRENT_YEAR}} HB Retrofit LLC. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="mobile-cta-bar" role="navigation" aria-label="Quick actions">
+    <a href="tel:{{PHONE}}" class="call" aria-label="Call HB Retrofit LLC">Call</a>
+    <a href="{{GOOGLE_LISTING_URL}}" class="directions" target="_blank" rel="noopener" aria-label="Get directions to HB Retrofit LLC">Get Directions</a>
+  </div>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "HB Retrofit LLC",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3640 Kennesaw North Industrial Parkway",
+        "addressLocality": "Kennesaw",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "image": "{{OG_IMAGE}}",
+      "url": "{{PRIMARY_DOMAIN}}",
+      "sameAs": [
+        "{{GOOGLE_LISTING_URL}}"
+      ]
+    }
+  </script>
+  <script>
+    (function() {
+      const form = document.getElementById('contact-form');
+      if (!form) return;
+      const statusEl = form.querySelector('.form-status');
+      form.addEventListener('submit', async function(event) {
+        event.preventDefault();
+        statusEl.textContent = 'Sending...';
+        const formData = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          if (response.ok) {
+            form.reset();
+            statusEl.textContent = 'Thank you! We have received your message.';
+          } else {
+            statusEl.textContent = 'There was an issue submitting the form. Please try again or call us during business hours.';
+          }
+        } catch (error) {
+          statusEl.textContent = 'Unable to send message at this time. Please call us for immediate assistance.';
+        }
+      });
+    })();
+  </script>
+  <!-- Analytics Placeholder: {{ANALYTICS_SNIPPET}} -->
+</body>
+</html>
