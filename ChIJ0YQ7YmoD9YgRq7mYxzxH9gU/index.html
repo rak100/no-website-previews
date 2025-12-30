@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mr. Handy ATL | Atlanta Handyman &amp; General Contractor | 4.9★ Rated</title>
+<meta name="description" content="Mr. Handy ATL in Atlanta, GA. 4.9★ from 94 reviews. Moving assistance, hardwood floor replacement, cabinet/curtain repairs, exterior lights, microwave trim. Open daily 8:00 AM–6:30 PM.">
+<meta property="og:title" content="Mr. Handy ATL | Atlanta Handyman &amp; General Contractor | 4.9★ Rated">
+<meta property="og:description" content="Professional Atlanta handyman offering moving assistance, hardwood floor replacement, cabinet repairs, and more. 4.9★ from 94 reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-primary: #0B2545;
+  --color-accent: #FF7A59;
+  --color-dark: #1F2937;
+  --color-light: #F5F5F5;
+  --color-text: #1F2937;
+  --color-muted: #6B7280;
+  --border-radius: 12px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+h1, h2, h3, h4 {
+  color: var(--color-primary);
+  margin-top: 0;
+}
+p {
+  margin-top: 0;
+}
+.section-subtitle {
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+.container {
+  width: min(1120px, 100% - 2.5rem);
+  margin: 0 auto;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  top: 0;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  z-index: 999;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+}
+.menu-toggle {
+  background: none;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-primary);
+}
+.site-nav {
+  display: none;
+}
+.site-nav.open {
+  display: block;
+}
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.site-nav a {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.header-ctas {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:focus-visible {
+  outline: 3px solid rgba(255, 122, 89, 0.4);
+  outline-offset: 3px;
+}
+.btn-primary {
+  background: var(--color-accent);
+  color: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(255, 122, 89, 0.22);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(255, 122, 89, 0.28);
+}
+.btn-secondary {
+  background: rgba(11, 37, 69, 0.08);
+  color: var(--color-primary);
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  transform: translateY(-1px);
+}
+.btn-link {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+.hero {
+  padding: 4.5rem 0 3.5rem;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+}
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+}
+.hero-tagline {
+  color: var(--color-muted);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 0.75rem 0;
+}
+.hero-subhead {
+  font-size: 1.05rem;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+.hero-meta {
+  color: var(--color-muted);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.hero-buttons a {
+  white-space: nowrap;
+}
+.hero-buttons .btn-link {
+  padding: 0;
+}
+.hero-media img {
+  border-radius: var(--border-radius);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(11, 37, 69, 0.08);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.rating-pill .stars {
+  color: #FFC107;
+  font-size: 1rem;
+}
+.stars {
+  color: #FFC107;
+}
+.section {
+  padding: 3.5rem 0;
+}
+.section.light {
+  background: var(--color-light);
+}
+.social-proof-content {
+  display: grid;
+  gap: 1.5rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+.services-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+.service-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+}
+.service-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+.section-cta {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.how-steps {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.how-step {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+}
+.how-step-number {
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+.about-content {
+  display: grid;
+  gap: 1.5rem;
+}
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.why-list li {
+  padding-left: 1.75rem;
+  position: relative;
+  color: var(--color-dark);
+}
+.why-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  opacity: 0.85;
+}
+.reviews-highlights {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.review-item {
+  background: #FFFFFF;
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+}
+.location-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.map-embed iframe {
+  width: 100%;
+  border: 0;
+  border-radius: var(--border-radius);
+  min-height: 260px;
+}
+.contact-wrapper {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.contact-form {
+  background: #FFFFFF;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 15px 28px rgba(15, 23, 42, 0.08);
+}
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.form-group label {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 3px solid rgba(255, 122, 89, 0.3);
+  border-color: var(--color-accent);
+}
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.consent input {
+  margin-top: 0.25rem;
+}
+.success-message {
+  background: rgba(31, 162, 165, 0.12);
+  border: 1px solid rgba(31, 162, 165, 0.25);
+  color: var(--color-dark);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.contact-info {
+  background: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+.contact-info h3 {
+  margin-top: 0;
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.faq-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+}
+.final-cta {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(11, 37, 69, 0.95), rgba(11, 37, 69, 0.85));
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 24px;
+  margin: 0 auto 3rem;
+  max-width: 1000px;
+}
+.final-cta h2 {
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.final-cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+}
+.final-cta .btn-secondary {
+  background: rgba(255, 255, 255, 0.14);
+  color: #FFFFFF;
+}
+.final-cta .hero-buttons {
+  justify-content: center;
+  gap: 1rem;
+}
+.footer {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  padding: 2.5rem 0;
+}
+.footer-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.footer h3 {
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.88);
+}
+.footer a:hover,
+.footer a:focus {
+  color: #FFFFFF;
+}
+.footer .quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.footer .footer-meta {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.68);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (min-width: 640px) {
+  .site-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+  }
+  .site-nav {
+    display: block;
+    flex: 1;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .header-inner {
+    gap: 2rem;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .how-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .contact-wrapper {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .site-nav {
+    display: block !important;
+  }
+  .site-nav ul {
+    justify-content: flex-end;
+  }
+  .header-inner {
+    gap: 3rem;
+  }
+  .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+  .social-proof-content,
+  .about-content,
+  .location-grid,
+  .contact-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .how-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .services-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .contact-wrapper {
+    align-items: start;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="page">
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="logo" href="#top">Mr. Handy ATL</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-ctas">
+      <a class="btn btn-primary" href="#contact" aria-label="Request service from Mr. Handy ATL">Request Service</a>
+      <a class="btn btn-secondary" href="tel:" aria-label="Call Mr. Handy ATL">Call </a>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tagline">Reliable Atlanta handyman services</span>
+        <div class="rating-pill">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>4.9 rating • 94 reviews</span>
+          <span class="sr-only">Rated 4.9 out of 5 stars by 94 customers on Google</span>
+        </div>
+        <h1>Atlanta Handyman &amp; General Contractor</h1>
+        <p class="hero-subhead">Professional, quality work with clear communication and attention to detail. 4.9★ from 94 reviews.</p>
+        <p class="hero-meta">Open daily 8:00 AM–6:30 PM • Based in Atlanta, GA</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#contact" aria-label="Request service from Mr. Handy ATL">Request Service</a>
+          <a class="btn btn-secondary" href="tel:" aria-label="Call Mr. Handy ATL">Call </a>
+          <a class="btn-link" href="" target="_blank" rel="noopener" aria-label="View Google reviews for Mr. Handy ATL">View Google Reviews</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Handyman installing light fixture in an Atlanta home" loading="lazy">
+      </figure>
+    </div>
+  </section>
+  <section class="section light" id="social-proof" aria-labelledby="social-proof-title">
+    <div class="container social-proof-content">
+      <div>
+        <h2 id="social-proof-title">Social Proof</h2>
+        <p>Atlanta homeowners and renters trust Mr. Handy ATL for dependable handyman and home improvement support.</p>
+        <div class="badge">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>4.9 out of 5 • 94 Google reviews</span>
+          <span class="sr-only">4.9 out of 5 based on 94 Google reviews</span>
+        </div>
+      </div>
+      <div>
+        <p>Clients appreciate professionalism, quality craftsmanship, clear updates, and how the team goes above and beyond to deliver results.</p>
+        <a class="btn btn-primary" href="" target="_blank" rel="noopener" aria-label="Read Mr. Handy ATL reviews on Google">Read Google Reviews</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title">Featured Services</h2>
+      <p>Handyman and home improvement services done right.</p>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Moving Assistance</h3>
+          <p>Careful support relocating furniture and household items so your move feels efficient and stress-free.</p>
+        </article>
+        <article class="service-card">
+          <h3>Hardwood Floor Replacement</h3>
+          <p>Refresh worn floors with precise installation and finishing for a durable upgrade.</p>
+        </article>
+        <article class="service-card">
+          <h3>Cabinet Repairs</h3>
+          <p>Fix doors, hinges, and shelving issues to keep your kitchen or bath operating smoothly.</p>
+        </article>
+        <article class="service-card">
+          <h3>Curtain Repairs</h3>
+          <p>Restore curtain rods and hardware for a polished look and reliable functionality.</p>
+        </article>
+        <article class="service-card">
+          <h3>Exterior Light Installation</h3>
+          <p>Install outdoor lighting with meticulous wiring and placement to brighten entrances safely.</p>
+        </article>
+        <article class="service-card">
+          <h3>Microwave Trim Installation</h3>
+          <p>Fit and secure microwave trim kits for a clean, built-in appearance.</p>
+        </article>
+        <article class="service-card">
+          <h3>General Handyman Repairs</h3>
+          <p>Tackle everyday fixes with attention to detail and respect for your home.</p>
+        </article>
+        <article class="service-card">
+          <h3>Home Improvement Projects</h3>
+          <p>Partner on projects that enhance comfort and value with clear communication at every step.</p>
+        </article>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn-primary" href="#contact" aria-label="Request service for handyman work">Request Service</a>
+        <a class="btn-link" href="tel:" aria-label="Call Mr. Handy ATL">Call </a>
+      </div>
+    </div>
+  </section>
+  <section class="section light" id="how-it-works" aria-labelledby="how-title">
+    <div class="container">
+      <h2 id="how-title">How It Works</h2>
+      <div class="how-steps">
+        <article class="how-step">
+          <span class="how-step-number">Step 1</span>
+          <h3>Share your project</h3>
+          <p>Tell us about your handyman or home improvement needs in Atlanta so we can understand the scope.</p>
+        </article>
+        <article class="how-step">
+          <span class="how-step-number">Step 2</span>
+          <h3>Receive a tailored plan</h3>
+          <p>We stay in touch with clear communication and outline the work needed for quality results.</p>
+        </article>
+        <article class="how-step">
+          <span class="how-step-number">Step 3</span>
+          <h3>Enjoy detailed workmanship</h3>
+          <p>Relax while we handle the details and deliver professional craftsmanship that meets your expectations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container about-content">
+      <div>
+        <h2 id="about-title">About Mr. Handy ATL</h2>
+        <p>Mr. Handy ATL is a general contractor serving Atlanta, GA with handyman and home improvement services delivered with professionalism and respect.</p>
+        <p>From moving support to detailed repairs and installations, we keep communication clear at every step so you always know what to expect.</p>
+      </div>
+      <div>
+        <p>Located at 100 Centennial Olympic Park Dr NW, we’re easy to reach when you need dependable help around your home, seven days a week from 8:00 AM to 6:30 PM.</p>
+        <p>Clients turn to us for projects that require extra attention to detail and a team committed to customer satisfaction.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section light" id="why-choose" aria-labelledby="why-title">
+    <div class="container">
+      <h2 id="why-title">Why Choose Mr. Handy ATL</h2>
+      <ul class="why-list">
+        <li>4.9★ rating from 94 reviews</li>
+        <li>Professional craftsmanship and quality results</li>
+        <li>Effective communication from start to finish</li>
+        <li>Attention to detail on every task</li>
+        <li>Known for going above and beyond</li>
+        <li>Open daily 8:00 AM–6:30 PM</li>
+        <li>Conveniently located at 100 Centennial Olympic Park Dr NW</li>
+      </ul>
+      <div class="section-cta">
+        <a class="btn btn-primary" href="#contact" aria-label="Request service from Mr. Handy ATL">Request Service</a>
+        <a class="btn-link" href="" target="_blank" rel="noopener" aria-label="View Mr. Handy ATL on Google">View Google Reviews</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <h2 id="reviews-title">Reviews</h2>
+      <div class="badge">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>4.9 out of 5 based on 94 Google reviews</span>
+      </div>
+      <div class="reviews-highlights">
+        <div class="review-item">
+          <p>Great communication and responsiveness keeps projects on schedule and stress-free.</p>
+        </div>
+        <div class="review-item">
+          <p>Detailed work and quality results show in every repair and installation.</p>
+        </div>
+        <div class="review-item">
+          <p>Clients appreciate how the team goes above and beyond to help when it matters most.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn-primary" href="" target="_blank" rel="noopener" aria-label="Read more reviews for Mr. Handy ATL on Google">Read More on Google</a>
+      </div>
+    </div>
+  </section>
+  <section class="section light" id="location" aria-labelledby="location-title">
+    <div class="container">
+      <h2 id="location-title">Location &amp; Hours</h2>
+      <div class="location-grid">
+        <div>
+          <h3>Visit or contact</h3>
+          <p><strong>Address:</strong> 100 Centennial Olympic Park Dr NW<br>Atlanta, GA</p>
+          <p><strong>Hours:</strong> Open daily: 8:00 AM–6:30 PM</p>
+          <p>Serving Atlanta, GA.</p>
+          <div class="section-cta">
+            <a class="btn btn-secondary" href="tel:" aria-label="Call Mr. Handy ATL">Call </a>
+            <a class="btn btn-primary" href="#contact" aria-label="Request service in Atlanta">Request Service</a>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe loading="lazy" src="https://www.google.com/maps?q=100+Centennial+Olympic+Park+Dr+NW,+Atlanta,+GA&amp;output=embed" title="Map to Mr. Handy ATL at 100 Centennial Olympic Park Dr NW, Atlanta, GA"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title">Request Service</h2>
+      <p class="section-subtitle">Tell Us What You Need. We’ll respond promptly during business hours.</p>
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="Your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Moving Assistance</option>
+              <option>Hardwood Floor Replacement</option>
+              <option>Cabinet Repairs</option>
+              <option>Curtain Repairs</option>
+              <option>Exterior Light Installation</option>
+              <option>Microwave Trim Installation</option>
+              <option>General Handyman Repairs</option>
+              <option>Home Improvement Projects</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preferred">Preferred Date/Time</label>
+            <input id="preferred" name="preferred" type="text" placeholder="Share your ideal timeframe">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project"></textarea>
+          </div>
+          <div class="consent">
+            <input id="consent" type="checkbox" required>
+            <label for="consent">You agree to be contacted about your request.</label>
+          </div>
+          <button class="btn btn-primary" type="submit">Request Service</button>
+          <div class="success-message" id="form-success" role="status" aria-live="polite" hidden>
+            Thank you! We’ll be in touch soon. Prefer to call? <a href="tel:" aria-label="Call Mr. Handy ATL now">Call </a>
+          </div>
+        </form>
+        <div class="contact-info">
+          <h3>Prefer another way?</h3>
+          <p>Reach out using the option that works best for you.</p>
+          <ul>
+            <li><strong>Phone:</strong> <a href="tel:" aria-label="Call Mr. Handy ATL">Call </a></li>
+            <li><strong>Email:</strong> <a href="mailto:" aria-label="Email Mr. Handy ATL">Email </a></li>
+            <li><strong>Booking:</strong> <a href="" aria-label="Open booking link for Mr. Handy ATL"> </a></li>
+            <li><strong>Google Listing:</strong> <a href="" target="_blank" rel="noopener" aria-label="View Mr. Handy ATL on Google">View listing</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="section-subtitle">Prefer to call or email? <a href="tel:" aria-label="Call Mr. Handy ATL">Call </a> | <a href="mailto:" aria-label="Email Mr. Handy ATL">Email </a></p>
+    </div>
+  </section>
+  <section class="section light" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title">FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>What are your service hours?</h3>
+          <p>We’re available daily from 8:00 AM to 6:30 PM to support handyman and home improvement projects in Atlanta.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Which areas do you serve?</h3>
+          <p>Mr. Handy ATL serves homeowners and renters throughout Atlanta, GA.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What types of projects can you handle?</h3>
+          <p>Clients count on us for moving assistance, hardwood floor replacement, cabinet and curtain repairs, exterior light installation, microwave trim installation, and other general handyman or home improvement work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="final-cta" aria-labelledby="final-cta-title">
+    <div class="container">
+      <div class="final-cta">
+        <h2 id="final-cta-title">Final CTA</h2>
+        <p>Ready for reliable handyman and home improvement help in Atlanta? Let Mr. Handy ATL handle the details with professionalism and clear communication.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#contact" aria-label="Request service from Mr. Handy ATL">Request Service</a>
+          <a class="btn btn-secondary" href="tel:" aria-label="Call Mr. Handy ATL">Call </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <h3>Mr. Handy ATL</h3>
+      <p>General contractor offering handyman and home improvement services.</p>
+      <p>Address: 100 Centennial Olympic Park Dr NW, Atlanta, GA</p>
+      <p>Hours: Open daily 8:00 AM–6:30 PM</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Phone: <a href="tel:" aria-label="Call Mr. Handy ATL from footer">Call </a></p>
+      <p>Email: <a href="mailto:" aria-label="Email Mr. Handy ATL from footer">Email </a></p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <div class="quick-links">
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="" target="_blank" rel="noopener">Google Listing</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span id="current-year"></span> Mr. Handy ATL. All rights reserved.</span>
+  </div>
+</footer>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', (!expanded).toString());
+      siteNav.classList.toggle('open');
+    });
+    siteNav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (window.innerWidth < 640) {
+          siteNav.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+  const contactForm = document.getElementById('contact-form');
+  const successMessage = document.getElementById('form-success');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (successMessage) {
+        successMessage.hidden = false;
+        successMessage.setAttribute('tabindex', '-1');
+        successMessage.focus();
+      }
+      contactForm.reset();
+    });
+  }
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Mr. Handy ATL",
+  "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Centennial Olympic Park Dr NW",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "",
+    "addressCountry": "US"
+  },
+  "areaServed": "Atlanta, GA",
+  "telephone": "",
+  "openingHours": "Mo-Su 08:00-18:30",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "94"
+  },
+  "url": "",
+  "sameAs": []
+}
+</script>
+</body>
+</html>
