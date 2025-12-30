@@ -1,778 +1,855 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Solid Waste Services | Garbage Pickup & Street Cleaning in Atlanta</title>
-<meta name="description" content="Garbage pickup and street cleaning in Atlanta. Visit our Google listing or contact Solid Waste Services at 1540 Northside Dr NW.">
-<meta property="og:title" content="Solid Waste Services | Garbage Pickup & Street Cleaning in Atlanta">
-<meta property="og:description" content="Garbage pickup and street cleaning in Atlanta. Visit our Google listing or contact Solid Waste Services at 1540 Northside Dr NW.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="[WEBSITE_URL]">
-<meta property="og:site_name" content="Solid Waste Services">
-<link rel="canonical" href="[WEBSITE_URL]">
-<style>
-:root {
-  --color-primary: #1F4E79;
-  --color-accent: #2A7F62;
-  --color-bg: #F3F4F6;
-  --color-text: #111827;
-  --color-muted: #6B7280;
-  --color-highlight: #F59E0B;
-  --font-base: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --max-width: 1100px;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: var(--font-base);
-  color: var(--color-text);
-  background-color: #fff;
-  line-height: 1.6;
-}
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.container {
-  width: min(100% - 2.5rem, var(--max-width));
-  margin: 0 auto;
-}
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
-}
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-  gap: 1rem;
-}
-.logo {
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--color-primary);
-}
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--color-text);
-}
-.nav-actions {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.65rem 1.1rem;
-  border-radius: 999px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
-}
-.btn-primary {
-  background-color: var(--color-accent);
-  color: #fff;
-}
-.btn-secondary {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-}
-.btn-outline {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 1px solid rgba(31, 78, 121, 0.4);
-}
-.btn-warning {
-  background-color: var(--color-highlight);
-  color: #111;
-}
-.btn:focus-visible {
-  outline: 3px solid rgba(31, 78, 121, 0.3);
-  outline-offset: 2px;
-}
-.btn:hover {
-  transform: translateY(-1px);
-}
-.hero {
-  background-color: var(--color-bg);
-  padding: 4.5rem 0 3rem;
-}
-.hero-content {
-  display: grid;
-  gap: 2rem;
-}
-.hero-text h1 {
-  font-size: 2rem;
-  margin: 0 0 1rem;
-  color: var(--color-primary);
-}
-.hero-text p {
-  margin-bottom: 1.5rem;
-  color: var(--color-muted);
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-.hero-actions .btn {
-  flex: 1 1 auto;
-  min-width: 160px;
-}
-.hero-visual img {
-  border-radius: 12px;
-  width: 100%;
-  object-fit: cover;
-}
-.section {
-  padding: 3.5rem 0;
-}
-.section-title {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: var(--color-primary);
-}
-.section-subtitle {
-  color: var(--color-muted);
-  margin-bottom: 2rem;
-}
-.card-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-.card {
-  background-color: #fff;
-  padding: 1.75rem;
-  border-radius: 14px;
-  border: 1px solid rgba(17, 24, 39, 0.08);
-  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.05);
-}
-.card h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  color: var(--color-text);
-}
-.card p {
-  margin: 0 0 1rem;
-  color: var(--color-muted);
-}
-.card a {
-  font-weight: 600;
-}
-.icon-circle {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: rgba(31, 78, 121, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.steps {
-  display: grid;
-  gap: 1.5rem;
-}
-.step {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-}
-.step-number {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
-.service-area {
-  background-color: var(--color-bg);
-  border-radius: 16px;
-  padding: 2rem;
-}
-.map-embed {
-  margin-top: 1.5rem;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid rgba(17, 24, 39, 0.12);
-}
-.review-summary {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  border-radius: 16px;
-  border: 1px solid rgba(17, 24, 39, 0.08);
-  padding: 1.5rem;
-  background-color: #fff;
-}
-.review-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 600;
-}
-.review-list {
-  display: grid;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-blockquote {
-  margin: 0;
-  padding-left: 1rem;
-  border-left: 4px solid rgba(31, 78, 121, 0.2);
-  color: var(--color-muted);
-  font-style: italic;
-}
-.faq-list {
-  display: grid;
-  gap: 1rem;
-}
-.faq-item {
-  border-radius: 12px;
-  border: 1px solid rgba(17, 24, 39, 0.1);
-  padding: 1.25rem 1.5rem;
-  background-color: #fff;
-}
-.faq-item h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-.contact-grid {
-  display: grid;
-  gap: 2rem;
-}
-.contact-details {
-  display: grid;
-  gap: 0.75rem;
-}
-.contact-details a {
-  word-break: break-word;
-}
-form {
-  display: grid;
-  gap: 1rem;
-}
-label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.25rem;
-}
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 0.75rem 0.85rem;
-  border: 1px solid rgba(17,24,39,0.2);
-  border-radius: 10px;
-  font-size: 1rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.2);
-}
-textarea {
-  min-height: 140px;
-  resize: vertical;
-}
-.form-check {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.form-check input {
-  width: auto;
-}
-.form-note {
-  margin-top: -0.5rem;
-  font-size: 0.9rem;
-  color: var(--color-muted);
-}
-.location-note {
-  margin-top: 1rem;
-  color: var(--color-muted);
-}
-.final-cta {
-  background-color: var(--color-primary);
-  color: #fff;
-  border-radius: 16px;
-  padding: 2.5rem;
-  text-align: center;
-}
-.final-cta h2 {
-  margin: 0 0 1rem;
-  font-size: 1.75rem;
-  color: #fff;
-}
-.final-cta p {
-  margin-bottom: 2rem;
-  color: rgba(255,255,255,0.85);
-}
-.footer {
-  background-color: #0f2440;
-  color: #d1d5db;
-  padding: 2.5rem 0 2rem;
-}
-.footer-content {
-  display: grid;
-  gap: 2rem;
-}
-.footer h3 {
-  margin: 0 0 0.75rem;
-  font-size: 1.1rem;
-  color: #fff;
-}
-.footer a {
-  color: #d1d5db;
-  font-size: 0.95rem;
-}
-.footer-bottom {
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #9ca3af;
-}
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 1rem;
-  background-color: #fff;
-  color: var(--color-primary);
-  padding: 0.75rem 1rem;
-  z-index: 1001;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
-}
-.skip-link:focus {
-  top: 1rem;
-}
-.mobile-cta-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-  background-color: rgba(255,255,255,0.95);
-  border-top: 1px solid rgba(17,24,39,0.1);
-  display: none;
-  padding: 0.75rem;
-}
-.mobile-cta-bar .btn {
-  flex: 1;
-  min-width: auto;
-}
-@media (min-width: 768px) {
-  .hero {
-    padding: 6rem 0 4rem;
-  }
-  .hero-content {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: center;
-  }
-  .card-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .step {
-    flex-direction: column;
-    text-align: left;
-  }
-  .contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .review-summary {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-@media (max-width: 1024px) {
-  nav ul {
-    display: none;
-  }
-  .nav-actions {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 640px) {
-  .site-header {
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  .hero-actions {
-    flex-direction: column;
-  }
-  .mobile-cta-bar {
-    display: flex;
-    gap: 0.75rem;
-  }
-  body {
-    padding-bottom: 70px;
-  }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solid Waste Services | Garbage Pickup &amp; Street Cleaning in Atlanta</title>
+  <meta name="description" content="Garbage pickup and street cleaning in Atlanta. Visit our Google listing or contact Solid Waste Services at 1540 Northside Dr NW.">
+  <meta property="og:title" content="Solid Waste Services | Garbage Pickup &amp; Street Cleaning in Atlanta">
+  <meta property="og:description" content="Garbage pickup and street cleaning in Atlanta. Visit our Google listing or contact Solid Waste Services at 1540 Northside Dr NW.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="[WEBSITE_URL]">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521577378364-66f0405175a3?auto=format&fit=crop&w=1200&q=80">
+  <style>
+    :root {
+      --color-primary: #1F4E79;
+      --color-accent: #2A7F62;
+      --color-bg: #F3F4F6;
+      --color-text: #111827;
+      --color-muted: #6B7280;
+      --color-warning: #F59E0B;
+      --max-width: 1100px;
+      --transition-speed: 0.2s;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--color-text);
+      background-color: #fff;
+      line-height: 1.6;
+    }
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    a:focus {
+      outline: 3px solid var(--color-warning);
+      outline-offset: 2px;
+    }
+    img, iframe {
+      max-width: 100%;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 1rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--color-primary);
+      border-radius: 0.25rem;
+      z-index: 1000;
+      transition: top var(--transition-speed);
+    }
+    .skip-link:focus {
+      top: 1rem;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: saturate(180%) blur(8px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      gap: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    nav {
+      display: none;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .nav-link {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      color: var(--color-primary);
+    }
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.25rem;
+      font-weight: 600;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--color-accent);
+      color: #fff;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(42, 127, 98, 0.25);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+    .btn-outline:hover,
+    .btn-outline:focus {
+      background: var(--color-primary);
+      color: #fff;
+    }
+    main {
+      display: block;
+    }
+    section {
+      padding: 3.5rem 1rem;
+    }
+    .section-light {
+      background: var(--color-bg);
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: var(--color-primary);
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: clamp(1.625rem, 4vw, 2.25rem);
+      margin-bottom: 1.5rem;
+    }
+    p {
+      margin: 0 0 1rem 0;
+      color: var(--color-text);
+    }
+    .muted {
+      color: var(--color-muted);
+    }
+    .hero {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .hero-utility {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      font-weight: 600;
+    }
+    .hero-visual {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(17, 24, 39, 0.12);
+    }
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cards {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      min-height: 100%;
+      transition: transform var(--transition-speed);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(31, 78, 121, 0.1);
+      color: var(--color-primary);
+    }
+    .steps {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .step {
+      background: #fff;
+      border-left: 4px solid var(--color-primary);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 10px 25px rgba(17, 24, 39, 0.05);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(31, 78, 121, 0.1);
+      color: var(--color-primary);
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+    }
+    .faq {
+      display: grid;
+      gap: 1rem;
+    }
+    details {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .contact-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .contact-methods {
+      display: grid;
+      gap: 1rem;
+    }
+    .contact-methods a {
+      font-weight: 600;
+    }
+    form {
+      background: #fff;
+      border-radius: 1rem;
+      border: 1px solid #e5e7eb;
+      padding: 1.5rem;
+      display: grid;
+      gap: 1rem;
+    }
+    label {
+      font-weight: 600;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #d1d5db;
+      font: inherit;
+      color: var(--color-text);
+      background: #fff;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--color-primary);
+      outline: 2px solid rgba(31,78,121,0.2);
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .form-row {
+      display: grid;
+      gap: 1rem;
+    }
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--color-text);
+    }
+    .consent input {
+      width: auto;
+      margin-top: 0.3rem;
+    }
+    .success-message {
+      display: none;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background: rgba(42, 127, 98, 0.1);
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+    .map-embed iframe {
+      border: 0;
+      width: 100%;
+      height: 320px;
+      border-radius: 1rem;
+    }
+    .review-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: #fff;
+      padding: 1.25rem;
+      border-radius: 1rem;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .rating svg {
+      color: var(--color-warning);
+    }
+    .google-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 600;
+    }
+    .about-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .list li {
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+    .list svg {
+      color: var(--color-accent);
+      margin-top: 0.25rem;
+    }
+    .final-cta {
+      text-align: center;
+      display: grid;
+      gap: 1rem;
+      justify-items: center;
+    }
+    footer {
+      background: #0b1726;
+      color: #f9fafb;
+      padding: 2.5rem 1rem;
+    }
+    .footer-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .footer-links {
+      display: grid;
+      gap: 0.5rem;
+    }
+    .footer-links a {
+      color: #e5e7eb;
+    }
+    .legal {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+    .sticky-mobile-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #d1d5db;
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5rem 0.75rem;
+      gap: 0.5rem;
+      z-index: 998;
+    }
+    .sticky-mobile-cta a {
+      flex: 1;
+      font-weight: 600;
+      background: var(--color-accent);
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.65rem;
+      text-align: center;
+    }
+    .sticky-mobile-cta a:nth-child(2) {
+      background: var(--color-primary);
+    }
+    @media (min-width: 640px) {
+      nav {
+        display: flex;
+      }
+      .hero {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+      }
+      .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .about-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 768px) {
+      section {
+        padding: 4rem 1.5rem;
+      }
+      .sticky-mobile-cta {
+        display: none;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to content</a>
-<header>
-  <div class="container site-header" role="banner">
-    <div class="logo" aria-label="Solid Waste Services logo placeholder">[LOGO]</div>
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call Solid Waste Services at [PHONE]">Call [PHONE]</a>
-      <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View Solid Waste Services on Google">View Google Listing</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header aria-label="Primary">
+    <div class="top-bar">
+      <div class="logo" aria-label="Solid Waste Services logo placeholder">
+        <span>[LOGO]</span>
+        <span>Solid Waste Services</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call Solid Waste Services at [PHONE]">Call [PHONE]</a>
+        <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View Google listing for Solid Waste Services">View Google Listing</a>
+      </div>
     </div>
-  </div>
-</header>
-<main id="main-content">
-  <section id="hero" class="hero" aria-labelledby="hero-title">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1 id="hero-title">Reliable garbage pickup and street cleaning in Atlanta</h1>
+  </header>
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">Reliable garbage pickup and street cleaning in Atlanta</h1>
         <p>Located at 1540 Northside Dr NW, Solid Waste Services helps keep Atlanta’s trash collected and streets clean. For details or to report an issue, get in touch or visit our Google listing.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call Solid Waste Services for garbage pickup or street cleaning">Call [PHONE]</a>
-          <a class="btn btn-secondary" href="#contact" aria-label="Report an issue with Solid Waste Services">Report an issue</a>
-          <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View the Solid Waste Services Google listing">View our Google listing</a>
+          <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call Solid Waste Services now">Call [PHONE]</a>
+          <a class="btn btn-outline" href="#contact" aria-label="Report an issue to Solid Waste Services">Report an issue</a>
+        </div>
+        <div class="hero-utility">
+          <span>Or</span>
+          <a class="google-link" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="Visit Solid Waste Services on Google">
+            <span>View our Google listing</span>
+            <svg width="18" height="18" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 9.54 6.59h-3.34a6.35 6.35 0 1 1-6.2-7.83 6.24 6.24 0 0 1 4.4 1.72l2.06-2A10 10 0 0 0 12 2z"/><path d="m21.5 11-9.5.01v3.18h5.57a4.77 4.77 0 0 1-2.05 2.99v2.49h3.31A9.94 9.94 0 0 0 22 12a10.1 10.1 0 0 0-.5-3z"/></svg>
+          </a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="false">
-        <img src="https://images.unsplash.com/photo-1604335399105-a0bf68a10eeb?auto=format&fit=crop&w=1200&q=80" alt="Sanitation crew maintaining a clean Atlanta street">
+      <div class="hero-visual" aria-hidden="true">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1521577378364-66f0405175a3?auto=format&fit=crop&w=900&q=60" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1521577378364-66f0405175a3?auto=format&fit=crop&w=900&q=60" alt="Sanitation crew maintaining a clean Atlanta street" loading="lazy">
+        </picture>
       </div>
-    </div>
-  </section>
-  <section id="social-proof" class="section" aria-labelledby="social-proof-title">
-    <div class="container">
-      <h2 id="social-proof-title" class="section-title">Trusted waste management for Atlanta</h2>
-      <p class="section-subtitle">Atlanta garbage pickup and street cleaning backed by community feedback.</p>
-      <div class="review-summary">
-        <div class="review-badge" aria-label="3.3 star rating based on 13 Google reviews">
-          <span aria-hidden="true">⭐⭐⭐✰✰</span>
-          <div>3.3 stars (13 reviews) on Google</div>
+    </section>
+
+    <section class="section-light" id="social-proof" aria-labelledby="social-proof-heading">
+      <div class="container">
+        <h2 id="social-proof-heading">Trusted municipal waste management support</h2>
+        <div class="cards">
+          <div class="card" role="group" aria-label="Google rating">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2 9.09 8.26 2.18 9.27l5 4.87L5.64 21 12 17.77 18.36 21l-1.55-6.86 5-4.87-6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="rating">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 9.09 8.26 2.18 9.27l5 4.87L5.64 21 12 17.77 18.36 21l-1.55-6.86 5-4.87-6.91-1.01L12 2z"/></svg>
+              <span>3.3 stars (13 reviews) on Google</span>
+            </div>
+            <p class="muted">Community feedback helps guide service improvements across Atlanta.</p>
+            <a class="google-link" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Read reviews on Google</a>
+          </div>
+          <div class="card" role="group" aria-label="Atlanta coverage">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+            </div>
+            <p>Serving Atlanta neighborhoods from our hub at 1540 Northside Dr NW.</p>
+            <a class="google-link" href="#service-area">See service area</a>
+          </div>
+          <div class="card" role="group" aria-label="Issue reporting">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M11 5h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            <p>Report delays, missed pickups, or container concerns so crews can follow up quickly.</p>
+            <a class="google-link" href="#contact">Go to contact form</a>
+          </div>
         </div>
-        <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="Read Solid Waste Services reviews on Google">See reviews on Google</a>
       </div>
-    </div>
-  </section>
-  <section class="section" aria-labelledby="value-pillars-title">
-    <div class="container">
-      <h2 id="value-pillars-title" class="section-title">Focused on essential waste management</h2>
-      <div class="card-grid">
-        <article class="card">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="24" height="24" fill="none" stroke="#1F4E79" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="3" width="16" height="18" rx="2"></rect>
-              <path d="M9 9h1m4 0h1M9 14h1m4 0h1"></path>
-            </svg>
-          </div>
-          <h3>Garbage Pickup</h3>
-          <p>Scheduled trash collection for Atlanta residents and businesses.</p>
-          <a href="#contact" aria-label="Contact Solid Waste Services about garbage pickup">Contact us about pickup</a>
-        </article>
-        <article class="card">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="24" height="24" fill="none" stroke="#1F4E79" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 18h18M4 14h16M7 10l2-6h6l2 6"></path>
-              <circle cx="6" cy="20" r="1.5"></circle>
-              <circle cx="18" cy="20" r="1.5"></circle>
-            </svg>
-          </div>
-          <h3>Street Cleaning</h3>
-          <p>Crews focused on maintaining cleaner, safer city streets.</p>
-          <a href="#contact" aria-label="Contact Solid Waste Services about street cleaning">Contact us about cleaning</a>
-        </article>
-        <article class="card">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="24" height="24" fill="none" stroke="#1F4E79" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20v-6"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-              <path d="M5 20v-4c0-1.5 1-3 3-3h8c2 0 3 1.5 3 3v4"></path>
-            </svg>
-          </div>
-          <h3>Responsive Support</h3>
-          <p>If you experience delays or container concerns, we’re here to help.</p>
-          <a href="#contact" aria-label="Reach Solid Waste Services support team">Reach support</a>
-        </article>
+    </section>
+
+    <section id="value-pillars" aria-labelledby="value-pillars-heading">
+      <div class="container">
+        <h2 id="value-pillars-heading">Focused support for Atlanta waste management</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M7 4h10l1 2h3v2h-1l-1 12H5L4 8H3V6h3zM6 8l1 10h10l1-10z"/></svg>
+            </div>
+            <h3>Garbage Pickup</h3>
+            <p>Scheduled trash collection for Atlanta residents and businesses.</p>
+            <a class="google-link" href="#contact">Contact for pickup questions</a>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M3 18h18v2H3zm0-6h18v2H3zm0-6h18v2H3z"/></svg>
+            </div>
+            <h3>Street Cleaning</h3>
+            <p>Crews focused on maintaining cleaner, safer city streets.</p>
+            <a class="google-link" href="#contact">Ask about street cleaning</a>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5v2h1a2 2 0 0 1 2 2v6h-2v5h-4v-5H10v5H6v-5H4v-6a2 2 0 0 1 2-2h1V7a5 5 0 0 1 5-5z"/></svg>
+            </div>
+            <h3>Responsive Support</h3>
+            <p>If you experience delays or container concerns, we’re here to help.</p>
+            <a class="google-link" href="#contact">Report an issue</a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="services" class="section" aria-labelledby="services-title">
-    <div class="container">
-      <h2 id="services-title" class="section-title">What we do</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Garbage Pickup</h3>
-          <p>Trash collection services within Atlanta. If you have questions about pickup timing, containers, or a missed collection, contact us below.</p>
-          <a class="btn btn-outline" href="#contact" aria-label="Ask about garbage pickup services">Get garbage pickup details</a>
-        </article>
-        <article class="card">
-          <h3>Street Cleaning</h3>
-          <p>Street cleaning to help keep local roads and public areas clear of debris.</p>
-          <a class="btn btn-outline" href="#contact" aria-label="Ask about street cleaning services">Get street cleaning details</a>
-        </article>
+    </section>
+
+    <section class="section-light" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">What we do</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Garbage Pickup</h3>
+            <p>Trash collection services within Atlanta. If you have questions about pickup timing, containers, or a missed collection, contact us below.</p>
+          </article>
+          <article class="card">
+            <h3>Street Cleaning</h3>
+            <p>Street cleaning to help keep local roads and public areas clear of debris.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="how-it-works" class="section" aria-labelledby="how-title">
-    <div class="container">
-      <h2 id="how-title" class="section-title">How it works</h2>
-      <p class="section-subtitle">Atlanta garbage pickup and street cleaning requests move through a simple process.</p>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
+    </section>
+
+    <section id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <h2 id="how-heading">How service works</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>1. Tell us your location and needs</h3>
+            <p>Share your address, the type of service, and any recent issues using the form or phone number below.</p>
+          </div>
+          <div class="step">
+            <h3>2. We confirm details</h3>
+            <p>Our team confirms the specifics for garbage pickup or street cleaning and provides guidance on next steps.</p>
+          </div>
+          <div class="step">
+            <h3>3. We follow up on delays</h3>
+            <p>If there are delays or container concerns, we follow up and coordinate any necessary adjustments.</p>
+          </div>
+        </div>
+        <p class="muted">If you’re experiencing a delay or need a container replacement, use the form below, and we’ll respond.</p>
+      </div>
+    </section>
+
+    <section class="section-light" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Solid Waste Services</h2>
+        <div class="about-grid">
           <div>
-            <h3>Tell us your location and needs</h3>
-            <p>Share your service address and whether you need garbage pickup support or street cleaning information.</p>
+            <p>Solid Waste Services supports Atlanta’s waste management needs with crews dedicated to garbage pickup and street cleaning across neighborhoods and business districts. From consistent trash collection to prompt responses on container concerns, our focus is on keeping the city clean and informed.</p>
           </div>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
           <div>
-            <h3>We confirm the details</h3>
-            <p>Our team reviews your request and confirms pickup schedules, street sweeping plans, or container options.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <div>
-            <h3>We follow up on delays</h3>
-            <p>We keep you informed about delays and address container concerns when reported.</p>
+            <ul class="list">
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l1.4-1.4L9 13.4 17.8 4.6 19.2 6z"/></svg>
+                <span>Located at 1540 Northside Dr NW, Atlanta, GA</span>
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l1.4-1.4L9 13.4 17.8 4.6 19.2 6z"/></svg>
+                <span>Garbage pickup and street cleaning support for Atlanta residents and businesses</span>
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l1.4-1.4L9 13.4 17.8 4.6 19.2 6z"/></svg>
+                <span>Transparent communication on service schedules, delays, and container replacements</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <p class="section-subtitle">If you’re experiencing a delay or need a container replacement, use the form below, and we’ll respond.</p>
-    </div>
-  </section>
-  <section id="service-area" class="section" aria-labelledby="service-area-title">
-    <div class="container">
-      <div class="service-area">
-        <h2 id="service-area-title" class="section-title">Service area</h2>
+    </section>
+
+    <section id="service-area" aria-labelledby="service-area-heading">
+      <div class="container">
+        <h2 id="service-area-heading">Service area</h2>
         <p>Serving Atlanta, Georgia.</p>
-        <p>Address: 1540 Northside Dr NW, Atlanta, GA.</p>
-        <p>Additional service details: [SERVICE_AREA_DETAILS]</p>
+        <p class="muted">Address: 1540 Northside Dr NW, Atlanta, GA. [SERVICE_AREA_DETAILS]</p>
         <div class="map-embed">
-          <iframe title="Map showing Solid Waste Services at 1540 Northside Dr NW, Atlanta, GA" src="https://www.google.com/maps?q=1540+Northside+Dr+NW,+Atlanta,+GA&output=embed" loading="lazy" width="100%" height="320" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="Map of Solid Waste Services at 1540 Northside Dr NW, Atlanta, GA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=[GOOGLE_MAPS_API_KEY]&amp;q=1540+Northside+Dr+NW,+Atlanta,+GA"></iframe>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="about" class="section" aria-labelledby="about-title">
-    <div class="container">
-      <h2 id="about-title" class="section-title">About Solid Waste Services</h2>
-      <p>Solid Waste Services provides municipal waste management support for Atlanta residents, neighborhoods, property managers, and local businesses. From scheduled garbage pickup to routine street cleaning, our crews focus on keeping public spaces clean while communicating clearly about delays or container needs.</p>
-      <p>Located at 1540 Northside Dr NW, Atlanta, GA, we encourage anyone with questions about trash collection timing, missed pickups, or sanitation concerns to reach out. Use the contact form or call [PHONE] to connect with a member of the team.</p>
-    </div>
-  </section>
-  <section id="reviews" class="section" aria-labelledby="reviews-title">
-    <div class="container">
-      <h2 id="reviews-title" class="section-title">What people say</h2>
-      <p class="section-subtitle">3.3 out of 5 based on 13 Google reviews.</p>
-      <div class="review-list" role="list">
-        <blockquote role="listitem">“[Positive review excerpt highlighting clean streets or good pickup]” — <cite>via Google</cite></blockquote>
-        <blockquote role="listitem">“[Review excerpt noting service delay or container replacement experience]” — <cite>via Google</cite></blockquote>
+    </section>
+
+    <section class="section-light" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <h2 id="reviews-heading">What people say</h2>
+        <span class="badge" aria-label="Google rating badge">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 9.09 8.26 2.18 9.27l5 4.87L5.64 21 12 17.77 18.36 21l-1.55-6.86 5-4.87-6.91-1.01L12 2z"/></svg>
+          3.3 out of 5 based on 13 Google reviews
+        </span>
+        <div class="review-grid">
+          <article class="review-card" aria-label="Positive review placeholder">
+            <p>“[Positive review excerpt highlighting clean streets or good pickup] — via Google”</p>
+          </article>
+          <article class="review-card" aria-label="Constructive review placeholder">
+            <p>“[Review excerpt noting service delay or container replacement experience] — via Google”</p>
+          </article>
+        </div>
+        <p class="muted">Reviews are from Google and reflect individual experiences.</p>
+        <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="Read more reviews on Google">Read more reviews on Google</a>
       </div>
-      <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="Read more Solid Waste Services reviews on Google">Read more reviews on Google</a>
-      <p class="section-subtitle">Reviews are from Google and reflect individual experiences.</p>
-    </div>
-  </section>
-  <section id="faq" class="section" aria-labelledby="faq-title">
-    <div class="container">
-      <h2 id="faq-title" class="section-title">FAQ</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <h3>What services does Solid Waste Services provide?</h3>
-          <p>Garbage pickup and street cleaning in Atlanta.</p>
-        </div>
-        <div class="faq-item">
-          <h3>How do I report a missed pickup or container concern?</h3>
-          <p>Use the form below or call [PHONE].</p>
-        </div>
-        <div class="faq-item">
-          <h3>Where are you located?</h3>
-          <p>1540 Northside Dr NW, Atlanta, GA.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What are your hours?</h3>
-          <p>[HOURS]</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="section" aria-labelledby="contact-title">
-    <div class="container">
-      <h2 id="contact-title" class="section-title">Contact Solid Waste Services</h2>
-      <div class="contact-grid">
-        <div class="contact-details" role="list">
-          <div role="listitem"><strong>Phone:</strong> <a href="tel:[PHONE]">[PHONE]</a></div>
-          <div role="listitem"><strong>Email:</strong> <a href="mailto:[EMAIL]">[EMAIL]</a></div>
-          <div role="listitem"><strong>Address:</strong> 1540 Northside Dr NW, Atlanta, GA</div>
-          <div role="listitem"><strong>Google listing:</strong> <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">[GOOGLE_LISTING_URL]</a></div>
-        </div>
-        <form aria-label="Contact and issue reporting form">
-          <div>
-            <label for="contact-purpose">Purpose</label>
-            <select id="contact-purpose" name="purpose" required>
-              <option value="">Select an option</option>
-              <option value="request-information">Request information</option>
-              <option value="report-issue">Report an issue (missed pickup, container, delay)</option>
-            </select>
-          </div>
-          <div>
-            <label for="contact-name">Full name</label>
-            <input id="contact-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div>
-            <label for="contact-phone">Phone</label>
-            <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
-          </div>
-          <div>
-            <label for="contact-email">Email</label>
-            <input id="contact-email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div>
-            <label for="contact-address">Service address (street, city, ZIP)</label>
-            <input id="contact-address" name="service-address" type="text" autocomplete="street-address" required>
-          </div>
-          <div>
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" required></textarea>
-          </div>
-          <div class="form-check">
-            <input id="contact-consent" name="consent" type="checkbox" required>
-            <label for="contact-consent">I agree to be contacted about my request.</label>
-          </div>
-          <button class="btn btn-primary" type="submit" aria-label="Send request to Solid Waste Services">Send request</button>
-          <p class="form-note" aria-live="polite">Thanks — we received your request. If urgent, please call [PHONE].</p>
-        </form>
-      </div>
-    </div>
-  </section>
-  <section id="location" class="section" aria-labelledby="location-title">
-    <div class="container">
-      <h2 id="location-title" class="section-title">Location &amp; map</h2>
-      <div class="map-embed">
-        <iframe title="Location map for Solid Waste Services at 1540 Northside Dr NW, Atlanta, GA" src="https://www.google.com/maps?q=1540+Northside+Dr+NW,+Atlanta,+GA&output=embed" loading="lazy" width="100%" height="340" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <p class="location-note">For more details about waste management and garbage collection in Atlanta, visit our Google listing.</p>
-      <a class="btn btn-outline" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="Open Google listing for Solid Waste Services">Open Google listing</a>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="final-cta" role="region" aria-labelledby="final-cta-title">
-        <h2 id="final-cta-title">Need help with garbage pickup or street cleaning?</h2>
-        <p>Call [PHONE], report an issue, or visit our Google listing to get the latest updates from Solid Waste Services in Atlanta.</p>
-        <div class="hero-actions" style="justify-content:center;">
-          <a class="btn btn-warning" href="tel:[PHONE]" aria-label="Call Solid Waste Services now">Call [PHONE]</a>
-          <a class="btn btn-secondary" href="#contact" aria-label="Report an issue to Solid Waste Services">Report an issue</a>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        <div class="faq">
+          <details>
+            <summary>What services does Solid Waste Services provide?</summary>
+            <p>Garbage pickup and street cleaning in Atlanta.</p>
+          </details>
+          <details>
+            <summary>How do I report a missed pickup or container concern?</summary>
+            <p>Use the form below or call [PHONE].</p>
+          </details>
+          <details>
+            <summary>Where are you located?</summary>
+            <p>1540 Northside Dr NW, Atlanta, GA.</p>
+          </details>
+          <details>
+            <summary>What are your hours?</summary>
+            <p>[HOURS]</p>
+          </details>
         </div>
       </div>
+    </section>
+
+    <section class="section-light" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact Solid Waste Services</h2>
+        <div class="contact-grid">
+          <div class="contact-methods" aria-label="Contact information">
+            <p><strong>Phone:</strong> <a href="tel:[PHONE]">[PHONE]</a></p>
+            <p><strong>Email:</strong> <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+            <p><strong>Address:</strong> 1540 Northside Dr NW, Atlanta, GA</p>
+            <p><strong>Google listing:</strong> <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">[GOOGLE_LISTING_URL]</a></p>
+          </div>
+          <form id="contact-form" novalidate>
+            <div>
+              <label for="purpose">How can we help?</label>
+              <select id="purpose" name="purpose" required>
+                <option value="">Select an option</option>
+                <option value="Request information">Request information</option>
+                <option value="Report an issue">Report an issue (missed pickup, container, delay)</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="full-name">Full name</label>
+                <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div>
+                <label for="service-address">Service address (street, city, ZIP)</label>
+                <input id="service-address" name="service-address" type="text" autocomplete="street-address" required>
+              </div>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="consent">
+              <input id="consent" name="consent" type="checkbox" required>
+              <label for="consent">I agree to be contacted about my request.</label>
+            </div>
+            <button class="btn btn-primary" type="submit" aria-label="Send request to Solid Waste Services">Send request</button>
+            <div class="success-message" role="status" aria-live="polite">Thanks — we received your request. If urgent, please call [PHONE].</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" aria-labelledby="location-heading">
+      <div class="container">
+        <h2 id="location-heading">Location &amp; map</h2>
+        <p>Find Solid Waste Services at 1540 Northside Dr NW, Atlanta, GA. For more details about waste management and garbage collection in Atlanta, visit our Google listing.</p>
+        <div class="map-embed">
+          <iframe title="Location map for Solid Waste Services in Atlanta" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.993176675085!2d-84.41471652344512!3d33.79718087326042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f505edff3d01f7%3A0xeba7d57d3e57f496!2s1540%20Northside%20Dr%20NW%2C%20Atlanta%2C%20GA!5e0!3m2!1sen!2sus!4v0000000000000"></iframe>
+        </div>
+        <a class="google-link" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Open directions on Google</a>
+      </div>
+    </section>
+
+    <section class="section-light" id="final-cta" aria-labelledby="final-cta-heading">
+      <div class="container final-cta">
+        <h2 id="final-cta-heading">Need help with garbage pickup or street cleaning?</h2>
+        <p>Contact Solid Waste Services to get information, report a missed pickup, or flag a container concern in Atlanta.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call Solid Waste Services for assistance">Call [PHONE]</a>
+          <a class="btn btn-outline" href="#contact" aria-label="Report an issue with Solid Waste Services">Report an issue</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-label="Footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Solid Waste Services</strong>
+        <p>Serving Atlanta with garbage pickup and street cleaning.</p>
+      </div>
+      <div>
+        <p>1540 Northside Dr NW, Atlanta, GA</p>
+        <p>[HOURS]</p>
+        <p>[PHONE]</p>
+        <p>[EMAIL]</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Google Listing</a>
+      </div>
     </div>
-  </section>
-</main>
-<footer class="footer" role="contentinfo">
-  <div class="container footer-content">
-    <div>
-      <h3>Solid Waste Services</h3>
-      <p>Municipal waste management support for Atlanta communities.</p>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Address: 1540 Northside Dr NW, Atlanta, GA</p>
-      <p>Hours: [HOURS]</p>
-      <p>Phone: <a href="tel:[PHONE]">[PHONE]</a></p>
-      <p>Email: <a href="mailto:[EMAIL]">[EMAIL]</a></p>
-    </div>
-    <div>
-      <h3>Links</h3>
-      <ul style="list-style:none; padding:0; margin:0; display:grid; gap:0.35rem;">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Google Listing</a></li>
-      </ul>
-    </div>
+    <p class="container legal">Do not include claims of guarantees or services not listed above.</p>
+  </footer>
+
+  <div class="sticky-mobile-cta" role="region" aria-label="Mobile quick actions">
+    <a href="tel:[PHONE]" aria-label="Call Solid Waste Services">Call [PHONE]</a>
+    <a href="#contact" aria-label="Report an issue with Solid Waste Services">Report an issue</a>
   </div>
-  <div class="container footer-bottom">
-    Do not include claims of guarantees or services not listed above.
-  </div>
-</footer>
-<div class="mobile-cta-bar" role="complementary" aria-label="Quick actions">
-  <a class="btn btn-primary" href="tel:[PHONE]" aria-label="Call Solid Waste Services from mobile">Call [PHONE]</a>
-  <a class="btn btn-secondary" href="#contact" aria-label="Report an issue from mobile">Report an issue</a>
-</div>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Solid Waste Services",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1540 Northside Dr NW",
-    "addressLocality": "Atlanta",
-    "addressRegion": "GA",
-    "postalCode": "[ZIP]"
-  },
-  "telephone": "[PHONE]",
-  "email": "[EMAIL]",
-  "url": "[WEBSITE_URL]",
-  "sameAs": ["[GOOGLE_LISTING_URL]"],
-  "areaServed": "Atlanta, GA",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "3.3",
-    "reviewCount": "13"
-  }
-}
-</script>
+
+  <script>
+    (function() {
+      const form = document.getElementById('contact-form');
+      const successMessage = form.querySelector('.success-message');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        successMessage.style.display = 'block';
+        form.setAttribute('aria-describedby', 'form-success');
+        successMessage.id = 'form-success';
+      });
+    })();
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Solid Waste Services",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1540 Northside Dr NW",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "[ZIP]"
+      },
+      "telephone": "[PHONE]",
+      "email": "[EMAIL]",
+      "url": "[WEBSITE_URL]",
+      "sameAs": ["[GOOGLE_LISTING_URL]"],
+      "areaServed": "Atlanta, GA",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "3.3",
+        "reviewCount": "13"
+      }
+    }
+  </script>
 </body>
 </html>
