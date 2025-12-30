@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cortes Tree Service | Tree Cutting &amp; Trimming in Sugar Hill, GA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional, reliable tree cutting and trimming in Sugar Hill, GA. Prompt estimates, clear costs, thorough cleanup. Open 24/7. Call [PHONE_NUMBER].">
+  <meta property="og:title" content="Cortes Tree Service — Tree Cutting &amp; Trimming in Sugar Hill, GA">
+  <meta property="og:description" content="Professional, reliable tree care with prompt estimates, clear costs, fair pricing, thorough cleanup. Open 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="[WEBSITE_URL]">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1593941707882-17a567cbe3d2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:locale" content="en_US">
+  <style>
+    :root {
+      --color-forest: #0B3D2E;
+      --color-leaf: #2A7F62;
+      --color-charcoal: #333333;
+      --color-light: #F4F6F5;
+      --color-white: #FFFFFF;
+      --font-base: 'Inter', 'Segoe UI', Arial, sans-serif;
+      --shadow-soft: 0 12px 30px rgba(11, 61, 46, 0.12);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-base);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-charcoal);
+      background: var(--color-light);
+      padding-bottom: 4.5rem;
+      text-rendering: optimizeLegibility;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: var(--color-leaf);
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      width: auto;
+      height: auto;
+      padding: 0.75rem 1rem;
+      background: var(--color-forest);
+      color: var(--color-white);
+      border-radius: var(--radius-md);
+      z-index: 2000;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid rgba(11, 61, 46, 0.08);
+      backdrop-filter: blur(12px);
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 0;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--color-forest);
+    }
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 2px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn:focus-visible {
+      outline: 3px solid rgba(42, 127, 98, 0.4);
+      outline-offset: 2px;
+    }
+    .btn-primary {
+      background: var(--color-leaf);
+      color: var(--color-white);
+      box-shadow: 0 10px 20px rgba(42, 127, 98, 0.25);
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(42, 127, 98, 0.28);
+    }
+    .btn-secondary {
+      background: var(--color-white);
+      color: var(--color-forest);
+      border: 2px solid rgba(11, 61, 46, 0.2);
+    }
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      border-color: rgba(11, 61, 46, 0.4);
+      transform: translateY(-2px);
+    }
+    main section {
+      padding: 3.5rem 0;
+    }
+    .hero {
+      background: var(--color-white);
+    }
+    .hero-grid {
+      display: grid;
+      gap: 2.5rem;
+    }
+    .hero-content h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--color-forest);
+    }
+    .hero-content p {
+      margin-bottom: 1.5rem;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .trust-row {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .trust-row li {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+      color: var(--color-forest);
+    }
+    .hero-image img {
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      width: 100%;
+      object-fit: cover;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.4rem);
+      margin-bottom: 1rem;
+      color: var(--color-forest);
+    }
+    .benefit-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .benefit-list li {
+      position: relative;
+      padding-left: 1.75rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+    }
+    .benefit-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-leaf);
+      font-weight: 700;
+    }
+    #services {
+      background: var(--color-white);
+    }
+    .services-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--color-light);
+      padding: 1.75rem;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 20px rgba(11, 61, 46, 0.08);
+    }
+    .service-card h3 {
+      margin-top: 0;
+      color: var(--color-forest);
+      font-size: 1.3rem;
+    }
+    .process-steps {
+      list-style: none;
+      margin: 2rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 1.5rem;
+    }
+    .process-step {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(11, 61, 46, 0.08);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .step-number {
+      background: var(--color-leaf);
+      color: var(--color-white);
+      font-weight: 700;
+      font-size: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--color-white);
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 18px rgba(11, 61, 46, 0.1);
+      margin: 1.5rem 0;
+      font-weight: 600;
+      color: var(--color-forest);
+    }
+    .rating-badge span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .highlight-list {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 0;
+      color: var(--color-charcoal);
+    }
+    .section-light {
+      background: #E9F2EF;
+    }
+    .section-highlight {
+      background: var(--color-white);
+      box-shadow: inset 0 18px 40px rgba(11, 61, 46, 0.07);
+    }
+    .contact-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .contact-copy {
+      background: var(--color-light);
+      padding: 1.75rem;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 20px rgba(11, 61, 46, 0.08);
+    }
+    form {
+      background: var(--color-light);
+      padding: 1.75rem;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 20px rgba(11, 61, 46, 0.08);
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    label {
+      font-weight: 600;
+      color: var(--color-forest);
+    }
+    input,
+    textarea {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: 1.5px solid rgba(11, 61, 46, 0.25);
+      font-size: 1rem;
+      font-family: var(--font-base);
+      background: var(--color-white);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      resize: vertical;
+      min-height: 48px;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    input:focus,
+    textarea:focus {
+      border-color: var(--color-leaf);
+      box-shadow: 0 0 0 3px rgba(42, 127, 98, 0.2);
+      outline: none;
+    }
+    .form-status {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .form-status.success {
+      color: var(--color-leaf);
+    }
+    .form-status.error {
+      color: #B00020;
+    }
+    .contact-details {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+    .contact-info {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .contact-info li {
+      font-weight: 600;
+      color: var(--color-charcoal);
+    }
+    .contact-info span {
+      font-weight: 400;
+    }
+    .map-wrapper {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(11, 61, 46, 0.12);
+    }
+    .map-wrapper iframe {
+      border: 0;
+      width: 100%;
+      min-height: 280px;
+    }
+    .faq-list {
+      display: grid;
+      gap: 1rem;
+    }
+    details {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.25rem 1rem;
+      box-shadow: 0 8px 20px rgba(11, 61, 46, 0.08);
+    }
+    summary {
+      font-weight: 700;
+      color: var(--color-forest);
+      cursor: pointer;
+      position: relative;
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.25rem;
+      color: var(--color-leaf);
+    }
+    details[open] summary::after {
+      content: "−";
+    }
+    details p {
+      margin-top: 0.75rem;
+    }
+    .final-cta {
+      background: var(--color-forest);
+      color: var(--color-white);
+      text-align: center;
+      padding: 3.5rem 0;
+    }
+    .final-cta .section-title {
+      color: var(--color-white);
+    }
+    .final-cta p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .final-cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .final-cta .btn-secondary {
+      background: var(--color-white);
+      color: var(--color-forest);
+    }
+    .site-footer {
+      background: #0A2A1F;
+      color: rgba(255, 255, 255, 0.92);
+      padding: 2.5rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .site-footer a {
+      color: #C8F5E2;
+    }
+    .site-footer address {
+      font-style: normal;
+      line-height: 1.6;
+    }
+    .disclaimer {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 1rem;
+    }
+    .sticky-mobile-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-white);
+      border-top: 1px solid rgba(11, 61, 46, 0.1);
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      box-shadow: 0 -12px 30px rgba(11, 61, 46, 0.12);
+      z-index: 999;
+    }
+    .sticky-mobile-cta .btn {
+      flex: 1;
+      font-size: 1rem;
+      padding: 0.9rem 1rem;
+    }
+    @media (min-width: 600px) {
+      .trust-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .process-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+      .header-cta {
+        gap: 0.75rem;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .contact-grid {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        align-items: start;
+      }
+      .sticky-mobile-cta {
+        display: none;
+      }
+    }
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+        align-items: center;
+      }
+      .process-steps {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      main section {
+        padding: 4.5rem 0;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Cortes Tree Service",
+      "image": "https://images.unsplash.com/photo-1593941707882-17a567cbe3d2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5956 Trail Hikes Dr",
+        "addressLocality": "Sugar Hill",
+        "addressRegion": "GA"
+      },
+      "telephone": "[PHONE_NUMBER]",
+      "email": "[EMAIL_ADDRESS]",
+      "url": "[WEBSITE_URL]",
+      "areaServed": "[SERVICE_AREA]",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "sameAs": "[GOOGLE_LISTING_URL]",
+      "serviceType": ["Tree cutting", "Tree trimming"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "2"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a class="logo" href="#hero" aria-label="Cortes Tree Service home">Cortes Tree Service</a>
+      <nav class="header-cta" aria-label="Primary">
+        <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service now, open 24/7">Call Now (24/7)</a>
+        <a class="btn btn-secondary" href="#estimate">Get a Prompt Estimate</a>
+      </nav>
+    </div>
+  </header>
+  <div class="sticky-mobile-cta" aria-label="Sticky contact options">
+    <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service now, open 24/7">Call Now (24/7)</a>
+    <a class="btn btn-secondary" href="#estimate">Get Estimate</a>
+  </div>
+  <main id="main-content">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title">Tree Cutting &amp; Trimming in Sugar Hill, GA</h1>
+          <p>Professional, reliable tree care with prompt estimates, clear communication about costs, fair pricing, thorough cleanup, and responsive service. Open 24/7.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service for tree cutting and tree trimming">Call Now (24/7)</a>
+            <a class="btn btn-secondary" href="#estimate">Get a Prompt Estimate</a>
+          </div>
+          <ul class="trust-row" aria-label="Key Cortes Tree Service highlights">
+            <li><span>5.0 stars from 2 reviews</span> · <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="View Cortes Tree Service on Google">View on Google</a></li>
+            <li>Open 24/7</li>
+            <li>5956 Trail Hikes Dr, Sugar Hill, GA</li>
+            <li>Serving [SERVICE_AREA]</li>
+          </ul>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1593941707882-17a567cbe3d2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Cortes Tree Service performing tree cutting and trimming in Sugar Hill, GA." loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="why-choose" aria-labelledby="why-title">
+      <div class="container">
+        <h2 id="why-title" class="section-title">Why Choose Cortes Tree Service</h2>
+        <p>Clear, upfront service focused on your peace of mind.</p>
+        <ul class="benefit-list">
+          <li>Professional and reliable</li>
+          <li>Prompt estimates</li>
+          <li>Clear communication about costs</li>
+          <li>Thorough cleanup after each project</li>
+          <li>Fair pricing</li>
+          <li>Responsive service</li>
+          <li>5.0 stars from 2 reviews</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="social-proof" class="section-light" aria-labelledby="social-title">
+      <div class="container">
+        <h2 id="social-title" class="section-title">What Customers Say</h2>
+        <p>Clients mention our professionalism, reliability, fair pricing, and responsive service.</p>
+        <div class="rating-badge">
+          <span>★★★★★</span>
+          <span>5.0 stars (2 reviews)</span>
+          <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener" aria-label="See Cortes Tree Service reviews on Google">See more on Google</a>
+        </div>
+        <ul class="highlight-list">
+          <li>Prompt estimates</li>
+          <li>Clear costs</li>
+          <li>Thorough cleanup</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title" class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Tree Cutting</h3>
+            <p>Careful cutting to manage overgrowth and keep your property looking its best. Ideal for tree cutting Sugar Hill GA homeowners need to stay safe and neat.</p>
+          </article>
+          <article class="service-card">
+            <h3>Tree Trimming</h3>
+            <p>Precise trimming to shape trees and maintain a neat, well-kept appearance. Trusted tree trimming Sugar Hill GA residents rely on for curb appeal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-we-work" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="section-title">How We Work</h2>
+        <p>Every project is handled with professional care from first call to thorough cleanup.</p>
+        <ul class="process-steps">
+          <li class="process-step">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Request a prompt estimate</h3>
+              <p>Reach out anytime for 24/7 tree service Sugar Hill support.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-number">2</span>
+            <div>
+              <h3>We assess your needs and explain costs clearly</h3>
+              <p>Expect clear communication about costs before any work begins.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-number">3</span>
+            <div>
+              <h3>Professional tree cutting or trimming</h3>
+              <p>Professional crews deliver reliable tree care Sugar Hill GA properties deserve.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-number">4</span>
+            <div>
+              <h3>Thorough cleanup and follow-up</h3>
+              <p>We leave your property tidy and confirm your satisfaction.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section-light" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About Cortes Tree Service</h2>
+        <p>Cortes Tree Service is a tree care business based in Sugar Hill, Georgia. We’re known for professionalism and reliability, provide prompt estimates, communicate clearly about costs, and ensure thorough cleanup after each project. Open 24 hours a day, seven days a week, we deliver tree care Sugar Hill GA neighbors count on whenever they need tree cutting or tree trimming.</p>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section-title">FAQ</h2>
+        <div class="faq-list">
+          <details>
+            <summary>What tree services do you offer?</summary>
+            <p>We focus on tree cutting and tree trimming for homes and businesses in Sugar Hill, GA.</p>
+          </details>
+          <details>
+            <summary>How quickly can I expect a quote?</summary>
+            <p>We provide prompt estimates with clear communication about costs so you can plan with confidence.</p>
+          </details>
+          <details>
+            <summary>Are you available outside regular business hours?</summary>
+            <p>Yes. Cortes Tree Service is Open 24/7 to handle tree cutting Sugar Hill GA residents request day or night.</p>
+          </details>
+          <details>
+            <summary>Which areas do you serve?</summary>
+            <p>We proudly serve Sugar Hill, GA and surrounding communities within [SERVICE_AREA].</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="estimate" class="section section-highlight" aria-labelledby="estimate-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <h2 id="estimate-title" class="section-title">Get a Prompt Estimate</h2>
+            <p>We respond quickly and provide clear, upfront costs.</p>
+            <p>Request expert tree cutting Sugar Hill GA or tree trimming Sugar Hill GA residents depend on for dependable results.</p>
+          </div>
+          <form id="estimate-form" action="#" method="post" novalidate aria-label="Request a prompt estimate form">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email address">
+            </div>
+            <div class="form-group">
+              <label for="address">Address or job location</label>
+              <input type="text" id="address" name="address" placeholder="Project address">
+            </div>
+            <div class="form-group">
+              <label for="details">Brief description of needed tree cutting or trimming *</label>
+              <textarea id="details" name="details" required placeholder="Tell us about your tree care needs"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request My Prompt Estimate</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="contact-details">
+          <ul class="contact-info">
+            <li>Phone: <a href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service 24 7">[PHONE_NUMBER]</a> <span>(24/7)</span></li>
+            <li>Email: <a href="mailto:[EMAIL_ADDRESS]">[EMAIL_ADDRESS]</a></li>
+            <li>Address: <span>5956 Trail Hikes Dr, Sugar Hill, GA</span></li>
+            <li>Google listing: <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">View our Google listing</a></li>
+          </ul>
+          <div class="map-wrapper" aria-label="Map to Cortes Tree Service">
+            <iframe src="https://www.google.com/maps?q=5956+Trail+Hikes+Dr,+Sugar+Hill,+GA&amp;output=embed" loading="lazy" allowfullscreen title="Map showing 5956 Trail Hikes Dr, Sugar Hill, GA"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="final-cta" class="final-cta" aria-labelledby="final-cta-title">
+      <div class="container final-cta-content">
+        <h2 id="final-cta-title" class="section-title">Ready for dependable tree care in Sugar Hill?</h2>
+        <p>Contact Cortes Tree Service for prompt estimates, clear communication about costs, fair pricing, and thorough cleanup after every tree cutting or tree trimming project.</p>
+        <div class="final-cta-buttons">
+          <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service now">Call Now (24/7)</a>
+          <a class="btn btn-secondary" href="#estimate">Request an Estimate</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <strong>Cortes Tree Service</strong>
+        <address>
+          5956 Trail Hikes Dr<br>
+          Sugar Hill, GA
+        </address>
+        <p>Phone: <a href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service">[PHONE_NUMBER]</a></p>
+        <p>Email: <a href="mailto:[EMAIL_ADDRESS]">[EMAIL_ADDRESS]</a></p>
+      </div>
+      <div>
+        <p>Hours: Open 24/7</p>
+        <p>Service area: Serving [SERVICE_AREA]</p>
+        <p><a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Google listing</a></p>
+      </div>
+      <div>
+        <p class="disclaimer">Content provided for general information; contact us for details.</p>
+        <p>&copy; 2024 Cortes Tree Service. All rights reserved.</p>
+        <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call Cortes Tree Service directly from footer">Call Now (24/7)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const form = document.getElementById('estimate-form');
+      const status = document.getElementById('form-status');
+      if (form && status) {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          if (!form.checkValidity()) {
+            status.textContent = "Please complete the required fields highlighted above.";
+            status.className = "form-status error";
+            form.reportValidity();
+            return;
+          }
+          form.reset();
+          status.textContent = "Thanks! We'll get back to you promptly with a clear, upfront estimate.";
+          status.className = "form-status success";
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
