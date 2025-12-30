@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Loving Care Daycare Center | Welcoming Daycare in Atlanta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A nurturing daycare in Atlanta known for attentive staff, regular communication, and homework help. Rated 4.3★ from 16 Google reviews.">
+  <meta property="og:title" content="Loving Care Daycare Center | Welcoming Daycare in Atlanta">
+  <meta property="og:description" content="A nurturing daycare in Atlanta known for attentive staff, regular communication, and homework help. Rated 4.3★ from 16 Google reviews.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="Loving Care Daycare Center">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --color-primary: #4DA3FF;
+  --color-primary-dark: #2F6FB8;
+  --color-secondary: #FF7A70;
+  --color-accent: #FFC542;
+  --color-bg: #F5F7FA;
+  --color-text: #2B2B2B;
+  --color-muted: #6B6E76;
+  --color-white: #FFFFFF;
+  --shadow: 0 10px 30px rgba(33, 56, 81, 0.12);
+  --max-width: 1200px;
+  --transition: all 0.25s ease-in-out;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 12px 16px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+  z-index: 1001;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: min(100% - 32px, var(--max-width));
+  margin-inline: auto;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-white);
+  box-shadow: 0 8px 20px rgba(77,163,255,0.35);
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  box-shadow: 0 6px 18px rgba(255,122,112,0.35);
+}
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  transform: translateY(-1px);
+}
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(27,46,73,0.08);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+}
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  white-space: nowrap;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.address-text {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.primary-nav a {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+}
+.primary-nav a:hover::after,
+.primary-nav a:focus-visible::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: var(--color-primary);
+}
+.nav-toggle {
+  display: none;
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.hero {
+  padding: 96px 0 64px;
+  background: linear-gradient(135deg, rgba(77,163,255,0.08), rgba(255,197,66,0.12));
+}
+.hero-content {
+  display: grid;
+  gap: 48px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0;
+  color: var(--color-text);
+}
+.hero p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-muted);
+}
+.hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+.hero-bullets li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+.hero-bullets li::before {
+  content: "•";
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: -2px;
+}
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  background: var(--color-white);
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.star-rating span {
+  color: #FFB400;
+  font-size: 1.1rem;
+}
+.star-rating .muted-star {
+  color: #d3d9e2;
+}
+.hero-visual {
+  position: relative;
+}
+.hero-visual img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+.section {
+  padding: 72px 0;
+}
+.section.alt-bg {
+  background: var(--color-bg);
+}
+.section .section-header {
+  max-width: 720px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.65rem, 4vw, 2.4rem);
+  margin: 0 0 18px;
+}
+.section p {
+  margin: 0 0 18px;
+  color: var(--color-muted);
+  font-size: 1.02rem;
+}
+.feature-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 32px;
+}
+.feature-card {
+  background: var(--color-white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(77,163,255,0.15);
+  display: grid;
+  place-items: center;
+  color: var(--color-primary-dark);
+  font-size: 1.5rem;
+}
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--color-text);
+}
+.highlight-box {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+}
+.highlight-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--color-muted);
+}
+.review-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 32px;
+}
+.review-card {
+  background: var(--color-white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+.review-card p {
+  margin: 0;
+  color: var(--color-text);
+}
+.review-card .reviewer {
+  font-weight: 600;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+.review-legal {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 16px;
+}
+.map-placeholder {
+  background: #dfe8f4;
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  color: var(--color-muted);
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  margin-top: 32px;
+}
+.steps-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 32px;
+}
+.step-card {
+  background: var(--color-white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255,122,112,0.18);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: var(--color-secondary);
+  font-size: 1.05rem;
+}
+.form-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+.form-row {
+  display: grid;
+  gap: 16px;
+}
+label {
+  font-weight: 600;
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 6px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(43,43,43,0.15);
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+}
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.contact-details {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+}
+.contact-details span {
+  display: block;
+}
+.consent-text {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 8px;
+}
+.faq-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+.faq-item {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+}
+.faq-item h3 {
+  margin: 0 0 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+.final-cta {
+  text-align: center;
+  padding: 72px 0;
+  background: linear-gradient(135deg, rgba(255,122,112,0.15), rgba(77,163,255,0.18));
+}
+.final-cta h2 {
+  margin-bottom: 12px;
+}
+.final-cta p {
+  max-width: 540px;
+  margin: 0 auto 24px;
+  color: var(--color-text);
+}
+.final-cta .cta-group {
+  justify-content: center;
+}
+.footer {
+  background: #142033;
+  color: var(--color-white);
+  padding: 48px 0;
+}
+.footer .container {
+  display: grid;
+  gap: 16px;
+}
+.footer a.btn-outline {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+.footer a.btn-outline:hover,
+.footer a.btn-outline:focus-visible {
+  background: var(--color-white);
+  color: #142033;
+}
+.footer .footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer small {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+}
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: var(--color-white);
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgba(44,62,80,0.22);
+  padding: 12px;
+  z-index: 999;
+  justify-content: center;
+  gap: 12px;
+}
+.mobile-cta-bar .btn {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .hero-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .review-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .steps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .form-row.two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .section {
+    padding: 96px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .address-text {
+    font-size: 0.95rem;
+  }
+  .primary-nav a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1023px) {
+  .primary-nav {
+    position: absolute;
+    inset: 100% 0 auto;
+    margin: 0;
+    padding: 16px;
+    background: rgba(255,255,255,0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 18px 26px rgba(17,38,58,0.12);
+    border-radius: 16px;
+    margin-inline: 16px;
+    display: none;
+  }
+  .primary-nav.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav-wrap {
+    position: relative;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+  }
+  .header-cta {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 120px;
+  }
+  .cta-group {
+    width: 100%;
+  }
+  .cta-group .btn {
+    flex: 1;
+  }
+  .trust-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section {
+    padding: 72px 0;
+  }
+  .mobile-cta-bar {
+    display: flex;
+  }
+  body {
+    padding-bottom: 100px;
+  }
+}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="mobile-cta-bar" role="region" aria-label="Mobile quick actions">
+    <a class="btn btn-secondary" href="#contact">Schedule a Visit</a>
+    <a class="btn btn-outline" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+  </div>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">Loving Care Daycare Center</div>
+      <div class="nav-wrap">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          Menu
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#why">Why Parents Choose Us</a>
+          <a href="#communication">Communication</a>
+          <a href="#homework">Homework Help</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="header-cta">
+        <div class="address-text">1037 Hollywood Rd NW, Atlanta, Georgia</div>
+        <a class="btn btn-outline" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+        <a class="btn btn-primary" href="#contact">Schedule a Visit</a>
+      </div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 id="hero-title">A Welcoming Daycare with Attentive, Long‑Term Staff in Atlanta</h1>
+          <p>Parents value our kindness, regular updates, and the homework help their children receive.</p>
+          <ul class="hero-bullets" role="list">
+            <li>Attentive, caring team that treats children with kindness</li>
+            <li>Regular communication about each child’s needs and progress</li>
+            <li>Positive atmosphere supported by long-term staff members</li>
+            <li>Families highlight the help children receive with homework</li>
+          </ul>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#contact">Schedule a Visit</a>
+            <a class="btn btn-secondary" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+          </div>
+          <div class="trust-row" role="region" aria-label="Google rating">
+            <div class="star-rating" aria-label="Rated 4.3 out of 5 stars on Google">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span class="muted-star">★</span>
+              <span>Google rating: 4.3/5 from 16 reviews</span>
+            </div>
+            <a class="btn btn-outline" href="[Google Listing URL]" target="_blank" rel="noopener" aria-label="See Google reviews for Loving Care Daycare Center">See Our Google Reviews</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Welcoming daycare environment in Atlanta" loading="eager" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+    <section id="why" class="section alt-bg" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Services &amp; Support</p>
+          <h2 id="why-title">Why Parents Choose Us</h2>
+          <p>A nurturing, reliable choice for Atlanta families. Parents consistently mention our welcoming environment, kindness, and attentive care.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">❤️</div>
+            <h3 class="card-title">Kind, Attentive Staff</h3>
+            <p>Families notice how thoughtfully children are cared for every day.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">💬</div>
+            <h3 class="card-title">Ongoing Communication</h3>
+            <p>Parents receive regular updates about needs and progress.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">🌈</div>
+            <h3 class="card-title">Positive, Welcoming Environment</h3>
+            <p>A place where children feel supported and encouraged.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">⭐️</div>
+            <h3 class="card-title">Trusted by Local Families</h3>
+            <p>4.3 stars from 16 Google reviews reflects the confidence families place in us.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="communication" class="section" aria-labelledby="communication-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="communication-title">Clear, Consistent Communication</h2>
+          <p>Parents appreciate the regular communication they receive about each child’s needs and progress, helping everyone stay connected and supported.</p>
+        </div>
+        <div class="highlight-box" role="presentation">
+          <p><strong>What to expect:</strong></p>
+          <ul>
+            <li>Thoughtful updates that keep parents in the loop.</li>
+            <li>A responsive team that listens and responds with care.</li>
+            <li>Peace of mind knowing you’re informed and involved.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="homework" class="section alt-bg" aria-labelledby="homework-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="homework-title">Help with Homework</h2>
+          <p>Several families highlight the help their children receive with homework, offering support that makes afternoons feel more manageable.</p>
+        </div>
+        <div class="highlight-box" role="presentation">
+          <p>While we’re not a formal tutoring program, our attentive team is there to encourage and assist as children work through their assignments.</p>
+        </div>
+      </div>
+    </section>
+    <section id="reviews" class="section" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Social Proof</p>
+          <h2 id="reviews-title">What Parents Are Saying</h2>
+          <p>Rated 4.3 out of 5 stars on Google (16 reviews).</p>
+        </div>
+        <div class="trust-row" role="img" aria-label="Rated 4.3 out of 5 stars">
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span class="muted-star">★</span>
+            <span>4.3 / 5</span>
+          </div>
+          <a class="btn btn-outline" href="[Google Listing URL]" target="_blank" rel="noopener" aria-label="View Loving Care Daycare Center reviews on Google">View More on Google</a>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <p>“[Insert review snippet highlighting kindness]”</p>
+            <span class="reviewer">— Google reviewer</span>
+          </article>
+          <article class="review-card">
+            <p>“[Insert review snippet highlighting communication]”</p>
+            <span class="reviewer">— Google reviewer</span>
+          </article>
+          <article class="review-card">
+            <p>“[Insert review snippet highlighting homework help/long-term staff]”</p>
+            <span class="reviewer">— Google reviewer</span>
+          </article>
+        </div>
+        <p class="review-legal">Snippets sourced from public Google reviews.</p>
+      </div>
+    </section>
+    <section id="about" class="section alt-bg" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="about-title">Long‑Term Staff, Lasting Relationships</h2>
+          <p>Loving Care Daycare Center is known in Atlanta, Georgia for a welcoming environment shaped by long-term staff members who bring consistency and warmth to each day.</p>
+        </div>
+      </div>
+    </section>
+    <section id="location" class="section" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="location-title">Visit Us in Atlanta</h2>
+          <p>We’re located at 1037 Hollywood Rd NW, Atlanta, Georgia. Atlanta families are invited to connect with our team and explore the welcoming space we’ve created.</p>
+        </div>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=1037+Hollywood+Rd+NW,+Atlanta,+Georgia" target="_blank" rel="noopener" aria-label="Get directions to Loving Care Daycare Center">Get Directions</a>
+          <a class="btn btn-secondary" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+        </div>
+        <div class="map-placeholder" role="img" aria-label="Map placeholder for 1037 Hollywood Rd NW, Atlanta, Georgia">
+          Map placeholder for 1037 Hollywood Rd NW, Atlanta, Georgia
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="section alt-bg" aria-labelledby="how-it-works-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">How It Works</p>
+          <h2 id="how-it-works-title">Easy to Get Started</h2>
+          <p>We make it simple for parents and guardians to connect, visit, and learn how our attentive team supports families in Atlanta.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="card-title">Contact Us</h3>
+            <p>Reach out with any questions—we’re ready to help.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="card-title">Schedule a Visit</h3>
+            <p>Come see our welcoming environment in person.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="card-title">Follow Up</h3>
+            <p>We’ll discuss next steps and how we can support your family.</p>
+          </article>
+        </div>
+        <div class="cta-group" style="margin-top:32px;">
+          <a class="btn btn-primary" href="#contact">Schedule a Visit</a>
+          <a class="btn btn-secondary" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact-title">Request Information or Schedule a Visit</h2>
+          <p>We’re here to help and communicate every step of the way.</p>
+        </div>
+        <form class="form-grid" action="#" method="post" aria-label="Contact form">
+          <div class="form-row two-columns">
+            <div>
+              <label for="parent-name">Parent/Guardian Name <span aria-hidden="true">*</span></label>
+              <input id="parent-name" name="parent_name" type="text" required aria-required="true">
+            </div>
+            <div>
+              <label for="phone">Phone <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" required aria-required="true" inputmode="tel">
+            </div>
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" required aria-required="true">
+            </div>
+            <div>
+              <label for="child-name">Child’s Name</label>
+              <input id="child-name" name="child_name" type="text">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="child-age">Child’s Age</label>
+              <input id="child-age" name="child_age" type="text">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Request Info</button>
+          <p class="consent-text">By submitting this form, you consent to being contacted by Loving Care Daycare Center via phone or email.</p>
+        </form>
+        <div class="contact-details">
+          <span><strong>Phone:</strong> </span>
+          <span><strong>Email:</strong> </span>
+          <span><strong>Hours:</strong> </span>
+          <span><strong>Google Listing:</strong> <a href="[Google Listing URL]" target="_blank" rel="noopener">[Google Listing URL]</a></span>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="section alt-bg" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-title">FAQ</h2>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>How does Loving Care Daycare Center keep parents informed?</h3>
+            <p>Parents appreciate the regular communication about each child’s needs and progress, keeping everyone connected.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What makes the staff at Loving Care Daycare Center special?</h3>
+            <p>Long-term staff members create a kind, attentive environment that helps children feel supported.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Where is the daycare located?</h3>
+            <p>We are located at 1037 Hollywood Rd NW, Atlanta, Georgia.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How can I schedule a visit?</h3>
+            <p>Use the “Schedule a Visit” buttons on this page or complete the inquiry form so our team can follow up with you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="final-cta" class="final-cta" aria-labelledby="final-cta-title">
+      <div class="container">
+        <h2 id="final-cta-title">Ready to Experience Loving Care?</h2>
+        <p>Connect with our attentive team to learn how we support Atlanta families through kindness, communication, and homework help.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#contact">Schedule a Visit</a>
+          <a class="btn btn-outline" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+          <a class="btn btn-secondary" href="[Google Listing URL]" target="_blank" rel="noopener" aria-label="Read Google reviews for Loving Care Daycare Center">View Google Reviews</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div>
+        <strong>Loving Care Daycare Center</strong><br>
+        1037 Hollywood Rd NW, Atlanta, Georgia
+      </div>
+      <div class="contact-details">
+        <span><strong>Phone:</strong> </span>
+        <span><strong>Email:</strong> </span>
+        <span><strong>Hours:</strong> </span>
+      </div>
+      <div class="footer-actions">
+        <a class="btn btn-outline" href="#contact">Schedule a Visit</a>
+        <a class="btn btn-outline" href="tel:" aria-label="Call Loving Care Daycare Center now">Call Now</a>
+        <a class="btn btn-outline" href="[Google Listing URL]" target="_blank" rel="noopener" aria-label="View Loving Care Daycare Center Google reviews">View Google Reviews</a>
+      </div>
+      <small>© Loving Care Daycare Center. All rights reserved.</small>
+    </div>
+  </footer>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ChildCare",
+  "name": "Loving Care Daycare Center",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1037 Hollywood Rd NW",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "addressCountry": "US"
+  },
+  "telephone": "",
+  "url": "",
+  "sameAs": [
+    "[Google Listing URL]"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "16"
+  }
+}
+  </script>
+  <script defer>
+    const navToggle = document.querySelector('.nav-toggle');
+    const primaryNav = document.querySelector('.primary-nav');
+    if (navToggle && primaryNav) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        primaryNav.classList.toggle('open');
+      });
+      primaryNav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          primaryNav.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
