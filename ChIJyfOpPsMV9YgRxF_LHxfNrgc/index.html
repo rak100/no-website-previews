@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cash for Junk Cars in Marietta | We Pay Cash For Junk Cars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sell your junk car in Marietta for cash. Quick response, convenient pickup, minimal paperwork. Open daily 7AM–8PM.">
+  <meta property="og:title" content="Cash for Junk Cars in Marietta | We Pay Cash For Junk Cars">
+  <meta property="og:description" content="Sell your junk car in Marietta for cash. Quick response, convenient pickup, minimal paperwork. Open daily 7AM–8PM.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="[SITE_URL]">
+  <link rel="canonical" href="[SITE_URL]">
+  <style>
+    :root {
+      --color-primary: #0b5a38;
+      --color-primary-dark: #09472c;
+      --color-accent: #f2c94c;
+      --color-dark: #1d2a27;
+      --color-muted: #5f6c68;
+      --color-light: #f7f9f8;
+      --border-radius: 12px;
+      --shadow-soft: 0 12px 24px rgba(0,0,0,0.08);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--color-dark);
+      background: #ffffff;
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 16px;
+      padding: 8px 12px;
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid var(--color-primary);
+      z-index: 1000;
+    }
+    .skip-link:focus {
+      top: 16px;
+    }
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(9,71,44,0.08);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px min(6vw, 32px);
+    }
+    .brand a {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+      color: var(--color-primary);
+    }
+    nav.primary-nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    nav.primary-nav a {
+      padding: 8px 10px;
+      border-radius: 999px;
+      transition: background 0.2s ease;
+    }
+    nav.primary-nav a:hover,
+    nav.primary-nav a:focus-visible {
+      background: rgba(11,90,56,0.1);
+    }
+    .header-cta {
+      display: none;
+    }
+    .header-meta {
+      margin: 0;
+      padding: 0  min(6vw, 32px) 12px;
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      letter-spacing: 0.03em;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: #ffffff;
+      box-shadow: 0 8px 16px rgba(11,90,56,0.24);
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 20px rgba(11,90,56,0.28);
+    }
+    .btn-secondary {
+      background: rgba(11,90,56,0.1);
+      color: var(--color-primary);
+    }
+    .btn-secondary:hover {
+      background: rgba(11,90,56,0.16);
+    }
+    .section {
+      padding: clamp(56px, 8vw, 88px) min(6vw, 72px);
+    }
+    .hero {
+      padding-top: clamp(96px, 12vw, 160px);
+      background: radial-gradient(circle at top right, rgba(242,201,76,0.18), transparent 45%), linear-gradient(180deg, #ffffff 0%, #f8fbf9 100%);
+    }
+    .hero .subheadline {
+      max-width: 32rem;
+      color: var(--color-muted);
+      font-size: 1.05rem;
+    }
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+      max-width: 360px;
+    }
+    .trust-strip {
+      margin-top: 32px;
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+    }
+    .trust-strip li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(11,90,56,0.08);
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--color-dark);
+    }
+    .trust-icon {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(11,90,56,0.12);
+    }
+    .trust-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--color-primary);
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      margin: 0 0 16px;
+      line-height: 1.1;
+      color: var(--color-dark);
+    }
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 16px;
+      color: var(--color-dark);
+    }
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      color: var(--color-dark);
+    }
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--color-muted);
+      max-width: 38rem;
+      margin-bottom: 32px;
+    }
+    .steps {
+      display: grid;
+      gap: 20px;
+    }
+    .step-card {
+      border: 1px solid rgba(11,90,56,0.12);
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 20px rgba(24,38,33,0.06);
+    }
+    .step-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(11,90,56,0.12);
+      color: var(--color-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .benefits-list {
+      display: grid;
+      gap: 12px;
+      margin: 24px 0 16px;
+      padding: 0;
+      list-style: none;
+    }
+    .benefits-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      background: #f4faf5;
+      border-left: 4px solid var(--color-primary);
+      padding: 12px 16px;
+      border-radius: 10px;
+    }
+    .benefits-list li span {
+      font-weight: 600;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin-top: 8px;
+    }
+    .cta-inline {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .about-card {
+      background: #ffffff;
+      border: 1px solid rgba(11,90,56,0.12);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 18px rgba(11,90,56,0.08);
+    }
+    .form-card {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid rgba(11,90,56,0.15);
+      box-shadow: var(--shadow-soft);
+      padding: clamp(24px, 6vw, 40px);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    form {
+      display: grid;
+      gap: 16px;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--color-dark);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(11,90,56,0.2);
+      font: inherit;
+      transition: border 0.2s ease, box-shadow 0.2s ease;
+      background: #ffffff;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 4px rgba(11,90,56,0.12);
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .form-response {
+      display: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .form-response.visible {
+      display: block;
+    }
+    .privacy-note {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+    .rating-block {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 8px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid rgba(11,90,56,0.12);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      max-width: 420px;
+    }
+    .stars {
+      display: flex;
+      gap: 4px;
+    }
+    .stars svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--color-accent);
+    }
+    .reviews-actions {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .hours-grid {
+      display: grid;
+      gap: 20px;
+    }
+    .hours-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid rgba(11,90,56,0.12);
+      padding: 24px;
+    }
+    .map-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(11,90,56,0.12);
+    }
+    .map-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(11,90,56,0.12);
+      padding: 16px 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .final-cta {
+      background: linear-gradient(135deg, rgba(11,90,56,0.92), #0b5a38);
+      color: #ffffff;
+      text-align: center;
+      border-radius: 24px;
+      padding: clamp(32px, 8vw, 64px);
+      box-shadow: 0 20px 32px rgba(11,90,56,0.35);
+    }
+    .final-cta p {
+      color: rgba(255,255,255,0.88);
+      max-width: 32rem;
+      margin: 12px auto 24px;
+      font-size: 1rem;
+    }
+    footer {
+      padding: 28px min(6vw, 72px);
+      background: #0f1a18;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: rgba(242,201,76,0.92);
+    }
+    footer .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .mobile-cta-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-top: 1px solid rgba(11,90,56,0.18);
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .mobile-cta-bar strong {
+      font-size: 0.95rem;
+      color: var(--color-dark);
+    }
+    .mobile-cta-bar .btn {
+      flex: 1;
+    }
+    @media (min-width: 620px) {
+      .trust-strip {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .hero-cta {
+        flex-direction: row;
+        max-width: none;
+      }
+      .hero-cta .btn {
+        flex: 1;
+      }
+      .steps {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .benefits-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 768px) {
+      .header-cta {
+        display: block;
+      }
+      .mobile-cta-bar {
+        display: none;
+      }
+      body {
+        padding-bottom: 0;
+      }
+      .about-card {
+        padding: 32px 40px;
+      }
+      .hours-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      nav.primary-nav ul {
+        gap: 20px;
+      }
+    }
+    @media (min-width: 992px) {
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .hero .hero-content {
+        max-width: 720px;
+      }
+      .section {
+        padding-left: 76px;
+        padding-right: 76px;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "We Pay Cash For Junk Cars",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1641 Canton Rd",
+        "addressLocality": "Marietta",
+        "addressRegion": "GA",
+        "postalCode": "",
+        "addressCountry": "US"
+      },
+      "telephone": "[PHONE_NUMBER]",
+      "email": "[EMAIL_ADDRESS]",
+      "url": "[SITE_URL]",
+      "openingHours": "Mo-Su 07:00-20:00",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "49"
+      },
+      "sameAs": [
+        "[GOOGLE_LISTING_URL]"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#hero">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="#hero">We Pay Cash For Junk Cars</a>
+      </div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#get-offer">Get Offer</a></li>
+          <li><a href="#hours-location">Hours &amp; Location</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call We Pay Cash For Junk Cars now">Call Now</a>
+      </div>
+    </div>
+    <p class="header-meta">Open daily 7:00 AM – 8:00 PM • Marietta, GA</p>
+  </header>
+  <main>
+    <section id="hero" class="hero section" role="region" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Sell Your Junk Car in Marietta for Cash</h1>
+        <p class="subheadline">Quick response, convenient pickup, minimal paperwork—cash provided at pickup.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call now to sell your junk car in Marietta">Call Now</a>
+          <a class="btn btn-secondary" href="#get-offer">Get My Cash Offer</a>
+        </div>
+        <ul class="trust-strip" aria-label="Business highlights">
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 17.3l-6.18 3.73 1.64-7.03-5.46-4.73 7.19-.61L12 2l2.81 6.66 7.19.61-5.46 4.73 1.64 7.03z"></path></svg>
+            </span>
+            4.7 stars (49 reviews)
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-.75-16v5.19l4.47 2.63.78-1.28-3.75-2.22V6h-1.5z"></path></svg>
+            </span>
+            Open daily 7AM–8PM
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"></path></svg>
+            </span>
+            Serving Marietta, GA
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section" role="region" aria-labelledby="how-it-works-title">
+      <h2 id="how-it-works-title">How It Works</h2>
+      <p class="section-subtitle">Three clear steps to sell your junk or unwanted car in Marietta.</p>
+      <div class="steps">
+        <article class="step-card">
+          <div class="step-icon" aria-hidden="true">1</div>
+          <h3>Contact Us</h3>
+          <p>Call us or request a cash offer online.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-icon" aria-hidden="true">2</div>
+          <h3>Get a Cash Offer</h3>
+          <p>Share basic vehicle details to receive a fair cash offer.</p>
+        </article>
+        <article class="step-card">
+          <div class="step-icon" aria-hidden="true">3</div>
+          <h3>Pickup &amp; Get Paid</h3>
+          <p>We arrange convenient pickup in Marietta. Cash is provided at the time of pickup.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section" role="region" aria-labelledby="services-title">
+      <h2 id="services-title">Why Choose Us</h2>
+      <p class="section-subtitle">Straightforward from start to finish.</p>
+      <ul class="benefits-list">
+        <li><span>Quick response and efficient transactions.</span></li>
+        <li><span>Cash at pickup.</span></li>
+        <li><span>Minimal paperwork.</span></li>
+        <li><span>Convenient vehicle pickup.</span></li>
+        <li><span>Open daily 7:00 AM – 8:00 PM.</span></li>
+      </ul>
+      <p class="note">Experiences may vary.</p>
+      <div class="cta-inline">
+        <a class="btn btn-primary" href="tel:[PHONE_NUMBER]" aria-label="Call now for a cash offer for your junk car">Call Now</a>
+        <a class="btn btn-secondary" href="#get-offer">Get My Cash Offer</a>
+      </div>
+    </section>
+
+    <section id="about" class="section" role="region" aria-labelledby="about-title">
+      <div class="about-card">
+        <h2 id="about-title">About We Pay Cash For Junk Cars</h2>
+        <p>We Pay Cash For Junk Cars serves Marietta, Georgia vehicle owners who want a respectful and efficient way to sell cars that are junk, unwanted, or no longer running. The team focuses on quick response, clear communication, and efficient transactions so you know what to expect.</p>
+        <p>From the first call to vehicle pickup, you can count on cash at pickup and minimal paperwork. Customers often point to our professionalism and an easy process, and we continue to work hard to keep every transaction straightforward.</p>
+        <div class="cta-inline">
+          <a class="btn btn-primary" href="tel:[PHONE_NUMBER]">Call Now</a>
+          <a class="btn btn-secondary" href="#get-offer">Get My Cash Offer</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-offer" class="section" role="region" aria-labelledby="get-offer-title">
+      <h2 id="get-offer-title">Get My Cash Offer</h2>
+      <p class="section-subtitle">Tell us about your vehicle to get a cash offer.</p>
+      <div class="form-card">
+        <form method="post" action="[CONTACT_FORM_ACTION]" novalidate>
+          <div>
+            <label for="full-name">Full Name<span aria-hidden="true">*</span></label>
+            <input id="full-name" name="full_name" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="phone">Phone<span aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="[PHONE_NUMBER]">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="[EMAIL_ADDRESS]">
+          </div>
+          <div>
+            <label for="vehicle-year">Vehicle Year<span aria-hidden="true">*</span></label>
+            <input id="vehicle-year" name="vehicle_year" type="number" required min="1900" max="2099" placeholder="e.g., 2008">
+          </div>
+          <div>
+            <label for="vehicle-make">Make<span aria-hidden="true">*</span></label>
+            <input id="vehicle-make" name="vehicle_make" type="text" required placeholder="e.g., Toyota">
+          </div>
+          <div>
+            <label for="vehicle-model">Model<span aria-hidden="true">*</span></label>
+            <input id="vehicle-model" name="vehicle_model" type="text" required placeholder="e.g., Camry">
+          </div>
+          <div>
+            <label for="condition">Condition</label>
+            <select id="condition" name="condition">
+              <option value="">Select condition</option>
+              <option value="running">Running</option>
+              <option value="non-running">Non-running</option>
+              <option value="salvage">Salvage</option>
+              <option value="damaged">Damaged</option>
+            </select>
+          </div>
+          <div>
+            <label for="location">Location in Marietta</label>
+            <input id="location" name="location" type="text" placeholder="Neighborhood or zip code">
+          </div>
+          <div>
+            <label for="preferred-contact">Preferred Contact Method</label>
+            <select id="preferred-contact" name="preferred_contact_method">
+              <option value="call">Call</option>
+              <option value="text">Text</option>
+              <option value="email">Email</option>
+            </select>
+          </div>
+          <div>
+            <label for="pickup-time">Preferred Pickup Time Window</label>
+            <input id="pickup-time" name="preferred_pickup_time" type="text" placeholder="e.g., Weekday afternoons">
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Add any details you want to share"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Request My Cash Offer</button>
+            <p class="form-response" role="status" aria-live="polite">Thanks! We’ll get back to you soon.</p>
+          </div>
+          <p class="privacy-note">We respect your privacy. <a href="[PRIVACY_POLICY_URL]">Privacy Notice</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="reviews" class="section" role="region" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Customer Reviews</h2>
+      <div class="rating-block">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+        </div>
+        <strong>4.7 out of 5 based on 49 Google reviews.</strong>
+        <p>Customers often mention professionalism, quick response, and an easy process.</p>
+      </div>
+      <div class="reviews-actions">
+        <a class="btn btn-secondary" href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">See More Reviews on Google</a>
+        <a class="btn btn-primary" href="tel:[PHONE_NUMBER]">Call Now</a>
+      </div>
+    </section>
+
+    <section id="hours-location" class="section" role="region" aria-labelledby="hours-title">
+      <h2 id="hours-title">Hours &amp; Location</h2>
+      <div class="hours-grid">
+        <div class="hours-card">
+          <h3>Visit or Reach Us</h3>
+          <p><strong>Address:</strong> 1641 Canton Rd, Marietta, GA</p>
+          <p><strong>Hours:</strong> Open daily 7:00 AM – 8:00 PM</p>
+          <p><strong>Call:</strong> <a href="tel:[PHONE_NUMBER]">[PHONE_NUMBER]</a></p>
+          <p><strong>Email:</strong> <a href="mailto:[EMAIL_ADDRESS]">[EMAIL_ADDRESS]</a></p>
+          <div class="cta-inline">
+            <a class="btn btn-primary" href="tel:[PHONE_NUMBER]">Call Now</a>
+            <a class="btn btn-secondary" href="#get-offer">Get My Cash Offer</a>
+          </div>
+        </div>
+        <div>
+          <div class="map-wrap" aria-label="Map of 1641 Canton Rd, Marietta, GA">
+            <iframe loading="lazy" src="https://www.google.com/maps?q=1641+Canton+Rd,+Marietta,+GA&output=embed" title="Map showing 1641 Canton Rd, Marietta, GA"></iframe>
+          </div>
+          <p class="note">Serving sellers in Marietta, Georgia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faqs" class="section" role="region" aria-labelledby="faqs-title">
+      <h2 id="faqs-title">FAQs</h2>
+      <div class="faq-item">
+        <h3>When do I get paid?</h3>
+        <p>Cash is provided at the time of pickup.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How fast is the process?</h3>
+        <p>Customers mention quick response and efficient transactions; timing may vary.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What paperwork is involved?</h3>
+        <p>The process ends with minimal paperwork.</p>
+      </div>
+      <div class="faq-item">
+        <h3>When are you open?</h3>
+        <p>Open daily from 7:00 AM to 8:00 PM.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where do you operate?</h3>
+        <p>Marietta, Georgia.</p>
+      </div>
+    </section>
+
+    <section id="final-cta" class="section" role="region" aria-labelledby="final-cta-title">
+      <div class="final-cta">
+        <h2 id="final-cta-title">Ready to sell your junk car in Marietta?</h2>
+        <p>Connect with We Pay Cash For Junk Cars for a straightforward offer, convenient pickup, and cash at pickup.</p>
+        <div class="cta-inline" style="justify-content:center;">
+          <a class="btn btn-secondary" href="#get-offer">Get My Cash Offer</a>
+          <a class="btn btn-primary" href="tel:[PHONE_NUMBER]">Call Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>We Pay Cash For Junk Cars • 1641 Canton Rd, Marietta, GA</p>
+    <p>Open daily 7:00 AM – 8:00 PM</p>
+    <p>Phone: <a href="tel:[PHONE_NUMBER]">[PHONE_NUMBER]</a> • Email: <a href="mailto:[EMAIL_ADDRESS]">[EMAIL_ADDRESS]</a></p>
+    <div class="footer-links">
+      <a href="[GOOGLE_LISTING_URL]" target="_blank" rel="noopener">Google Listing</a>
+      <a href="[PRIVACY_POLICY_URL]">Privacy Policy</a>
+      <a href="[TERMS_URL]">Terms</a>
+    </div>
+    <p>&copy; <span id="year"></span> We Pay Cash For Junk Cars. All rights reserved.</p>
+  </footer>
+
+  <div class="mobile-cta-bar" role="region" aria-label="Call to action">
+    <strong>Open 7AM–8PM</strong>
+    <a class="btn btn-primary" href="tel:[PHONE_NUMBER]">Call Now</a>
+  </div>
+
+  <script>
+    const form = document.querySelector('form');
+    const responseEl = document.querySelector('.form-response');
+    if (form) {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const action = form.getAttribute('action') || '';
+        const formData = new FormData(form);
+        const isPlaceholder = action.includes('[');
+        if (!isPlaceholder) {
+          try {
+            const result = await fetch(action, {
+              method: 'POST',
+              body: formData
+            });
+            if (!result.ok) {
+              throw new Error('Request failed');
+            }
+          } catch (error) {
+            console.error('Form submission error:', error);
+          }
+        }
+        if (responseEl) {
+          responseEl.classList.add('visible');
+        }
+        form.reset();
+        setTimeout(() => {
+          if (responseEl) {
+            responseEl.classList.remove('visible');
+          }
+        }, 5000);
+      });
+    }
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
