@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE SMART COMPANY LLC | General &amp; Roofing Contractor in Atlanta, GA</title>
+<meta name="description" content="General and roofing contractor in Atlanta, GA for roofing, home restoration, house painting, and deck &amp; fence work. 5-star rating from 30 reviews. Mon–Fri 9am–5pm. Request an estimate.">
+<meta property="og:title" content="THE SMART COMPANY LLC | General &amp; Roofing Contractor in Atlanta, GA">
+<meta property="og:description" content="General and roofing contractor in Atlanta, GA for roofing, home restoration, house painting, and deck &amp; fence work. 5-star rating from 30 reviews. Mon–Fri 9am–5pm. Request an estimate.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-primary: #1e2a3b;
+  --color-accent: #f57c00;
+  --color-light: #f8f9fb;
+  --color-text: #1f2933;
+  --color-muted: #4a5568;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus, button:focus {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+button {
+  font-family: inherit;
+}
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+.section {
+  padding: 64px 0;
+}
+.section.light {
+  background-color: var(--color-light);
+}
+.section-tight {
+  padding: 48px 0;
+}
+h1, h2, h3 {
+  color: var(--color-text);
+  line-height: 1.2;
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin: 0 0 16px;
+}
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0 0 24px;
+}
+h3 {
+  font-size: 1.25rem;
+  margin: 0 0 12px;
+}
+p {
+  margin: 0 0 16px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(245, 124, 0, 0.2);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(245, 124, 0, 0.25);
+}
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-secondary {
+  border: 2px solid var(--color-primary);
+  background: #fff;
+  color: var(--color-primary);
+}
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(30, 42, 59, 0.08);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid rgba(30, 42, 59, 0.08);
+  backdrop-filter: blur(8px);
+}
+.site-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+.brand span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+.brand small {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+.nav {
+  display: none;
+  align-items: center;
+  gap: 24px;
+}
+.nav a {
+  font-weight: 500;
+  color: var(--color-muted);
+}
+.nav a:hover {
+  color: var(--color-text);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.call-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+}
+.call-link strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.call-link small {
+  color: var(--color-muted);
+}
+.hero {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(120deg, rgba(30,42,59,0.82), rgba(30,42,59,0.6)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+.hero .container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.hero-content {
+  max-width: 640px;
+}
+.hero p {
+  color: rgba(255, 255, 255, 0.86);
+}
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+.hero-trust a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.social-proof-grid {
+  display: grid;
+  gap: 16px;
+}
+.social-proof-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(30,42,59,0.08);
+  box-shadow: 0 8px 18px rgba(30, 42, 59, 0.08);
+}
+.service-grid {
+  display: grid;
+  gap: 24px;
+}
+.service-card {
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(30,42,59,0.1);
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(30,42,59,0.08);
+}
+.service-card p {
+  color: var(--color-muted);
+}
+.trust-list {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+}
+.trust-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--color-muted);
+}
+.trust-list li::before {
+  content: '✓';
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.process-steps {
+  display: grid;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 40px;
+}
+.process-step {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(30,42,59,0.1);
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(30,42,59,0.06);
+}
+.process-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+}
+.reviews-highlights {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 32px;
+}
+.reviews-highlights li {
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid rgba(30,42,59,0.08);
+  box-shadow: 0 4px 12px rgba(30,42,59,0.06);
+  font-weight: 500;
+  color: var(--color-muted);
+}
+.gallery-grid {
+  display: grid;
+  gap: 16px;
+}
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 6px 16px rgba(30,42,59,0.12);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.faq-list {
+  margin: 32px 0 0;
+  display: grid;
+  gap: 20px;
+}
+.faq-item {
+  border-radius: 12px;
+  border: 1px solid rgba(30,42,59,0.1);
+  padding: 20px 24px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(30,42,59,0.06);
+}
+.contact-grid {
+  display: grid;
+  gap: 32px;
+}
+.contact-card {
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(30,42,59,0.1);
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(30,42,59,0.1);
+}
+.contact-info {
+  display: grid;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+.contact-info a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+.contact-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(30,42,59,0.2);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(245,124,0,0.15);
+}
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.contact-map iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(30,42,59,0.12);
+}
+.final-cta {
+  text-align: center;
+  padding: 72px 24px;
+  background: linear-gradient(120deg, rgba(30,42,59,0.95), rgba(30,42,59,0.85));
+  color: #fff;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 60%;
+  height: 160%;
+  background: rgba(245,124,0,0.18);
+  transform: rotate(12deg);
+}
+.final-cta h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+.final-cta p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 32px;
+}
+.footer {
+  background: var(--color-primary);
+  color: rgba(255,255,255,0.85);
+  padding: 40px 0 32px;
+}
+.footer a {
+  color: rgba(255,255,255,0.85);
+}
+.footer-top {
+  display: grid;
+  gap: 24px;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer small {
+  display: block;
+  margin-top: 12px;
+  color: rgba(255,255,255,0.65);
+}
+.mobile-sticky-cta {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(480px, 92vw);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(30,42,59,0.18);
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  z-index: 999;
+}
+.mobile-sticky-cta a,
+.mobile-sticky-cta button {
+  flex: 1;
+}
+@media (min-width: 640px) {
+  .hero .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .social-proof-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-steps {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .reviews-highlights {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+@media (min-width: 900px) {
+  .nav {
+    display: flex;
+  }
+  .call-link {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  .call-link small {
+    margin-left: 8px;
+  }
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+  }
+  .hero-content {
+    padding-right: 80px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .mobile-sticky-cta {
+    display: none;
+  }
+}
+body {
+  scroll-behavior: smooth;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+</style>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="container inner">
+    <div class="brand">
+      <span>THE SMART COMPANY LLC</span>
+      <small>923 Peachtree St NE, Atlanta, GA</small>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="call-link" href="tel:" aria-label="Call THE SMART COMPANY LLC">
+        <strong>Call </strong>
+        <small>Mon–Fri 9:00 AM–5:00 PM</small>
+      </a>
+      <a class="btn btn-primary" href="#contact" data-track="header-request-estimate" aria-label="Request an estimate">Request an Estimate</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Roofing, Restoration &amp; House Painting in Atlanta, GA</h1>
+        <p>Professional workmanship, clear communication, and attention to detail—backed by a 5-star rating from 30 reviews.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contact" data-track="hero-request-estimate" aria-label="Request an estimate from THE SMART COMPANY LLC">Request an Estimate</a>
+          <a class="btn btn-outline" href="tel:" data-track="hero-call" aria-label="Call THE SMART COMPANY LLC">Call </a>
+        </div>
+        <p>Available Monday–Friday, 9:00 AM–5:00 PM.</p>
+        <div class="hero-trust">
+          <div class="badge">5.0 average rating (30 reviews)</div>
+          <a href="" aria-label="Read more reviews on Google">Read more on Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section light" id="social-proof">
+    <div class="container">
+      <div class="badge">Trusted by Atlanta homeowners</div>
+      <h2>Professional, responsive, reliable</h2>
+      <div class="social-proof-grid">
+        <div class="social-proof-card">
+          <h3>5-Star Reputation</h3>
+          <p>30 homeowners rated THE SMART COMPANY LLC 5.0 for quality workmanship and outstanding service.</p>
+        </div>
+        <div class="social-proof-card">
+          <h3>Communication First</h3>
+          <p>Clients highlight the clear updates and proactive communication throughout each project.</p>
+        </div>
+        <div class="social-proof-card">
+          <h3>On-Time Delivery</h3>
+          <p>Timely roof replacements, efficient house painting, and well-managed restoration work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="services">
+    <div class="container">
+      <h2>Home improvement done right—roofing, restoration, house painting, and deck &amp; fence work.</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Roofing</h3>
+          <p>From timely roof replacements to well-planned roofing projects, count on professional execution and consistent updates.</p>
+        </div>
+        <div class="service-card">
+          <h3>Home Restoration</h3>
+          <p>Detail-oriented restoration for homes, with clear communication at every stage.</p>
+        </div>
+        <div class="service-card">
+          <h3>House Painting</h3>
+          <p>Efficient painting for homes—with careful prep, clean results, and a smooth, informed experience.</p>
+        </div>
+        <div class="service-card">
+          <h3>Deck &amp; Fence Work</h3>
+          <p>Skilled deck and fence improvements that elevate curb appeal and function.</p>
+        </div>
+      </div>
+      <div style="margin-top:32px;">
+        <a class="btn btn-primary" href="#contact" data-track="services-request-estimate" aria-label="Request an estimate for services">Request an Estimate</a>
+      </div>
+    </div>
+  </section>
+  <section class="section light" id="why-us">
+    <div class="container">
+      <h2>Built on Professionalism and Clear Communication</h2>
+      <ul class="trust-list">
+        <li>5-star rated based on 30 reviews</li>
+        <li>Clear, proactive communication from start to finish</li>
+        <li>Attention to detail and quality workmanship</li>
+        <li>Timely, efficient project delivery</li>
+      </ul>
+      <p style="margin-top:24px;"><a href="" aria-label="See more on Google listing">See more on our Google listing</a></p>
+    </div>
+  </section>
+  <section class="section" id="process">
+    <div class="container">
+      <h2>A Clear, Informed Process</h2>
+      <ol class="process-steps">
+        <li class="process-step">
+          <span>1</span>
+          <h3>Tell us about your project</h3>
+          <p>Submit the form or call .</p>
+        </li>
+        <li class="process-step">
+          <span>2</span>
+          <h3>Review and estimate</h3>
+          <p>We review your needs and provide a clear estimate.</p>
+        </li>
+        <li class="process-step">
+          <span>3</span>
+          <h3>Professional work, kept on schedule</h3>
+          <p>We execute with updates so you always know what’s next.</p>
+        </li>
+        <li class="process-step">
+          <span>4</span>
+          <h3>Final review</h3>
+          <p>We walk through the results together.</p>
+        </li>
+      </ol>
+      <a class="btn btn-primary" href="#contact" data-track="process-request-estimate" aria-label="Request an estimate after reviewing the process">Request an Estimate</a>
+    </div>
+  </section>
+  <section class="section light" id="reviews">
+    <div class="container">
+      <h2>What Customers Appreciate</h2>
+      <div class="badge">5.0 out of 5 — 30 reviews</div>
+      <ul class="reviews-highlights">
+        <li>Professional and responsive</li>
+        <li>Timely roof replacements</li>
+        <li>Efficient house painting</li>
+        <li>Clear communication throughout</li>
+        <li>Attention to detail</li>
+      </ul>
+      <a class="btn btn-secondary" href="" data-track="reviews-google" aria-label="Read reviews on Google">Read Reviews on Google</a>
+    </div>
+  </section>
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2>Project Gallery</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1597096224823-3df984b6c17d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="New roof installation on Atlanta home" loading="lazy">
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Freshly painted Atlanta home exterior" loading="lazy">
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Atlanta deck refinishing project" loading="lazy">
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Home restoration project in Atlanta" loading="lazy">
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Atlanta fence upgrade project" loading="lazy">
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Roofing crew working on Atlanta home" loading="lazy">
+        </figure>
+      </div>
+      <div style="margin-top:32px;">
+        <a class="btn btn-primary" href="#contact" data-track="gallery-request-estimate" aria-label="Request an estimate after viewing gallery">Request an Estimate</a>
+      </div>
+    </div>
+  </section>
+  <section class="section light" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Where are you located?</h3>
+          <p>923 Peachtree St NE, Atlanta, GA.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What are your business hours?</h3>
+          <p>Monday–Friday, 9:00 AM–5:00 PM.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I request an estimate?</h3>
+          <p>Use the form below or call . We’ll review your project and follow up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Request an Estimate</h2>
+      <p>Tell us about your project—we’ll reply promptly during business hours.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <form class="contact-form" id="estimate-form" aria-label="Request an estimate form">
+            <div>
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            <div>
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" required aria-required="true">
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div>
+              <label for="address">Project Address</label>
+              <input type="text" id="address" name="address">
+            </div>
+            <div>
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option>Roofing</option>
+                <option>Home Restoration</option>
+                <option>House Painting</option>
+                <option>Deck &amp; Fence Work</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="details">Project Details</label>
+              <textarea id="details" name="details"></textarea>
+            </div>
+            <div>
+              <label for="contact-method">Preferred Contact Method</label>
+              <select id="contact-method" name="contact-method">
+                <option>Phone</option>
+                <option>Email</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit" data-track="form-submit" aria-label="Submit request for estimate">Request an Estimate</button>
+          </form>
+        </div>
+        <div class="contact-card">
+          <div class="contact-info">
+            <div><strong>Phone:</strong> </div>
+            <div><strong>Email:</strong> </div>
+            <div><strong>Address:</strong> 923 Peachtree St NE, Atlanta, GA</div>
+            <div><strong>Hours:</strong> Monday–Friday, 9:00 AM–5:00 PM</div>
+            <a href="" aria-label="View Google listing">View our Google listing</a>
+          </div>
+          <div class="contact-map" style="margin-top:24px;">
+            <iframe title="Map of THE SMART COMPANY LLC" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.185407066145!2d-84.38557702387327!3d33.78097657325044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504755bf40d69%3A0x6e7f83413cf5df76!2s923%20Peachtree%20St%20NE%2C%20Atlanta%2C%20GA%2030309!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="final-cta">
+    <div class="container">
+      <div class="final-cta">
+        <h2>Ready to discuss your project?</h2>
+        <p>Connect with THE SMART COMPANY LLC for roofing, home restoration, house painting, or deck and fence improvements in Atlanta, GA.</p>
+        <div class="hero-ctas" style="justify-content:center;">
+          <a class="btn btn-primary" href="#contact" data-track="final-request-estimate" aria-label="Request an estimate final CTA">Request an Estimate</a>
+          <a class="btn btn-outline" href="tel:" data-track="final-call" aria-label="Call THE SMART COMPANY LLC final CTA">Call </a>
+        </div>
+        <p style="color:rgba(255,255,255,0.85);">Mon–Fri 9:00 AM–5:00 PM.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <h3 style="color:#fff;">THE SMART COMPANY LLC</h3>
+        <p>923 Peachtree St NE, Atlanta, GA</p>
+        <p> •  • </p>
+        <p>Hours: Monday–Friday, 9:00 AM–5:00 PM</p>
+      </div>
+      <div>
+        <h3 style="color:#fff;">Quick Links</h3>
+        <div class="footer-nav">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <small>Information based on our public listing. For more details, visit our Google listing.</small>
+        <a href="" aria-label="Visit Google listing from footer">Google listing</a>
+      </div>
+    </div>
+    <small style="margin-top:24px;display:block;">&copy; <span id="current-year"></span> THE SMART COMPANY LLC. All rights reserved.</small>
+  </div>
+</footer>
+<div class="mobile-sticky-cta" role="complementary" aria-label="Quick contact actions">
+  <a class="btn btn-secondary" href="tel:" data-track="mobile-call" aria-label="Tap to call THE SMART COMPANY LLC">Call </a>
+  <a class="btn btn-primary" href="#contact" data-track="mobile-request-estimate" aria-label="Request an estimate on mobile">Request an Estimate</a>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.querySelectorAll('[data-track]');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      console.log('CTA Click:', btn.getAttribute('data-track'));
+    });
+  });
+  var form = document.getElementById('estimate-form');
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      console.log('Form Submission: estimate-form');
+      form.reset();
+      alert('Thank you! We will reach out during business hours.');
+    });
+  }
+  var yearEl = document.getElementById('current-year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "THE SMART COMPANY LLC",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "923 Peachtree St NE",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA"
+  },
+  "telephone": "",
+  "email": "",
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "areaServed": "Atlanta, GA",
+  "sameAs": "",
+  "knowsAbout": [
+    "Roofing",
+    "Home Restoration",
+    "House Painting",
+    "Deck &amp; Fence Work"
+  ]
+}
+</script>
+</body>
+</html>
