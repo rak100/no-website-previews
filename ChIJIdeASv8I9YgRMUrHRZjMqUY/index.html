@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hillside Chamblee Nursery | Plants & Landscaping Support</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wide variety of flowers, trees, and landscape plants in Chamblee, GA. Helpful staff and landscaping support. Call to check availability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Hillside Chamblee Nursery | Plants & Landscaping Support">
+<meta property="og:description" content="Wide variety of flowers, trees, and landscape plants in Chamblee, GA. Helpful staff and landscaping support. Call to check availability.">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+<meta property="og:type" content="website">
+<style>
+:root {
+  --green-primary: #2F6F3E;
+  --green-secondary: #67A36B;
+  --beige: #E9E4D8;
+  --gray: #6B6B6B;
+  --white: #FFFFFF;
+  --dark: #1F1F1F;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--white);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 8px 16px;
+  z-index: 999;
+  transition: top 0.3s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  z-index: 998;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  gap: 1rem;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--green-primary);
+}
+.utility-line {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+.hours-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--beige);
+  color: var(--green-primary);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.nav-toggle {
+  border: none;
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--white);
+  padding: 0.75rem 1.25rem 1.25rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: var(--shadow);
+}
+.nav-menu.open {
+  display: flex;
+}
+.nav-menu a {
+  font-weight: 500;
+  color: var(--dark);
+}
+.header-cta {
+  display: none;
+  flex-shrink: 0;
+  gap: 0.75rem;
+}
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+}
+.cta-button.primary {
+  background: var(--green-primary);
+  color: var(--white);
+}
+.cta-button.primary:hover,
+.cta-button.primary:focus {
+  background: #265b32;
+}
+.cta-button.secondary {
+  background: var(--white);
+  color: var(--green-primary);
+  border-color: var(--green-primary);
+}
+.cta-button.secondary:hover,
+.cta-button.secondary:focus {
+  background: var(--green-primary);
+  color: var(--white);
+}
+.cta-button.light {
+  background: rgba(255,255,255,0.9);
+  color: var(--green-primary);
+}
+.cta-button.light:hover,
+.cta-button.light:focus {
+  background: var(--white);
+}
+main {
+  display: block;
+}
+.hero {
+  position: relative;
+  padding: 5.5rem 1.5rem 4rem;
+  background-image: linear-gradient(135deg, rgba(47,111,62,0.82), rgba(47,111,62,0.65)), url('https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: left;
+}
+.hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hero .microcopy {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: rgba(255,255,255,0.8);
+}
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+.hero-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(233,228,216,0.9);
+  color: var(--green-primary);
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.trust-badge svg {
+  width: 18px;
+  height: 18px;
+  fill: #F2C94C;
+}
+.section {
+  padding: 4rem 1.5rem;
+}
+.section-header {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.section-header h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--green-primary);
+}
+.section-header p {
+  color: var(--gray);
+}
+.plant-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.plant-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+.plant-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.plant-card .card-content {
+  padding: 1.25rem;
+}
+.plant-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: var(--green-primary);
+}
+.plant-card p {
+  margin: 0;
+  color: var(--gray);
+}
+.grid-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+.grid-cta .cta-button {
+  min-width: 240px;
+}
+.services-list {
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--beige);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+.services-list p {
+  margin-top: 0;
+  color: var(--gray);
+}
+.services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.75rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.services-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+.services-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background: var(--green-primary);
+  flex-shrink: 0;
+}
+.note-text {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-top: 1rem;
+}
+.value-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.value-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 1rem;
+}
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(103,163,107,0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-circle svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--green-primary);
+}
+.value-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--green-primary);
+  font-size: 1.1rem;
+}
+.value-card p {
+  margin: 0;
+  color: var(--gray);
+}
+.value-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.review-highlights {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--beige);
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+.review-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  gap: 1rem;
+}
+.review-highlights li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+.review-highlights li::before {
+  content: '“';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--green-primary);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+hours-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+  display: grid;
+  gap: 2rem;
+}
+.hours-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+  display: grid;
+  gap: 2rem;
+}
+.hours-info {
+  display: grid;
+  gap: 1rem;
+}
+.hours-info address {
+  font-style: normal;
+  color: var(--dark);
+  font-weight: 600;
+}
+.hours-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--gray);
+}
+.hours-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.map-wrapper iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px rgba(47,111,62,0.15);
+}
+.contact-section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--beige);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.contact-section form {
+  display: grid;
+  gap: 1.25rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+label {
+  font-weight: 600;
+  color: var(--dark);
+}
+input,
+select,
+textarea {
+  padding: 0.85rem;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--green-primary);
+  box-shadow: 0 0 0 3px rgba(47,111,62,0.2);
+  outline: none;
+}
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.form-success {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: rgba(103,163,107,0.18);
+  color: var(--green-primary);
+  font-weight: 600;
+}
+.contact-details {
+  margin-top: 2rem;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1.75rem;
+  display: grid;
+  gap: 0.75rem;
+  color: var(--dark);
+}
+.contact-details a {
+  color: var(--green-primary);
+  font-weight: 600;
+  word-break: break-word;
+}
+.privacy-note {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+.final-cta {
+  background: linear-gradient(135deg, rgba(47,111,62,0.95), rgba(103,163,107,0.85));
+  color: var(--white);
+  border-radius: 20px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+}
+.final-cta h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+.final-cta p {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+}
+.final-cta .cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.site-footer {
+  background: #0f2f1b;
+  color: rgba(255,255,255,0.85);
+  padding: 3rem 1.5rem 4.5rem;
+}
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+.footer-brand {
+  display: grid;
+  gap: 0.5rem;
+}
+.footer-brand .logo {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+.footer-nav a {
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+}
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+}
+.hours-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 0.75rem;
+  z-index: 997;
+}
+.sticky-mobile-cta a {
+  flex: 1;
+  font-size: 0.95rem;
+}
+@media (min-width: 540px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .hero-ctas {
+    flex-direction: row;
+  }
+  .plant-card img {
+    height: 210px;
+  }
+}
+@media (min-width: 700px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-list ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .review-highlights ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .hours-info {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+  .hours-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 960px) {
+  .header-inner {
+    padding: 0.85rem 2.5rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-menu {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .header-cta {
+    display: flex;
+  }
+  .brand {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .utility-line {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .hero {
+    padding: 6.5rem 2.5rem 5rem;
+  }
+  .hero-content {
+    margin-left: 0;
+  }
+  .plant-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .value-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .final-cta .cta-group {
+    flex-direction: row;
+  }
+  .footer-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+  .sticky-mobile-cta {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to Main Content</a>
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="logo">Hillside Chamblee Nursery</span>
+      <div class="utility-line">
+        <span class="address">1025 Vijay Dr, Chamblee, GA</span>
+        <span class="hours-badge" aria-label="Nursery hours">Open Today: 7:00 AM–5:00 PM</span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    <nav id="primary-navigation" class="nav-menu" role="navigation" aria-label="Primary navigation">
+      <a href="#plants">Plants</a>
+      <a href="#landscaping">Landscaping Support</a>
+      <a href="#hours">Hours &amp; Location</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:" class="cta-button primary" aria-label="Call Hillside Chamblee Nursery">Call </a>
+      <a href="#contact" class="cta-button secondary">Get Landscaping Support</a>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <p class="microcopy">Local plants &amp; landscape support</p>
+      <h1 id="hero-title">A Wide Variety of Flowers, Trees, and Landscape Plants in Chamblee, GA</h1>
+      <p>Discover agaves, azaleas, magnolias, gardenias, hydrangeas, Japanese maples, knockout roses, boxwood, lariope, and more—with helpful, knowledgeable service.</p>
+      <div class="hero-ctas">
+        <a href="tel:" class="cta-button primary" aria-label="Call to check plant availability">Call to Check Availability</a>
+        <a href="#contact" class="cta-button light">Get Landscaping Support</a>
+      </div>
+      <div class="trust-badge" aria-label="Customer review rating">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2l2.9 6 6.6.6-5 4.7 1.5 6.6L12 16.8l-6 3.1 1.5-6.6-5-4.7 6.6-.6L12 2z"></path>
+        </svg>
+        <span>Rated 4.3 stars based on 6 reviews</span>
+      </div>
+      <p class="note-text" style="color: rgba(255,255,255,0.85); margin-top: 1rem;">Availability varies by season—call ahead.</p>
+    </div>
+  </section>
+
+  <section class="section" id="plants" aria-labelledby="plants-title">
+    <div class="section-header">
+      <h2 id="plants-title">Explore Our Plant Selection</h2>
+      <p>From flowering shrubs to standout trees, find plants for gardens and landscapes.</p>
+    </div>
+    <div class="plant-grid">
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Agaves in decorative pots" loading="lazy">
+        <div class="card-content">
+          <h3>Agaves</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1587314195676-126cf75be292?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Pink azalea shrubs in bloom" loading="lazy">
+        <div class="card-content">
+          <h3>Azaleas</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Magnolia blossoms on tree branches" loading="lazy">
+        <div class="card-content">
+          <h3>Magnolias</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Gardenia flowers at a nursery" loading="lazy">
+        <div class="card-content">
+          <h3>Gardenias</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb7?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Hydrangeas in bloom" loading="lazy">
+        <div class="card-content">
+          <h3>Hydrangeas</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1599395521447-1a9c43d95564?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Japanese maple tree with red foliage" loading="lazy">
+        <div class="card-content">
+          <h3>Japanese Maple Trees</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Knockout roses in bloom" loading="lazy">
+        <div class="card-content">
+          <h3>Knockout Roses</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1545254446-aa380071d5c8?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Boxwood shrubs shaped neatly" loading="lazy">
+        <div class="card-content">
+          <h3>Boxwood</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1523514783744-58afcad10063?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Lariope groundcover plants" loading="lazy">
+        <div class="card-content">
+          <h3>Lariope</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+      <article class="plant-card">
+        <img src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad4?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Variety of plants at a nursery" loading="lazy">
+        <div class="card-content">
+          <h3>And more</h3>
+          <p>Ask about sizes and seasonal availability.</p>
+        </div>
+      </article>
+    </div>
+    <div class="grid-cta">
+      <a href="tel:" class="cta-button primary" aria-label="Call to ask for current inventory">Call  and Ask for Current Inventory</a>
+    </div>
+  </section>
+
+  <section class="section" id="landscaping" aria-labelledby="landscaping-title">
+    <div class="section-header">
+      <h2 id="landscaping-title">Landscaping Support Available</h2>
+      <p>Customers mention support for plant installation, grading, cleaning, and help with specialized requests like improving drainage. Tell us about your project and we’ll advise on next steps.</p>
+    </div>
+    <div class="services-list">
+      <ul>
+        <li>Plant installation</li>
+        <li>Grading and site cleaning</li>
+        <li>Assistance with drainage-related requests</li>
+      </ul>
+      <a href="#contact" class="cta-button primary">Request Landscaping Support</a>
+      <p class="note-text">Scope and scheduling vary. We’ll follow up to discuss your needs.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="materials-title">
+    <div class="section-header">
+      <h2 id="materials-title">Materials for Your Garden Projects</h2>
+      <p>Customers note the availability of materials to support gardens and landscaping work. Contact us to confirm what’s currently in stock.</p>
+      <a href="tel:" class="cta-button primary" aria-label="Call to inquire about materials">Call to Inquire: </a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="why-title">
+    <div class="section-header">
+      <h2 id="why-title">Why Shoppers Choose Us</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2l2.8 5.6L21 8.7l-4.5 4.3L17.6 20 12 16.8 6.4 20l1.1-7-4.5-4.3 6.2-1.1z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3>Extensive Variety</h3>
+          <p>Wide-ranging plant inventory to enhance your outdoor spaces.</p>
+        </div>
+      </div>
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3>Knowledgeable Staff</h3>
+          <p>Helpful guidance to select the right plants for your site.</p>
+        </div>
+      </div>
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3>Local Resource</h3>
+          <p>Conveniently located at 1025 Vijay Dr, Chamblee, GA.</p>
+        </div>
+      </div>
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h7l2 3h7v13H4z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3>Landscaping Support</h3>
+          <p>Installation, grading, cleaning, and drainage help available.</p>
+        </div>
+      </div>
+    </div>
+    <div class="value-actions">
+      <a href="#hours" class="cta-button secondary">Visit Us Today</a>
+      <a href="tel:" class="cta-button primary" aria-label="Call Hillside Chamblee Nursery">Call </a>
+    </div>
+  </section>
+
+  <section class="section" id="reviews" aria-labelledby="reviews-title">
+    <div class="section-header">
+      <h2 id="reviews-title">What Customers Say</h2>
+      <p>4.3 stars based on 6 reviews.</p>
+    </div>
+    <div class="review-highlights">
+      <p>Review highlights from visitors:</p>
+      <ul>
+        <li>Praised for knowledgeable, helpful service.</li>
+        <li>Appreciated for the wide selection of plants.</li>
+        <li>Noted for support with installation, grading, cleaning, and drainage-related requests.</li>
+      </ul>
+      <div class="grid-cta">
+        <a href="" class="cta-button secondary" aria-label="View more reviews on Google">See More on Google</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hours" aria-labelledby="visit-title">
+    <div class="section-header">
+      <h2 id="visit-title">Visit Hillside Chamblee Nursery</h2>
+      <p>Stop by to explore plants, materials, and discuss landscaping support. Hours subject to change on holidays—call to confirm.</p>
+    </div>
+    <div class="hours-card">
+      <div class="hours-info">
+        <address>1025 Vijay Dr, Chamblee, GA</address>
+        <div>
+          <strong>Hours</strong>
+          <ul>
+            <li>Monday–Friday: 7:00 AM–5:00 PM</li>
+            <li>Saturday: 7:00 AM–1:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="hours-actions">
+          <a href="" class="cta-button secondary" aria-label="Get directions to Hillside Chamblee Nursery">Get Directions</a>
+          <a href="tel:" class="cta-button primary" aria-label="Call Hillside Chamblee Nursery">Call </a>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="" loading="lazy" allowfullscreen title="Map to Hillside Chamblee Nursery"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="section-header">
+      <h2 id="contact-title">How Can We Help?</h2>
+      <p>Share details about plant availability or landscaping support needs. We’ll follow up to discuss next steps.</p>
+    </div>
+    <div class="contact-section">
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="contact-phone">Phone</label>
+          <input type="tel" id="contact-phone" name="phone" placeholder="Best phone number">
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="contact-topic">Topic</label>
+          <select id="contact-topic" name="topic">
+            <option value="Plant Availability">Plant Availability</option>
+            <option value="Landscaping Support">Landscaping Support</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" placeholder="Tell us about the plants or project you're interested in."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="contact-time">Preferred Contact Time</label>
+          <input type="text" id="contact-time" name="preferred_time" placeholder="Morning, afternoon, etc.">
+        </div>
+        <button type="submit" class="cta-button primary">Request a Callback</button>
+        <p class="form-success" role="status" aria-live="polite" hidden>Thanks! We’ll get back to you soon.</p>
+      </form>
+      <div class="contact-details">
+        <div><strong>Phone:</strong> <a href="tel:"> </a></div>
+        <div><strong>Email:</strong> <a href="mailto:"> </a></div>
+        <div><strong>Google listing:</strong> <a href="">View listing</a></div>
+        <p class="privacy-note">We’ll only use your info to respond to your request.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="final-cta">
+      <h2>Ready to Plan Your Next Garden Visit?</h2>
+      <p>Availability varies by season—call ahead or request support so we can prepare for your visit.</p>
+      <div class="cta-group">
+        <a href="tel:" class="cta-button primary" aria-label="Call Hillside Chamblee Nursery now">Call to Check Availability</a>
+        <a href="#contact" class="cta-button secondary">Request Landscaping Support</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">Hillside Chamblee Nursery</span>
+      <span>1025 Vijay Dr, Chamblee, GA</span>
+      <span class="hours-chip">Hours: Mon–Fri 7:00 AM–5:00 PM, Sat 7:00 AM–1:00 PM</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#plants">Plants</a>
+      <a href="#landscaping">Landscaping Support</a>
+      <a href="#hours">Hours &amp; Location</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-cta">
+      <a href="tel:" class="cta-button primary" aria-label="Call Hillside Chamblee Nursery">Call </a>
+      <a href="" class="cta-button secondary">See Us on Google</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="current-year"></span> Hillside Chamblee Nursery. All rights reserved.</span>
+  </div>
+</footer>
+
+<div class="sticky-mobile-cta" role="region" aria-label="Mobile quick actions">
+  <a href="tel:" class="cta-button primary" aria-label="Call Hillside Chamblee Nursery now">Call </a>
+  <a href="#contact" class="cta-button secondary">Request Support</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GardenStore",
+  "name": "Hillside Chamblee Nursery",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1025 Vijay Dr",
+    "addressLocality": "Chamblee",
+    "addressRegion": "GA",
+    "postalCode": ""
+  },
+  "telephone": "",
+  "url": "",
+  "sameAs": [""],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "6"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "07:00",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": "00:00",
+      "description": "Closed"
+    }
+  ]
+}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+      const isOpen = navMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+  const contactForm = document.getElementById('contact-form');
+  const successMessage = document.querySelector('.form-success');
+  if (contactForm && successMessage) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      successMessage.hidden = false;
+      contactForm.reset();
+    });
+  }
+});
+</script>
+</body>
+</html>
